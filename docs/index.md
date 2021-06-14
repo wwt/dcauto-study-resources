@@ -36,38 +36,38 @@ Overview paragraph text.  300-635 DCAUTO Exam: Automating and Programming Cisco 
 0. [Getting Started](sections/section_0.md "Getting Started")
 1. [Section 1.0 - Network Programmability Foundation](sections/section_1.md "Network Programmability Foundation")
 
-  - [Section 1.1](sections/section_1_1.md "Section 1.1")
-  - [Section 1.2](sections/section_1_2.md "Section 1.2")
-  - [Section 1.3](sections/section_1_3.md "Section 1.3")
-  - [Section 1.4](sections/section_1_4.md "Section 1.4")
-  - [Section 1.5](sections/section_1_5.md "Section 1.5")
-  - [Section 1.6](sections/section_1_6.md "Section 1.6")
+- [Section 1.1](sections/section_1_1.md "Section 1.1")
+- [Section 1.2](sections/section_1_2.md "Section 1.2")
+- [Section 1.3](sections/section_1_3.md "Section 1.3")
+- [Section 1.4](sections/section_1_4.md "Section 1.4")
+- [Section 1.5](sections/section_1_5.md "Section 1.5")
+- [Section 1.6](sections/section_1_6.md "Section 1.6")
 
 2. Section 2.0 - Controller Based Data Center Networking:
 
-  - [Section 2.1](sections/section_2_1.md "Section 2.1")
-  - [Section 2.2](sections/section_2_2.md "Section 2.2")
-  - [Section 2.3](sections/section_2_3.md "Section 2.3")
-  - [Section 2.4](sections/section_2_4.md "Section 2.4")
-  - [Section 2.5](sections/section_2_5.md "Section 2.5")
-  - [Section 2.6](sections/section_2_6.md "Section 2.6")
+- [Section 2.1](sections/section_2_1.md "Section 2.1")
+- [Section 2.2](sections/section_2_2.md "Section 2.2")
+- [Section 2.3](sections/section_2_3.md "Section 2.3")
+- [Section 2.4](sections/section_2_4.md "Section 2.4")
+- [Section 2.5](sections/section_2_5.md "Section 2.5")
+- [Section 2.6](sections/section_2_6.md "Section 2.6")
 
 3. Section 3.0 = Data Center Device-Centric Networking:
 
-  - [Section 3.1](sections/section_3_1.md "Section 3.1")
-  - [Section 3.2](sections/section_3_2.md "Section 3.2")
-  - [Section 3.3](sections/section_3_3.md "Section 3.3")
-  - [Section 3.4](sections/section_3_4.md "Section 3.4")
-  - [Section 3.5](sections/section_3_5.md "Section 3.5")
+- [Section 3.1](sections/section_3_1.md "Section 3.1")
+- [Section 3.2](sections/section_3_2.md "Section 3.2")
+- [Section 3.3](sections/section_3_3.md "Section 3.3")
+- [Section 3.4](sections/section_3_4.md "Section 3.4")
+- [Section 3.5](sections/section_3_5.md "Section 3.5")
 
 4. Section 4.0 - Data Center Compute:
 
-  - [Section 4.1](sections/section_4_1.md "Section 4.1")
-  - [Section 4.2](sections/section_4_2.md "Section 4.2")
-  - [Section 4.3](sections/section_4_3.md "Section 4.3")
-  - [Section 4.4](sections/section_4_4.md "Section 4.4")
-  - [Section 4.5](sections/section_4_5.md "Section 4.5")
-  - [Section 4.6](sections/section_4_6.md "Section 4.6")
+- [Section 4.1](sections/section_4_1.md "Section 4.1")
+- [Section 4.2](sections/section_4_2.md "Section 4.2")
+- [Section 4.3](sections/section_4_3.md "Section 4.3")
+- [Section 4.4](sections/section_4_4.md "Section 4.4")
+- [Section 4.5](sections/section_4_5.md "Section 4.5")
+- [Section 4.6](sections/section_4_6.md "Section 4.6")
 
 ---
 
