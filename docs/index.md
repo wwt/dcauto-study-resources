@@ -33,7 +33,7 @@ Overview paragraph text.  300-635 DCAUTO Exam: Automating and Programming Cisco 
 
 ### Contents
 
-[Getting Started](sections/section_0.md "Getting Started")
+#### [Getting Started](sections/section_0.md "Getting Started")
 
 1. [Section 1.0 - Network Programmability Foundation](sections/section_1.md "Network Programmability Foundation")
     - [Section 1.1](sections/section_1_1.md "Section 1.1")
@@ -43,7 +43,7 @@ Overview paragraph text.  300-635 DCAUTO Exam: Automating and Programming Cisco 
     - [Section 1.5](sections/section_1_5.md "Section 1.5")
     - [Section 1.6](sections/section_1_6.md "Section 1.6")
 
-2. Section 2.0 - Controller Based Data Center Networking:
+2. [Section 2.0 - Controller Based Data Center Networking](sections/section_2.md "Controller Based Data Center Networking")
     - [Section 2.1](sections/section_2_1.md "Section 2.1")
     - [Section 2.2](sections/section_2_2.md "Section 2.2")
     - [Section 2.3](sections/section_2_3.md "Section 2.3")
@@ -51,14 +51,14 @@ Overview paragraph text.  300-635 DCAUTO Exam: Automating and Programming Cisco 
     - [Section 2.5](sections/section_2_5.md "Section 2.5")
     - [Section 2.6](sections/section_2_6.md "Section 2.6")
 
-3. Section 3.0 = Data Center Device-Centric Networking:
+3. [Section 3.0 - Data Center Device-Centric Networking](sections/section_3.md "Data Center Device-Centric Networking")
     - [Section 3.1](sections/section_3_1.md "Section 3.1")
     - [Section 3.2](sections/section_3_2.md "Section 3.2")
     - [Section 3.3](sections/section_3_3.md "Section 3.3")
     - [Section 3.4](sections/section_3_4.md "Section 3.4")
     - [Section 3.5](sections/section_3_5.md "Section 3.5")
 
-4. Section 4.0 - Data Center Compute:
+4. [Section 4.0 - Data Center Compute](sections/section_4.md "Data Center Compute")
     - [Section 4.1](sections/section_4_1.md "Section 4.1")
     - [Section 4.2](sections/section_4_2.md "Section 4.2")
     - [Section 4.3](sections/section_4_3.md "Section 4.3")
