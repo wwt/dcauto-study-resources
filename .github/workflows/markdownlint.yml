@@ -1,0 +1,30 @@
+---
+# This action performs a lint of markdown files in the repository
+
+# Name of the action
+name: Markdown Linting
+
+# Events which trigger the action
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  markdownlint:
+    name: Lint markdown (.md) files
+    runs-on: ubuntu-latest
+
+    steps:
+      # checkout@v2 action documentation
+      # https://github.com/marketplace/actions/checkout
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # markdownlint-cli action documentation
+      # https://github.com/marketplace/actions/markdownlint-cli
+      - name: markdownlint-cli
+        uses: nosborn/github-action-markdown-cli@v1.1.1
+        with:
+          files: .
+          config_file: .markdownlint.json
