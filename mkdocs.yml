@@ -37,8 +37,6 @@ repo_name: "wwt/dcauto-study-resources"
 repo_url: "https://github.com/wwt/dcauto-study-resources"
 edit_uri: ""
 
-
-
 # Configuration
 theme:
   name: material
@@ -79,4 +77,3 @@ markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.keys
-
