@@ -1,0 +1,18 @@
+# Development Dockerfile for WWT - Cisco DevNet DCAUTO Study Resources
+
+FROM python:3.9-slim-buster
+
+LABEL maintainer="Tim Hull <tim.hull@wwt.com>"
+
+WORKDIR /app
+
+RUN apt-get update && \
+    apt-get install -y git
+
+COPY requirements-dev.txt requirements-dev.txt
+
+RUN python -m pip install --upgrade pip && \
+    python -m pip install -r requirements-dev.txt && \
+    rm requirements-dev.txt
+
+CMD [ "/bin/bash" ]

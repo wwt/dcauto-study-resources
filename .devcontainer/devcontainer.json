@@ -1,0 +1,25 @@
+{
+    "name": "WWT - Cisco DevNet DCAUTO Study Resources Dev Container",
+    "build": {
+        "dockerfile": "../Dockerfile.dev",
+        "context": ".."
+    },
+    "extensions": [
+        "docsmsft.docs-markdown",
+        "docsmsft.docs-yaml",
+        "davidanson.vscode-markdownlint",
+        "redhat.vscode-yaml"
+    ],
+    "settings": {
+        "[yaml]": {
+            "editor.insertSpaces": true,
+            "editor.tabSize": 2,
+            "editor.autoIndent": "keep",
+            "editor.quickSuggestions": {
+                "other": true,
+                "comments": false,
+                "strings": true
+            }
+        }
+    }
+}
