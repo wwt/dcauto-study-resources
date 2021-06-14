@@ -6,8 +6,9 @@ Overview paragraph text.  300-635 DCAUTO Exam: Automating and Programming Cisco 
 
 - :video_camera: [Cisco DCAUTO Exam Topics](https://learningnetwork.cisco.com/s/dcauto-exam-topics "Cisco DCAUTO Exam Topics"){target=_blank}
 
-!!! danger
-    All repository authors and contributors will strictly comply with the [Cisco Certification and Confidentiality Agreement](https://www.cisco.com/c/dam/en_us/training-events/downloads/certificationNDA.pdf "Cisco Certification and Confidentiality Agreement"){target=_blank}, also known as the Cisco Certification Non-Disclosure Agreement (NDA).
+!!! attention
+    All all content and contributions on this site strictly comply with the [Cisco Certification and Confidentiality Agreement](https://www.cisco.com/c/dam/en_us/training-events/downloads/certificationNDA.pdf "Cisco Certification and Confidentiality Agreement"){target=_blank}, also known as the Cisco Certification Non-Disclosure Agreement (NDA).
+
 
 !!! info
     This site is neither affiliated with Cisco Systems, Inc nor any of its affiliates.
