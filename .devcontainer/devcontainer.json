@@ -18,7 +18,7 @@
         8000,
         8888
     ],
-    "postCreateCommand": ["./requirements/server-launch.sh"],
+    "postStartCommand": ["./requirements/server-launch.sh"],
     "settings": {
         "[yaml]": {
             "editor.insertSpaces": true,
