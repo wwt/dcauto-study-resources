@@ -5,11 +5,20 @@
         "context": ".."
     },
     "extensions": [
+        "davidanson.vscode-markdownlint",
         "docsmsft.docs-markdown",
         "docsmsft.docs-yaml",
-        "davidanson.vscode-markdownlint",
-        "redhat.vscode-yaml"
+        "ms-azuretools.vscode-docker",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "redhat.vscode-yaml",
+        "zbr.vscode-ansible"
     ],
+    "forwardPorts": [
+        8000,
+        8888
+    ],
+    "postCreateCommand": ["./requirements/jupyter-launch.sh"],
     "settings": {
         "[yaml]": {
             "editor.insertSpaces": true,
@@ -20,6 +29,10 @@
                 "comments": false,
                 "strings": true
             }
-        }
+        },
+        "python.pythonPath": "/usr/local/bin/python3",
+        "python.formatting.provider": "autopep8",
+        "python.linting.enabled": true,
+        "python.linting.flake8Enabled": true
     }
 }
