@@ -3,8 +3,8 @@
 site_name: "WWT - Cisco DevNet DCAUTO Study Resources"
 nav:
   - Home: index.md
-  - Getting Started:
-    - Study Environment Setup: sections/section_0.md
+  - Development Environment Setup:
+    - Visual Studio Code Dev Container: sections/section_0.md
   - Section 1.0:
     - Section 1.1: sections/section_1_1.md
     - Section 1.2: sections/section_1_2.md
@@ -32,6 +32,8 @@ nav:
     - Section 4.4: sections/section_4_4.md
     - Section 4.5: sections/section_4_5.md
     - Section 4.6: sections/section_4_6.md
+  - Appendecies:
+    - Lessons Learned: sections/appendix_a.md
 
 # Repository
 repo_name: "wwt/dcauto-study-resources"
@@ -74,7 +76,8 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - admonition
   - attr_list
-  - pymdownx.tasklist
   - pymdownx.highlight
-  - pymdownx.superfences
+  - pymdownx.details
   - pymdownx.keys
+  - pymdownx.superfences
+  - pymdownx.tasklist
