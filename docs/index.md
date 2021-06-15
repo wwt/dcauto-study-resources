@@ -108,4 +108,4 @@
 
 ## Let's Do This
 
-That's all there is to it! Click [this link](sections/section_0.md "Hands-On Environment Setup") to setup your development environment.
+:medal: You can do this and you're already to get started! Click [this link](sections/section_0.md "Hands-On Environment Setup") to setup your development environment.
