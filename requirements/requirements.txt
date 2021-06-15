@@ -13,8 +13,8 @@ requests
 xmltodict
 
 # Python SDK for Cisco ACI
-requirements/acicobra-4.2_3h-py2.py3-none-any.whl
-requirements/acimodel-4.2_3h-py2.py3-none-any.whl
+requirements/aci/acicobra-4.2_3h-py2.py3-none-any.whl
+requirements/aci/acimodel-4.2_3h-py2.py3-none-any.whl
 
 # Nexus
 cisco-gnmi
