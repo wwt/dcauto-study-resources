@@ -18,7 +18,7 @@
         8000,
         8888
     ],
-    "postCreateCommand": ["./requirements/jupyter-launch.sh"],
+    "postCreateCommand": ["./requirements/server-launch.sh"],
     "settings": {
         "[yaml]": {
             "editor.insertSpaces": true,
