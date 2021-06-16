@@ -56,7 +56,7 @@ The setup process is 4 high-level steps:
 
         ??? example "3d. Reopen the current workspace in a Visual Studio Code Development Container:"
 
-            [![vs-code-rereopen-in-confainer](../images/vs-code-rereopen-in-confainer.png "Reopen in Visual Studio Code Development Container")](../../images/vs-code-rereopen-in-confainer.png){target=_blank}
+            [![vs-code-reopen-in-confainer](../images/vs-code-reopen-in-confainer.png "Reopen in Visual Studio Code Development Container")](../../images/vs-code-reopen-in-confainer.png){target=_blank}
 
             [![vs-code-choose-repo-folder](../images/vs-code-choose-repo-folder.png "Choose Repository Folder")](../../images/vs-code-choose-repo-folder.png){target=_blank}
 
