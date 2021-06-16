@@ -127,7 +127,7 @@ The setup process takes a little bit of work on the first pass.  Afterwards, the
             [![vs-code-devcontainer-build-done](../images/vs-code-devcontainer-build-done.png "Development Container Build Complete")](../../images/vs-code-devcontainer-build-done.png){target=_blank}
 
 ??? abstract "5. Use the Development Environment"
-    1. :fontawesome-solid-folder: Open the "resources" Folder
+    1. :fontawesome-solid-folder: Open the "**resources**" Folder
 
         ??? example "1a. Study materials, code samples, references, etc. are here:"
 
@@ -160,4 +160,4 @@ The setup process takes a little bit of work on the first pass.  Afterwards, the
 
 ## Now You're Ready
 
-:thumbsup: Your development environment is ready to go and that means it's time to get to the exam topics. Click [this link](sections/section_1.md "Section 1.0 Exam Topics") to check out the Section 1 of the exam topics.
+:thumbsup: Your development environment is ready to go and that means it's time to get to the exam topics. Click [this link](section_1.md "Section 1.0 Exam Topics") to check out the **Section 1** of the exam topics.
