@@ -1,0 +1,8 @@
+---
+collections:
+  - name: cisco.aci
+    source: https://galaxy.ansible.com
+  - name: cisco.nxos
+    source: https://galaxy.ansible.com
+  - name: cisco.ucs
+    source: https://galaxy.ansible.com
