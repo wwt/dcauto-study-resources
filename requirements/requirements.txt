@@ -1,0 +1,29 @@
+# Ansible
+ansible==2.9
+
+# MkDocs Core
+mkdocs-material
+
+# Python
+ipython
+jupyterlab
+ncclient
+pyyaml
+requests
+xmltodict
+
+# Python SDK for Cisco ACI
+requirements/aci/acicobra-4.2_3h-py2.py3-none-any.whl
+requirements/aci/acimodel-4.2_3h-py2.py3-none-any.whl
+
+# Nexus
+cisco-gnmi
+
+# Syntax and formatting
+ansible-lint
+autopep8
+flake8
+yamllint
+
+# UCS
+ucsmsdk
