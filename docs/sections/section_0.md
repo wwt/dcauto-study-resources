@@ -12,10 +12,10 @@
 
 ## Dev Environment Setup
 
-The setup process is 4 steps:
+The setup process is 4 high-level steps:
 
 !!! tip
-    Click to expand any step.
+    Click to expand each step.
 
 ??? abstract "1. Install Desktop Software"
     1. :fontawesome-brands-windows: :fontawesome-brands-apple: Choose a Windows or macOS computer
@@ -40,28 +40,51 @@ The setup process is 4 steps:
     2. :material-microsoft-visual-studio-code: Launch Visual Studio Code
     3. :fontawesome-solid-table: Install the Visual Studio Code Remote Development Extension
 
-        - Copy the Remote Development Bundle extension name to your clipboard:
+        ??? example "3a. Copy the Remote Development Bundle extension name to your clipboard:"
 
-        ```
-        ms-vscode-remote.vscode-remote-extensionpack
-        ```
+            ```
+            ms-vscode-remote.vscode-remote-extensionpack
+            ```
 
-        - Install the Visual Studio Code Remote Development Bundle:
+        ??? example "3b. Install the Visual Studio Code Remote Development Bundle:"
 
-        [![vs-code-install-remote-extension](../images/vs-code-install-remote-extension.png "Install Visual Studio Code Remote Development Bundle")](../../images/vs-code-install-remote-extension.png){target=_blank}
+            [![vs-code-install-remote-extension](../images/vs-code-install-remote-extension.png "Install Visual Studio Code Remote Development Bundle")](../../images/vs-code-install-remote-extension.png){target=_blank}
 
-        ---
+        ??? example "3c. Verify the Remote Development Bundle installation:"
 
-        - Verify the Remote Development Bundle installation:
+            [![vs-code-verify-remote-extension](../images/vs-code-verify-remote-extension.png "Visual Studio Code Remote Development Bundle Verification")](../../images/vs-code-verify-remote-extension.png){target=_blank}
 
-        [![vs-code-verify-remote-extension](../images/vs-code-verify-remote-extension.png "Visual Studio Code Remote Development Bundle Verification")](../../images/vs-code-verify-remote-extension.png){target=_blank}
+        ??? example "3d. Reopen the current workspace in a Visual Studio Code Development Container:"
 
-??? abstract "4. Start the Development Container"
-    1. :material-open-in-new: Open the cloned Git repository folder in a new window
-    2. :fontawesome-solid-laptop-code: Activate the Development Container
-    3. :material-format-list-bulleted-type: Start Studying
+            [![vs-code-rereopen-in-confainer](../images/vs-code-rereopen-in-confainer.png "Reopen in Visual Studio Code Development Container")](../../images/vs-code-rereopen-in-confainer.png){target=_blank}
 
-### Describe what's being installed and that it may take some time
+            [![vs-code-choose-repo-folder](../images/vs-code-choose-repo-folder.png "Choose Repository Folder")](../../images/vs-code-choose-repo-folder.png){target=_blank}
+
+??? abstract "4. Observe Development Container Activation"
+    1. :material-open-in-new: Wait for Development Container Activation
+
+        ??? example "1a. Click "show log" to monitor container activation:"
+
+            [![vs-code-devcontainer-build-start](../images/vs-code-devcontainer-build-start.png "Click "show log"")](../../images/vs-code-devcontainer-build-start.png){target=_blank}
+
+        ??? example "1b. Observe the development container build process:"
+
+            !!! attention
+                The initial development container build may take 5-10 minutes, please be patient.  Subsequent launches should only take a few seconds.
+
+            [![vs-code-devcontainer-building](../images/vs-code-devcontainer-building.png "Observe Development Container Build Process")](../../images/vs-code-devcontainer-building.png){target=_blank}
+
+    2. :fontawesome-solid-laptop-code: Verify Development Container Activation
+
+        ??? example "2a. Observe the repository files reappear and the log message scrolling stop:"
+
+            [![vs-code-devcontainer-build-done](../images/vs-code-devcontainer-build-done.png "Development Container Build Complete")](../../images/vs-code-devcontainer-build-done.png){target=_blank}
+
+---
+
+## Dev Environment Contents
+
+:question: So, what all is in this development environment?
 
 ### Describe Jupyter & MkDocs servers
 
