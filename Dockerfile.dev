@@ -19,9 +19,10 @@ RUN apt-get update && \
 # Copy requirements files to Image
 COPY requirements/ requirements/
 
-# Install Python packages
+# Install Python packages and Ansible Collections
 RUN python -m pip install --upgrade pip && \
-    python -m pip install -r requirements/requirements-dev.txt
+    python -m pip install -r requirements/requirements-dev.txt && \
+    ansible-galaxy collection install -r requirements/ansible-galaxy.yml
 
 # Install and configure PowerShell
 RUN dpkg -i requirements/ucs/packages-microsoft-prod.deb && \

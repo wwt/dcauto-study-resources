@@ -34,7 +34,7 @@
 
 :rocket: For us, liftoff is the hardest part of the study process.  Getting our computers setup in a way which allows us to study and takes notes seems to take way more time than we think it will.  To make that process easier for you, we tried to make the study resources in this guide as portable and consumable as possible.
 
-:computer: We think the best way to study for the DCAUTO exam is to have a great development environment so we packaged one right into the [GitHub repository](https://github.com/wwt/dcauto-study-resources "DCAUTO Study Resources GitHub Repository"){target=_blank} which supports this site.  The study material contend doesn't change whether you choose to use our development environment, use the files in the GitHub repository to build a development environment from source, or use your own development environment.  These are the tools that we *recommend* to get started with your DCAUTO exam study:
+:computer: We think the best way to study for the DCAUTO exam is to have a great development environment so we packaged one right into the [GitHub repository](https://github.com/wwt/dcauto-study-resources "DCAUTO Study Resources GitHub Repository"){target=_blank} which supports this site.  The study material content doesn't change whether you choose to use our development environment, use the files in the GitHub repository to build a development environment from source, or use your own development environment.  These are the tools that we *recommend* to get started with your DCAUTO exam study:
 
 1. :fontawesome-solid-cloud: **An account registration with [Cisco DevNet](https://developer.cisco.com "Cisco DevNet"){target=_blank}**.
 
@@ -109,4 +109,4 @@
 
 ## Let's Do This
 
-:medal: You can do this and you're already to get started! Click [this link](sections/section_0.md "Hands-On Environment Setup") to setup your development environment.
+:medal: You're already to get started! Click [this link](sections/section_0.md "Development Environment Setup") to setup your development environment.
