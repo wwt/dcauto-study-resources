@@ -4,7 +4,19 @@
 
 :computer: In case you're wondering, "_Why do I need a development environment?  I'm studying for an exam, right?_"  In our opinion, this is an exam for operations _developers_ and a developer needs the right tools in order to do their job well.  Because the exam topics cover so many subjects, the array of tools, software packages, etc. is big enough that putting together an effective development environment, even if only for exam study, takes a lot of time.  We want you to save that time and help you get into the study materials as quickly as possible.
 
-??? info "Development Environment Contents Overview"
+---
+
+## VS Code Dev Container
+
+:bulb: Our development environment uses the [Development Container](https://code.visualstudio.com/docs/remote/containers "Visual Studio Code Development Containers"){target=_blank} feature in Visual Studio Code.  The reasons we use this particular environment are:
+
+- :white_check_mark: **Consistency:** this development environment will work in the same way on any computer that has Visual Studio Code and Docker installed.
+- :white_check_mark: **Portability:** the development environment is part of the Git repository which supports this guide so simply cloning the repository means you have all of the files you need.
+- :white_check_mark: **Ease of Use:** Getting started with your studies quickly and the ability to easily pick up your studies where you left off means less time spent fussing with a development environment and more time available to focus on exam topic study.
+
+---
+
+??? info "Development Environment Contents Reference"
     ??? abstract "Local web servers"
         - :material-web-box: MkDocs at [http://localhost:8000](http://localhost:8000 "Local MkDocs Documentation Site"){target=_blank} - for offline documentation access.
         - :fontawesome-brands-python: Jupyter Lab at [http://localhost:8888](http://localhost:8888 "Local Jupyter Lab Python Exercises"){target=_blank} - for Python code walkthroughs.
@@ -32,31 +44,21 @@
         - :fontawesome-brands-python: [Cisco UCS Manager Python SDK](https://pypi.org/project/ucsmsdk/ "ucsmsdk on PyPi"){target=_blank} - simplified Python interaction for Cisco UCS Manager.
 
     ??? abstract "Product-specific Ansible Collections"
-        - [Cisco ACI Ansible Collection](https://galaxy.ansible.com/cisco/aci "Cisco ACI Ansible Collection"){target=_blank}
-        - [Cisco Intersight Ansible Collection](https://galaxy.ansible.com/cisco/intersight "Cisco Intersight Ansible Collection"){target=_blank}
-        - [Cisco NX-OS (Nexus) Ansible Collection](https://galaxy.ansible.com/cisco/nxos "Cisco NX-OS (Nexus) Ansible Collection"){target=_blank}
-        - [Cisco UCS Ansible Collection](https://galaxy.ansible.com/cisco/ucs "Cisco UCS Ansible Collection"){target=_blank}
+        - :material-ansible: [Cisco ACI Ansible Collection](https://galaxy.ansible.com/cisco/aci "Cisco ACI Ansible Collection"){target=_blank}
+        - :material-ansible: [Cisco Intersight Ansible Collection](https://galaxy.ansible.com/cisco/intersight "Cisco Intersight Ansible Collection"){target=_blank}
+        - :material-ansible: [Cisco NX-OS (Nexus) Ansible Collection](https://galaxy.ansible.com/cisco/nxos "Cisco NX-OS (Nexus) Ansible Collection"){target=_blank}
+        - :material-ansible: [Cisco UCS Ansible Collection](https://galaxy.ansible.com/cisco/ucs "Cisco UCS Ansible Collection"){target=_blank}
 
     ??? abstract "Microsoft PowerShell development environment"
         - :material-powershell: [PowerShell for Linux](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-linux?view=powershell-7.1#debian-10 "PowerShell for Linux"){target=_blank}
         - :fontawesome-solid-server: [Cisco UCS PowerTool on PowerShell Gallery](https://www.powershellgallery.com/profiles/Cisco/ "Cisco UCS PowerTool on PowerShell Gallery"){target=_blank}
-            - :fontawesome-brands-docker: [Source/credit for PowerShell launch script](https://hub.docker.com/r/ciscodevnet/ucs-powertool-core-ms "Source/credit for PowerShell Launch Script on Docker Hub"){target=_blank}
-
----
-
-## VS Code Dev Containers
-
-:bulb: Our development environment uses the [Development Container](https://code.visualstudio.com/docs/remote/containers "Visual Studio Code Development Containers"){target=_blank} feature in Visual Studio Code.  The reasons we use this particular environment are:
-
-- :white_check_mark: **Consistency:** this development environment will work in the same way on any computer that has Visual Studio Code and Docker installed.
-- :white_check_mark: **Portability:** the development environment is part of the Git repository which supports this guide so simply cloning the repository means you have all of the files you need.
-- :white_check_mark: **Ease of Use:** Getting started with your studies quickly and the ability to easily pick up your studies where you left off means less time spent fussing with a development environment and more time available to focus on exam topic study.
+            - :fontawesome-brands-docker: [Source/credit for PowerShell launch script](https://hub.docker.com/r/ciscodevnet/ucs-powertool-core-ms "Source/credit for PowerShell Launch Script on Docker Hub"){target=_blank} 
 
 ---
 
 ## Dev Environment Setup
 
-The setup process is 4 high-level steps:
+The setup process takes a little bit of work on the first pass.  Afterwards, the setup and teardown is quick and easy.  Here are the high-level steps to setup the development environment:
 
 !!! tip
     Click to expand each step.
@@ -123,6 +125,36 @@ The setup process is 4 high-level steps:
         ??? example "2a. Observe the repository files reappear and the log message scrolling stop:"
 
             [![vs-code-devcontainer-build-done](../images/vs-code-devcontainer-build-done.png "Development Container Build Complete")](../../images/vs-code-devcontainer-build-done.png){target=_blank}
+
+??? abstract "5. Use the Development Environment"
+    1. :fontawesome-solid-folder: Open the "resources" Folder
+
+        ??? example "1a. Study materials, code samples, references, etc. are here:"
+
+            [![vs-code-resources-folder](../images/vs-code-resources-folder.png "resources Folder")](../../images/vs-code-resources-folder.png){target=_blank}
+
+    2. :fontawesome-solid-terminal: Use the Visual Studio Code Integrated Terminal
+
+        ??? example "2a. Use the terminal controls pallete to open new shells:"
+
+            [![vs-code-open-terminals](../images/vs-code-open-terminals.png "Open New Bash or PowerShell Terminals")](../../images/vs-code-open-terminals.png){target=_blank}
+
+        ??? example "2b. Use terminal tabs to switch between or close any open terminals:"
+
+            [![vs-code-manage-terminals](../images/vs-code-manage-terminals.png "Switch Between or Close Terminals")](../../images/vs-code-manage-terminals.png){target=_blank}
+
+??? abstract "6. Teardown and Re-Launch"
+    1. :fontawesome-solid-window-close: Teardown the Development Environment
+
+        ??? example "1a. Close the Dev Container, Without Deleting the Dev Environment Image:"
+
+            [![vs-code-close-dev-container](../images/vs-code-close-dev-container.png "Close the Dev Container")](../../images/vs-code-close-dev-container.png){target=_blank}
+
+    2. :material-open-in-app: Re-Launch the Development Environment
+
+        ??? example "2a. Quickly Restart the Dev Container From the Welcome Screen:"
+
+            [![vs-code-restart-dev-container](../images/vs-code-restart-dev-container.png "Restart the Dev Container")](../../images/vs-code-restart-dev-container.png){target=_blank}
 
 ---
 
