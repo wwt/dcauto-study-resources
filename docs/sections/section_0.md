@@ -40,16 +40,30 @@ The setup process is 4 steps:
     2. :material-microsoft-visual-studio-code: Launch Visual Studio Code
     3. :fontawesome-solid-table: Install the Visual Studio Code Remote Development Extension
 
-        - Copy the following extension name to your clipboard:
+        - Copy the Remote Development Bundle extension name to your clipboard:
 
         ```
         ms-vscode-remote.vscode-remote-extensionpack
         ```
 
+        - Install the Visual Studio Code Remote Development Bundle:
+
+        [![vs-code-install-remote-extension](../images/vs-code-install-remote-extension.png "Install Visual Studio Code Remote Development Bundle")](../../images/vs-code-install-remote-extension.png){target=_blank}
+
+        ---
+
+        - Verify the Remote Development Bundle installation:
+
+        [![vs-code-verify-remote-extension](../images/vs-code-verify-remote-extension.png "Visual Studio Code Remote Development Bundle Verification")](../../images/vs-code-verify-remote-extension.png){target=_blank}
+
 ??? abstract "4. Start the Development Container"
     1. :material-open-in-new: Open the cloned Git repository folder in a new window
     2. :fontawesome-solid-laptop-code: Activate the Development Container
     3. :material-format-list-bulleted-type: Start Studying
+
+### Describe what's being installed and that it may take some time
+
+### Describe Jupyter & MkDocs servers
 
 ---
 
