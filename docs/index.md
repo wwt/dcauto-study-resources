@@ -10,7 +10,7 @@
 
 ## Overview
 
-:clipboard: This guide provides content and references which will help you study and prepare yourself for the Cisco [**300-635 DCAUTO Exam: Automating and Programming Cisco Data Center Solutions**](https://www.cisco.com/c/en/us/training-events/training-certifications/exams/current-list/dcauto-300-635.html "Cisco DCAUTO (300-635) Exam"){target=_blank} exam.  All of the information in this guide is a curation of study resources which the authors used in order to study for and pass the Cisco DCAUTO exam.
+:clipboard: This guide provides content and references which will help you study and prepare yourself for the [**Cisco 300-635 DCAUTO Exam: Automating and Programming Cisco Data Center Solutions**](https://www.cisco.com/c/en/us/training-events/training-certifications/exams/current-list/dcauto-300-635.html "Cisco DCAUTO (300-635) Exam"){target=_blank} exam.  All of the information in this guide is a curation of study resources which the authors used in order to study for and pass the Cisco DCAUTO exam.
 
 !!! attention
     All all content in this guide strictly comply with the [Cisco Certification and Confidentiality Agreement](https://www.cisco.com/c/dam/en_us/training-events/downloads/certificationNDA.pdf "Cisco Certification and Confidentiality Agreement"){target=_blank}, also known as the Cisco Certification Non-Disclosure Agreement (**NDA**).  We welcome and appreciate any Cisco NDA-compliant contributions from the community.
@@ -36,21 +36,22 @@
 
 :computer: We think the best way to study for the DCAUTO exam is to have a great development environment so we packaged one right into the [GitHub repository](https://github.com/wwt/dcauto-study-resources "DCAUTO Study Resources GitHub Repository"){target=_blank} which supports this site.  The study material contend doesn't change whether you choose to use our development environment, use the files in the GitHub repository to build a development environment from source, or use your own development environment.  These are the tools that we *recommend* to get started with your DCAUTO exam study:
 
-1. An account registration with [Cisco DevNet](https://developer.cisco.com "Cisco DevNet"){target=_blank}.
+1. :fontawesome-solid-cloud: **An account registration with [Cisco DevNet](https://developer.cisco.com "Cisco DevNet"){target=_blank}**.
 
     !!! tip
-        If possible, we recommend you register with and log on to Cisco DevNet with a [Cisco.com account](https://id.cisco.com/signin/register "Cisco.com Account Registration"){target=_blank} because the DevNet labs for [Cisco Intersight](https://www.intersight.com "Cisco Intersight") require a Cisco.com account.
+        If possible, we recommend you register with and log on to Cisco DevNet with a [Cisco.com account](https://id.cisco.com/signin/register "Cisco.com Account Registration"){target=_blank} because the DevNet labs for [Cisco Intersight](https://www.intersight.com "Cisco Intersight"){target=_blank} require a Cisco.com account.
 
-2. A Windows or macOS computer with the following software installed:
-    - [Docker Desktop](https://www.docker.com/products/docker-desktop "Docker Desktop Download"){target=_blank}.
-    - [Visual Studio Code](https://code.visualstudio.com/ "Visual Studio Code"){target=_blank}.
-    - Cisco [AnyConnect](https://developer.cisco.com/site/sandbox/anyconnect/ "Cisco AnyConnect VPN Client"){target=_blank} or [OpenConnect](http://www.infradead.org/openconnect/ "OpenConnect VPN Client"){target=_blank} VPN client.
-    - A desktop hypervisor ([Parallels](https://www.parallels.com/products/desktop/ "Parallels for Mac"){target=_blank}, [VirtualBox](https://www.virtualbox.org "VirtualBox"){target=_blank}, [VMware Fusion](https://www.vmware.com/products/fusion.html "VMware Fusion"){target=_blank}, or [VMware Workstation Player](https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html "VMware Workstation Player"){target=_blank}).
+2. :fontawesome-brands-windows: :fontawesome-brands-apple: **A Windows or macOS computer with the following software installed**:
+    - :fontawesome-brands-docker: [Docker Desktop](https://www.docker.com/products/docker-desktop "Docker Desktop Download"){target=_blank}.
+    - :fontawesome-brands-git-alt: Git SCM from [Git-SCM](https://git-scm.com/downloads "Git-SCM Downloads"){target=_blank} or from a [Windows](https://community.chocolatey.org/packages/git "Git - Chocolatey for Windows"){target=_blank} or [macOS](https://brew.sh/ "Homebrew for macOS"){target=_blank} package manager.
+    - :material-microsoft-visual-studio-code: [Visual Studio Code](https://code.visualstudio.com/ "Visual Studio Code"){target=_blank}.
+    - :material-security-network: Cisco [AnyConnect](https://developer.cisco.com/site/sandbox/anyconnect/ "Cisco AnyConnect VPN Client"){target=_blank} or [OpenConnect](http://www.infradead.org/openconnect/ "OpenConnect VPN Client"){target=_blank} VPN client.
+    - :fontawesome-solid-server: A desktop hypervisor ([Parallels](https://www.parallels.com/products/desktop/ "Parallels for Mac"){target=_blank}, [VirtualBox](https://www.virtualbox.org "VirtualBox"){target=_blank}, [VMware Fusion](https://www.vmware.com/products/fusion.html "VMware Fusion"){target=_blank}, or [VMware Workstation Player](https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html "VMware Workstation Player"){target=_blank}).
 
     !!! tip
         A desktop hypervisor is optional.  We found value/ease in using a desktop hypervisor to run local instances of the [Cisco UCS Platform Emulator](https://community.cisco.com/t5/unified-computing-system/ucs-platform-emulator-downloads-ucspe-4-1-2cpe1-ucspe-4-0-4epe1/ta-p/3648177 "Cisco UCS Platform Emulator"){target=_blank} although DevNet provides labs with sufficient access to UCS platforms.
 
-3. Your favorite terminal/shell program (iTerm, PowerShell, Bash, etc.).
+3. :fontawesome-solid-terminal: **Your favorite terminal/shell program (iTerm, PowerShell, Bash, etc.).**
 
     !!! tip
         In our exmaples, we use either the [Visual Studio Code Integrated Terminal](https://code.visualstudio.com/docs/editor/integrated-terminal "Visual Studio Code Integrated Terminal"){target=_blank} or the [macOS Terminal application](https://support.apple.com/guide/terminal/welcome/mac "macOS Terminal Application"){target=_blank}.
@@ -60,7 +61,7 @@
 ## Topic Navigation
 
 !!! tip
-    Click to expand any topic
+    Click to expand any topic.
 
 ??? abstract "Development Environment Setup"
     - [Visual Studio Code Dev Container](sections/section_0.md "Visual Studio Code Dev Container")
