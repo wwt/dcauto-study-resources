@@ -1,4 +1,13 @@
 #!/usr/bin/env python3
+""" Interactive Python code which allows abstract/free-formed requests
+    to Cisco ACI.
+
+    Run the code in a REPL and call the apic_helper() method to
+    practice
+
+    Usage option #1: ipython -i aci_testing.py
+    Usage option #2: python3 -i aci_testing.py
+"""
 
 # Imports
 from json.decoder import JSONDecodeError
@@ -80,6 +89,7 @@ def apic_login() -> None:
 
     print(f'\n** Login {login_status} **\n')
 
+    # These options are not necessary with the requests.session object
     # if login_response.json().get('totalCount', None) == '1':
     #     # Option #1
     #     token = session.cookies['APIC-cookie']
@@ -118,3 +128,21 @@ def apic_helper(
     print(f'\n** Request {response_status} **\n')
 
     return response
+
+
+def main() -> None:
+    """ Main function to run when the code executes.
+
+    Args:
+        None
+
+    Returns:
+        None
+    """
+
+    # Perform APIC login
+    apic_login()
+
+
+if __name__ == '__main__':
+    main()

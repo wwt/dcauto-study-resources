@@ -1,14 +1,19 @@
 #!/usr/bin/env ansible-playbook
-
+# Ansible Playbook to delete an ACI Tenant and its child objects
+# Usage option #1: ansible-playbook delete_aci_tenant_and_children.yml -i inventory
+# Usage option #2: ./delete_aci_tenant_and_children.yml -i inventory
 ---
+# Play definition
 - name: Delete ACI Tenant and Children
   hosts: devnet
   connection: local
   gather_facts: false
 
+  # Import cisco.aci collection to, optionally, shorten module syntax
   collections:
     - cisco.aci
 
+  # Establish variables which are common to each task, as an anchor
   vars:
     task_common: &task_common
       host: "{{ inventory_hostname }}"
@@ -19,6 +24,7 @@
       output_level: debug
 
   tasks:
+    # Delete the Tenant Object, and all of its child objects
     - name: Delete Tenant
       cisco.aci.aci_tenant:
         tenant: "{{ tenant_name }}"

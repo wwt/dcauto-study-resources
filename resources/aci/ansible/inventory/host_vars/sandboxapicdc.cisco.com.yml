@@ -1,3 +1,4 @@
+# Host variables for Cisco Always-On ACI Sandbox (https://sandboxapicdc.cisco.com)
 ---
 name: admin
 pwd: ciscopsdt

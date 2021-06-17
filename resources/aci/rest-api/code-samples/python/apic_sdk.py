@@ -1,4 +1,12 @@
-#!/usr/bin/env pythong
+#!/usr/bin/env python3
+""" APIC SDK wrapper to test REST APIC calls to Cisco ACI.
+    Performs automatic login to ACI on init.
+
+    Usage (in a Python file):
+        from apic_sdk import Apic
+        apic = Apic()
+        apic.make_request(**kwargs)
+"""
 
 # Imports
 import requests
@@ -25,7 +33,6 @@ class Apic:
         pwd=ALWAYS_ON_PWD,
     ):
 
-        """Review the docs for the underscore"""
         self._base_url = base_url
         self._port = port
         self._name = name
