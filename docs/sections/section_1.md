@@ -6,7 +6,7 @@ This section of the exam topics focuses on the skills that will want to be very 
 
 In our exam preparation, we didn't spend a ton of dedicated time on the topics in this section because these particular topics are quite familiar to us from previous DevNet exam study work (DEVASC, ENAUTO, & DEVCOR), we help teach these topics in our free, ongoing, open-to-the-public [DevNet Study Group](https://www.wwt.com/community/cisco-devnet-study-groups "WWT DevNet Study Group Community"){target=_blank} meetings, and because we work with many of the topics, daily.
 
-We do, however, remember exactly how we felt when these topics were new to us and we have plenty of resources to share.
+We do, however, remember exactly how we felt when these topics were new to us and we have plenty of resources to share.  Also, we included some general Ansible references that we found helpful in this section, since the exam topics in each of the subsequent sections have an Ansible automation element.
 
 ???+ note "Section 1.0 Topic Details"
     - 1.1 Utilize common version control operations with git: add, clone, push, commit, diff, branching, merging conflict
@@ -66,8 +66,17 @@ We do, however, remember exactly how we felt when these topics were new to us an
 
 ## :material-file-document-outline: Documentation
 
+??? abstract "Code Formatting"
+    - [Code Beautifier Tool for JSON, XML, YAML, etc.](https://codebeautify.org "Code Beautifier Tool for JSON, XML, YAML, etc."){target=_blank}
+
 ??? abstract "Python"
     - [RealPython Virtual Environments Primer](https://realpython.com/python-virtual-environments-a-primer/ "RealPython Virtual Environments Primer"){target=_blank}
+    - [RealPython Working With JSON Data in Python](https://realpython.com/python-json/#serializing-json "RealPython Working With JSON Data in Python"){target=_blank}
+
+??? abstract "Ansible"
+    - [Ansible Configuration Files](https://docs.ansible.com/ansible/latest/reference_appendices/config.html#ansible-configuration-settings-locations "Ansible Configuration Files"){target=_blank}
+    - [Ansible Inventory](https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html){target=_blank}
+    - [Ansible Variables](https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html "Ansible Variables"){target=_blank}
 
 ---
 
