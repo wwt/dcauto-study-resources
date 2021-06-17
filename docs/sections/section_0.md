@@ -160,4 +160,4 @@ The setup process takes a little bit of work on the first pass.  Afterwards, the
 
 ## Now You're Ready
 
-:thumbsup: Your development environment is ready to go and that means it's time to get to the exam topics. Click [this link](section_1.md "Section 1.0 Exam Topics") to check out the **Section 1** of the exam topics.
+:thumbsup: Your development environment is ready to go and that means it's time to get to the exam topics. Click [this link](section_1.md "Section 1.0") to check out **Section 1.0** exam topics and resources.
