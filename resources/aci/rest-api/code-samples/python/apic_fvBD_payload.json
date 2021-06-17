@@ -1,0 +1,42 @@
+{
+    "fvTenant": {
+        "attributes": {
+            "dn": "uni/tn-test_th_tenant",
+            "status": "modified"
+        },
+        "children": [
+            {
+                "fvBD": {
+                    "attributes": {
+                        "dn": "uni/tn-test_th_tenant/BD-test1",
+                        "name": "test1",
+                        "rn": "BD-test1",
+                        "status": "created"
+                    },
+                    "children": [
+                        {
+                            "fvRsCtx": {
+                                "attributes": {
+                                    "tnFvCtxName": "test_vrf",
+                                    "status": "created,modified"
+                                },
+                                "children": []
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "fvCtx": {
+                    "attributes": {
+                        "dn": "uni/tn-test_th_tenant/ctx-test_vrf",
+                        "name": "test_vrf",
+                        "rn": "ctx-test_vrf",
+                        "status": "created"
+                    },
+                    "children": []
+                }
+            }
+        ]
+    }
+}
