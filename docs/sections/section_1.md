@@ -92,4 +92,4 @@ We do, however, remember exactly how we felt when these topics were new to us an
 
 ## On to Section 2.0
 
-:thumbsup:  Nice work on the foundational topics!  Keep up the good work and click [this link](section_1.md "Section 1.0") to check out **Section 2.0** exam topics and resources.
+:thumbsup:  Nice work on the foundational topics!  Keep up the good work and click [this link](section_2.md "Section 2.0") to check out **Section 2.0** exam topics and resources.
