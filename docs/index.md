@@ -13,12 +13,13 @@
 :clipboard: This guide provides content and references which will help you study and prepare yourself for the [**Cisco 300-635 DCAUTO Exam: Automating and Programming Cisco Data Center Solutions**](https://www.cisco.com/c/en/us/training-events/training-certifications/exams/current-list/dcauto-300-635.html "Cisco DCAUTO (300-635) Exam"){target=_blank} exam.  All of the information in this guide is a curation of study resources which the authors used in order to study for and pass the Cisco DCAUTO exam.
 
 !!! attention
-    All all content in this guide strictly comply with the [Cisco Certification and Confidentiality Agreement](https://www.cisco.com/c/dam/en_us/training-events/downloads/certificationNDA.pdf "Cisco Certification and Confidentiality Agreement"){target=_blank}, also known as the Cisco Certification Non-Disclosure Agreement (**NDA**).  We welcome and appreciate any Cisco NDA-compliant contributions from the community.
+    All all content in this guide strictly complies with the [Cisco Certification and Confidentiality Agreement](https://www.cisco.com/c/dam/en_us/training-events/downloads/certificationNDA.pdf "Cisco Certification and Confidentiality Agreement"){target=_blank}, also known as the Cisco Certification Non-Disclosure Agreement (**NDA**).  We welcome and appreciate any Cisco NDA-compliant contributions from the community.
 
 !!! info
     - This guide is neither affiliated with Cisco Systems, Inc. nor any of its affiliates, including Cisco DevNet.
     - All materials in this guide are contributions from the community of Cisco DevNet enthusiasts and certification candidates.
     - Any references to pay-for-use study materials are free of sponsorship, affiliations, royalties, and payments of any kind.
+        - We pay for these resources just like anyone else would and we recommend the paid resources because we think they are highly-valuable.
 
 ---
 
@@ -68,42 +69,18 @@
 
 ??? abstract "Section 1.0 - Network Programmability Foundation"
     - [Section 1.0 - Network Programmability Foundation](sections/section_1.md "Network Programmability Foundation")
-        - [Section 1.1](sections/section_1_1.md "Section 1.1")
-        - [Section 1.2](sections/section_1_2.md "Section 1.2")
-        - [Section 1.3](sections/section_1_3.md "Section 1.3")
-        - [Section 1.4](sections/section_1_4.md "Section 1.4")
-        - [Section 1.5](sections/section_1_5.md "Section 1.5")
-        - [Section 1.6](sections/section_1_6.md "Section 1.6")
 
 ??? abstract "Section 2.0 - Controller Based Data Center Networking"
     - [Section 2.0 - Controller Based Data Center Networking](sections/section_2.md "Controller Based Data Center Networking")
-        - [Section 2.1](sections/section_2_1.md "Section 2.1")
-        - [Section 2.2](sections/section_2_2.md "Section 2.2")
-        - [Section 2.3](sections/section_2_3.md "Section 2.3")
-        - [Section 2.4](sections/section_2_4.md "Section 2.4")
-        - [Section 2.5](sections/section_2_5.md "Section 2.5")
-        - [Section 2.6](sections/section_2_6.md "Section 2.6")
 
 ??? abstract "Section 3.0 - Data Center Device-Centric Networking"
     - [Section 3.0 - Data Center Device-Centric Networking](sections/section_3.md "Data Center Device-Centric Networking")
-        - [Section 3.1](sections/section_3_1.md "Section 3.1")
-        - [Section 3.2](sections/section_3_2.md "Section 3.2")
-        - [Section 3.3](sections/section_3_3.md "Section 3.3")
-        - [Section 3.4](sections/section_3_4.md "Section 3.4")
-        - [Section 3.5](sections/section_3_5.md "Section 3.5")
 
 ??? abstract "Section 4.0 - Data Center Compute"
     - [Section 4.0 - Data Center Compute](sections/section_4.md "Data Center Compute")
-        - [Section 4.1](sections/section_4_1.md "Section 4.1")
-        - [Section 4.2](sections/section_4_2.md "Section 4.2")
-        - [Section 4.3](sections/section_4_3.md "Section 4.3")
-        - [Section 4.4](sections/section_4_4.md "Section 4.4")
-        - [Section 4.5](sections/section_4_5.md "Section 4.5")
-        - [Section 4.6](sections/section_4_6.md "Section 4.6")
 
-??? abstract "Appendecies"
-    - [Appendecies](sections/appendecies.md "Appendix")
-        - [Appendix A - Lessons Learned](sections/appendix_a.md "Lessons Learned")
+??? abstract "Appendix"
+    - [Appendix A - Lessons Learned](sections/appendix/#appendix-a-lessons-learned "Appendix A - Lessons Learned")
 
 ---
 

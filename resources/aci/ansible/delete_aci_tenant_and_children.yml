@@ -1,0 +1,27 @@
+#!/usr/bin/env ansible-playbook
+
+---
+- name: Delete ACI Tenant and Children
+  hosts: devnet
+  connection: local
+  gather_facts: false
+
+  collections:
+    - cisco.aci
+
+  vars:
+    task_common: &task_common
+      host: "{{ inventory_hostname }}"
+      username: "{{ name }}"
+      password: "{{ pwd }}"
+      validate_certs: "{{ validate_certs }}"
+      timeout: "{{ timeout }}"
+      output_level: debug
+
+  tasks:
+    - name: Delete Tenant
+      cisco.aci.aci_tenant:
+        tenant: "{{ tenant_name }}"
+        state: absent
+        <<: *task_common
+      register: apic_tenant

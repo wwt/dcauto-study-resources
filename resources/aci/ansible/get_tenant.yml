@@ -1,0 +1,30 @@
+#!/usr/bin/env ansible-playbook
+
+---
+- name: Get Tenant Information
+  hosts: devnet
+  connection: local
+  gather_facts: false
+
+  collections:
+    - cisco.aci
+
+  vars:
+    task_common: &task_common
+      host: "{{ inventory_hostname }}"
+      username: "{{ name }}"
+      password: "{{ pwd }}"
+      validate_certs: "{{ validate_certs }}"
+      timeout: "{{ timeout }}"
+
+  tasks:
+    - name: Get Tenant
+      aci_tenant:
+        tenant: "{{ tenant_name }}"
+        state: query
+        <<: *task_common
+      register: apic_tenant
+
+    - name: Display Reply
+      debug:
+        var: apic_tenant

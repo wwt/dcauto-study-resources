@@ -1,27 +1,31 @@
-# dcauto-study-resources
+# Cisco DevNet DCAUTO Exam Study Resource Guide
 
-Study Resources for the Cisco DevNet DCAUTO Exam
+![cisco-devnet-specialist](docs/images/cisco-devnet-specialist.png "Cisco DevNet Specialist Logo")
+
+## Notice
+
+:warning: All all content in this guide strictly complies with the [Cisco Certification and Confidentiality Agreement](https://www.cisco.com/c/dam/en_us/training-events/downloads/certificationNDA.pdf "Cisco Certification and Confidentiality Agreement"), also known as the Cisco Certification Non-Disclosure Agreement (**NDA**).  We welcome and appreciate any Cisco NDA-compliant contributions from the community.
 
 ---
 
-## Development Environment Tutorial
+## Disclaimer
 
-## Install Requirements
+:warning: This guide is neither affiliated with Cisco Systems, Inc. nor any of its affiliates, including Cisco DevNet.
 
-```sh
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
+- All materials in this guide are contributions from the community of Cisco DevNet enthusiasts and certification candidates.
+- Any references to pay-for-use study materials are free of sponsorship, affiliations, royalties, and payments of any kind.
+    - We pay for these resources just like anyone else would and we recommend the paid resources because we think they are highly-valuable.
 
-## Preview Documentation Locally
+---
 
-```sh
-mkdocs serve
-```
+## About
 
-## Deploy to Github Pages
+:mortar_board: We have a lot of people to thank for helping us pass the Cisco DCAUTO exam.  Many of those people we have never met and, likely, will never meet, in-person or otherwise.  Each of these people took time from their lives to publish something they know or built so the rest of us, somehow, via some search engine, could have even a slightly more simple path to whatever it is we want to learn.
 
-```sh
-mkdocs gh-deploy
-```
+:sunrise_over_mountains: To everyone who took the time to help the entire DevNet community, this guide is a both nod of appreciation to you and also our way of paying it forward to the next person or people who, like us, feel like climbing to the top of the mountain, however strenuous, is worth the view.  It would be disingenuous for us to make the climb using the ropes people left for us without leaving our own ropes to help the people that follow.  We wish you success in your climb.
+
+---
+
+## Usage
+
+Navigate to [https://wwt.github.io/dcauto-study-resources](https://wwt.github.io/dcauto-study-resources) and follow the guided walkthrough instructions.
