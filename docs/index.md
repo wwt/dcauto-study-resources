@@ -19,6 +19,7 @@
     - This guide is neither affiliated with Cisco Systems, Inc. nor any of its affiliates, including Cisco DevNet.
     - All materials in this guide are contributions from the community of Cisco DevNet enthusiasts and certification candidates.
     - Any references to pay-for-use study materials are free of sponsorship, affiliations, royalties, and payments of any kind.
+        - We pay for these resources just like anyone else would and we recommend the paid resources because we think they are highly-valuable.
 
 ---
 
