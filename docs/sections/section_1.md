@@ -56,16 +56,22 @@ We do, however, remember exactly how we felt when these topics were new to us an
     - [WWT Git Foundations Git Repository](https://wwt.github.io/git-foundations/ "WWT Git Foundations Git Repository"){target=_blank}
     - [WWT Docker Foundations Git Repository](https://wwt.github.io/docker-foundations/ "WWT Docker Foundations Git Repository"){target=_blank}
 
-??? abstract "Hands-On Lab"
+??? abstract "Hands-On Labs"
     - [WWT Programmability Foundations Lab](https://www.wwt.com/lab/programmability-foundations-lab "WWT Programmability Foundations Lab"){target=_blank}
 
+??? abstract "Practice Tools"
+    - [Git Visualizer](http://git-school.github.io/visualizing-git/ "Git Visualizer"){target=_blank}
+
 ---
 
-## Documentation
+## :material-file-document-outline: Documentation
+
+??? abstract "Python"
+    - [RealPython Virtual Environments Primer](https://realpython.com/python-virtual-environments-a-primer/ "RealPython Virtual Environments Primer"){target=_blank}
 
 ---
 
-## Insights
+## :fontawesome-solid-lightbulb: Insights
 
 - Force yourself to use the skills you learn in this section frequently as you study the remaining exam topic sections.  Lots of repetition will help you build and retain these skills and we think it is important that these skills be second-nature to you, as you prepare for a certification exam.
 
