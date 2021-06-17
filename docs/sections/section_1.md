@@ -24,8 +24,8 @@ We do, however, remember exactly how we felt when these topics were new to us an
 
 ??? abstract "Learning Labs"
     - [Introduction to DevNet Learning Path](https://developer.cisco.com/learning/tracks/devnet-beginner "Introduction to DevNet Learning Path"){target=_blank}
-        - **Programming Fundamentals** Module, All Labs
-        - **REST API Fundamentals** Module, All Labs
+        - **Programming Fundamentals Module** - All Labs
+        - **REST API Fundamentals Module** - All Labs
 
 ---
 
