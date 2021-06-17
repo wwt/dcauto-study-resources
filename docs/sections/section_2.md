@@ -58,7 +58,7 @@ This section of the exam topics focuses almost entirely on working with Cisco Ap
 
     !!! attention
         - Use Visual Studio Code to explore the **resources** folder within the Development Environment Container to review code samples and hands-on exercises.
-        - The links below require that the local Jupyter Lab server is active and listening on **http://localhost:8888"
+        - The links below require that the local Jupyter Lab server is active and listening on **http://localhost:8888**
             - The Visual Studio Code Development Environment automatically activates the Jupyter Lab server.
 
     - [Ansible](http://localhost:8888/lab/tree/resources/aci/ansible "Ansible"){target=_blank}
@@ -74,7 +74,7 @@ This section of the exam topics focuses almost entirely on working with Cisco Ap
         - [Python Code Samples](http://localhost:8888/doc/tree/resources/aci/rest-api/code-samples/python "Python Code Samples"){target=_blank}
 
 ??? abstract "Management Information Tree (MIT) Assembly Challenge"
-    - Review the scrambled, disconnected ACI MIT diagrams and try to draw them (digitally or on paper) in the correct positions with the correct connections.
+    - Review the scrambled, disconnected ACI MIT diagrams in the **resources/aci/mit** folder, within the development environment, and try to draw them (digitally or on paper) in the correct positions with the correct connections.
         - Option #1 - [.png quiz #1](http://localhost:8888/doc/tree/resources/aci/mit/png/quiz_1.png ".png quiz #1"){target=_blank}, [.png quiz #2](http://localhost:8888/doc/tree/resources/aci/mit/png/quiz_1.png ".png quiz #2"){target=_blank}, and [.png solution](http://localhost:8888/doc/tree/resources/aci/mit/png/solution/solution.png ".png solution"){target=_blank}
         - Option #2 -  [Visio Quiz and Solution File](http://localhost:8888/doc/tree/resources/aci/mit/visio/quizzes_and_solution.vsdx "Visio Quiz and Solution File"){target=_blank}
 
