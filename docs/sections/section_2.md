@@ -31,7 +31,14 @@ This section of the exam topics focuses almost entirely on working with Cisco Ap
 
 ### Videos on Demand
 
-#### :fontawesome-solid-laptop-code: WWT Digital Platform
+#### :fontawesome-solid-dollar-sign: Pluralsight
+
+??? abstract "Individual Courses"
+    - [Cisco Data Center Core: Implementing Automation](https://www.pluralsight.com/courses/cisco-data-center-core-implementing-automation "Cisco Data Center Core: Implementing Automation"){target=_blank}
+
+---
+
+#### :fontawesome-solid-laptop-code: Cisco YouTube
 
 ??? abstract "Cisco Live"
     - [Mastering ACI Programmability and Automating common DC Tasks](https://www.youtube.com/watch?v=8K6MHPZmc5A "Mastering ACI Programmability and Automating common DC Tasks"){target=_blank}
@@ -41,24 +48,35 @@ This section of the exam topics focuses almost entirely on working with Cisco Ap
 
 ---
 
-#### :fontawesome-solid-dollar-sign: Pluralsight
-
-??? abstract "Individual Courses"
-    - [Cisco Data Center Core: Implementing Automation](https://www.pluralsight.com/courses/cisco-data-center-core-implementing-automation "Cisco Data Center Core: Implementing Automation"){target=_blank}
-
----
-
 ### :fontawesome-regular-keyboard: Hands-On Learning
 
-Jupyter Notebooks
+??? abstract "DevNet Sandbox Labs"
+    - [DevNet Always-On ACI Sandbox](https://sandboxapicdc.cisco.com "DevNet Always-On ACI Sandbox"){target=_blank}
+        - [Sandbox Access Instructions](https://devnetsandbox.cisco.com/RM/Diagram/Index/5a229a7c-95d5-4cfd-a651-5ee9bc1b30e2?diagramType=Topology "Sandbox Access Instructions"){target=_blank}
 
-MIT Assembly Exercise
+??? abstract "Development Environment Resources"
 
-??? abstract "Hands-On Labs"
-    - [WWT Programmability Foundations Lab](https://www.wwt.com/lab/programmability-foundations-lab "WWT Programmability Foundations Lab"){target=_blank}
+    !!! attention
+        - Use Visual Studio Code to explore the **resources** folder within the Development Environment Container to review code samples and hands-on exercises.
+        - The links below require that the local Jupyter Lab server is active and listening on **http://localhost:8888"
+            - The Visual Studio Code Development Environment automatically activates the Jupyter Lab server.
 
-??? abstract "Practice Tools"
-    - [Git Visualizer](http://git-school.github.io/visualizing-git/ "Git Visualizer"){target=_blank}
+    - [Ansible](http://localhost:8888/lab/tree/resources/aci/ansible "Ansible"){target=_blank}
+    - [ACI Python (Cobra) SDK](http://localhost:8888/lab/tree/resources/aci/cobra-sdk "ACI Python (Cobra) SDK"){target=_blank}
+        - [Practice Exercise](http://localhost:8888/doc/tree/resources/aci/cobra-sdk/exercises/apic_cobra_sdk_exercises.ipynb "Practice Exercise"){target=_blank}
+        - [Practice Exercise Solution](http://localhost:8888/doc/tree/resources/aci/cobra-sdk/exercises/solutions/apic_cobra_sdk_exercise_solution.ipynb "Practice Exercise Solution"){target=_blank}
+        - [Practice Exercise Example](http://localhost:8888/doc/tree/resources/aci/cobra-sdk/exercises/examples/apic_cobra_sdk_exercises_example_1.ipynb "Practice Exercise Example"){target=_blank}
+    - [ACI REST API](http://localhost:8888/doc/tree/resources/aci/rest-api "ACI REST API"){target=_blank}
+        - [Practice Exercise](http://localhost:8888/doc/tree/resources/aci/rest-api/exercises/apic_rest_exercises.ipynb "Practice Exercise"){target=_blank}
+        - [Practice Exercise Solution](http://localhost:8888/doc/tree/resources/aci/rest-api/exercises/solutions/apic_rest_exercise_solution.ipynb "Practice Exercise Solution"){target=_blank}
+        - [Practice Exercise Example #1](http://localhost:8888/doc/tree/resources/aci/rest-api/exercises/examples/apic_rest_exercises_example_1.ipynb "Practice Exercise Example #1"){target=_blank}
+        - [Practice Exercise Example #2](http://localhost:8888/doc/tree/resources/aci/rest-api/exercises/examples/apic_rest_exercises_example_2.ipynb "Practice Exercise Example #2"){target=_blank}
+        - [Python Code Samples](http://localhost:8888/doc/tree/resources/aci/rest-api/code-samples/python "Python Code Samples"){target=_blank}
+
+??? abstract "Management Information Tree (MIT) Assembly Challenge"
+    - Review the scrambled, disconnected ACI MIT diagrams and try to draw them (digitally or on paper) in the correct positions with the correct connections.
+        - Option #1 - [.png quiz #1](http://localhost:8888/doc/tree/resources/aci/mit/png/quiz_1.png ".png quiz #1"){target=_blank}, [.png quiz #2](http://localhost:8888/doc/tree/resources/aci/mit/png/quiz_1.png ".png quiz #2"){target=_blank}, and [.png solution](http://localhost:8888/doc/tree/resources/aci/mit/png/solution/solution.png ".png solution"){target=_blank}
+        - Option #2 -  [Visio Quiz and Solution File](http://localhost:8888/doc/tree/resources/aci/mit/visio/quizzes_and_solution.vsdx "Visio Quiz and Solution File"){target=_blank}
 
 ---
 
@@ -84,14 +102,20 @@ MIT Assembly Exercise
 
 ## :fontawesome-solid-lightbulb: Insights
 
-- Force yourself to use the skills you learn in this section frequently as you study the remaining exam topic sections.  Lots of repetition will help you build and retain these skills and we think it is important that these skills be second-nature to you, as you prepare for a certification exam.
+- We spent plenty of time watching the videos and reading the documentation in this guide although we spent most of our time going through the hands-on learning exercises over, and over, and over again.  The practice made a big difference in our ability to retain so many details.  Forcing ourselves to type our way through the Jupyter Lab exercises was really hard and was also our best teacher.
 
-- The Cisco DevNet learning labs and WWT guided walkthroughs are excellent, repeatable learning tools which present you content in small chunks.  You can repeat any or all of this content as many times as you like.
+- The Cisco DevNet learning labs for ACI were a great starting point for us and set the tone for the things we needed to learn and practice.  Following those up with the Jupyter and MIT exercises was very beneficial.
 
-- Our favorite resource to learn this material is Pluralsight.  The author of the courses we recommend, Nick Russo, does an absolutely fantastic job of explaining core concepts in a way that we could easily consume.  Yes, Pluralsight is a paid resource and we have our own subscriptions.  In our opinion, the monthly cost is well worth the price.
+- The star resource to practice just about any skills related to ACI is the **[DevNet Always-On ACI Sandbox](https://sandboxapicdc.cisco.com "DevNet Always-On ACI Sandbox"){target=_blank}**.  This is a publicly-accessible (no-VPN required), reservationless, read/write, read/write ACI simulator and we used it excessively.  All of the code samples, Jupyter Notebooks, and Ansible Playbooks bundled in this repository use this sandbox.
 
----
+!!! caution
+        - From time to time, the **[DevNet Always-On ACI Sandbox](https://sandboxapicdc.cisco.com "DevNet Always-On ACI Sandbox"){target=_blank}** can be a bit slow or fail to respond to your API call, browser session, etc.  Generally, after a minute or two, we found the sandbox would recover from these situations.
 
-## On to Section 2.0
+    !!! tip "tips"
+        - Spend plenty of time working with ACI both programmatically _and_ in the APIC GUI.
+        - The [ACI visore tool](https://www.cisco.com/c/en/us/support/docs/cloud-systems-management/application-policy-infrastructure-controller-apic/118839-technote-visore-00.html "ACI visore tool"){target=_blank} provides a great way to understand relationships between ACI objects in the MIT.
+        - The [ACI API Inspector](https://aci-prog-lab.ciscolive.com/lab/pod1/references/find-object "ACI API Inspector"){target=_blank} vastly simplifies the process to construct REST payloads for ACI.  We recommend that you spend plenty of time observing how you can use APIC GUI interactions, via the API Inspector, to construct REST payloads within Python.
 
-:thumbsup:  Nice work on the foundational topics!  Keep up the good work and click [this link](section_1.md "Section 1.0") to check out **Section 2.0** exam topics and resources.
+## On to Section 3.0
+
+:thumbsup:  Great job getting through ACI!  Let's keep going, click [this link](section_3.md "Section 3.0") to check out **Section 2.0** exam topics and resources.
