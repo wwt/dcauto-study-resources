@@ -786,9 +786,9 @@
 <h3 id="cisco-devnet"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 3h2v2H5v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5h2v2H5c-1.07-.27-2-.9-2-2v-4a2 2 0 0 0-2-2H0v-2h1a2 2 0 0 0 2-2V5a2 2 0 0 1 2-2m14 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2m-7 12a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-4 0a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m8 0a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1z"/></svg></span> Cisco DevNet<a class="headerlink" href="#cisco-devnet" title="Permanent link">&para;</a></h3>
 <details class="abstract"><summary>Learning Labs</summary><ul>
 <li><a href="https://developer.cisco.com/learning/tracks/aci-programmability" target="_blank" title="Introduction to DevNet Learning Path">ACI Programmability</a><ul>
-<li><strong>Introduction to ACI Programmability</strong> Module, All Labs</li>
-<li><strong>Intermediate ACI Programmability</strong> Module, All Labs</li>
-<li><strong>Introduction to ACI and Ansible</strong> Module, All Labs</li>
+<li><strong>Introduction to ACI Programmability Module</strong> - All Labs</li>
+<li><strong>Intermediate ACI Programmability Module</strong> - All Labs</li>
+<li><strong>Introduction to ACI and Ansible Module</strong> -  All Labs</li>
 </ul>
 </li>
 </ul>
@@ -822,35 +822,56 @@
 <details class="abstract"><summary>Development Environment Resources</summary><div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <ul>
-<li>Use Visual Studio Code to explore the <strong>resources</strong> folder within the Development Environment Container to review code samples and hands-on exercises.</li>
-<li>The links below require that the local Jupyter Lab server is active and listening on **http://localhost:8888"<ul>
+<li>The links below require that the local Jupyter Lab server is active and listening on <a href="http://localhost:8888" target="_blank" title="Jupyter Lab Server"><strong>http://localhost:8888</strong></a><ul>
 <li>The Visual Studio Code Development Environment automatically activates the Jupyter Lab server.</li>
 </ul>
 </li>
 </ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul>
+<li>You may also use Visual Studio Code to explore the same code samples and hands-on exercises.  The <strong>resources</strong> folder within the Development Environment Container contains all of the source files.</li>
+</ul>
+</div>
 </div>
 <ul>
-<li><a href="http://localhost:8888/lab/tree/resources/aci/ansible" target="_blank" title="Ansible">Ansible</a></li>
-<li><a href="http://localhost:8888/lab/tree/resources/aci/cobra-sdk" target="_blank" title="ACI Python (Cobra) SDK">ACI Python (Cobra) SDK</a><ul>
-<li><a href="http://localhost:8888/doc/tree/resources/aci/cobra-sdk/exercises/apic_cobra_sdk_exercises.ipynb" target="_blank" title="Practice Exercise">Practice Exercise</a></li>
-<li><a href="http://localhost:8888/doc/tree/resources/aci/cobra-sdk/exercises/solutions/apic_cobra_sdk_exercise_solution.ipynb" target="_blank" title="Practice Exercise Solution">Practice Exercise Solution</a></li>
-<li><a href="http://localhost:8888/doc/tree/resources/aci/cobra-sdk/exercises/examples/apic_cobra_sdk_exercises_example_1.ipynb" target="_blank" title="Practice Exercise Example">Practice Exercise Example</a></li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m4.1 15c-.19 0-.34-.1-.55-.27l-5.16-4.17-1.73 4.34H7.17l4.37-10.51c.11-.28.35-.42.63-.42s.5.14.62.42l3.98 9.58c.04.11.07.22.07.29-.01.42-.34.74-.74.74m-3.93-8.89 2.59 6.39-3.91-3.08 1.32-3.31z"/></svg></span> <a href="http://localhost:8888/lab/tree/resources/aci/ansible" target="_blank" title="Ansible Root Folder">Ansible Files</a><ul>
+<li><a href="http://localhost:8888/lab/workspaces/auto-c/tree/resources/aci/ansible/ansible.cfg" target="_blank" title="Sample Configuarion File">Sample Configuration File</a></li>
+<li><a href="http://localhost:8888/lab/workspaces/auto-c/tree/resources/aci/ansible/create_aci_tenant_and_children.yml" target="_blank" title="Sample Playbook 1">Sample Playbook 1</a></li>
+<li><a href="http://localhost:8888/lab/workspaces/auto-c/tree/resources/aci/ansible/delete_aci_tenant_and_children.yml" target="_blank" title="Sample Playbooks 2">Sample Playbook 2</a></li>
+<li><a href="http://localhost:8888/lab/workspaces/auto-c/tree/resources/aci/ansible/get_tenant.yml" target="_blank" title="Sample Playbooks 3">Sample Playbook 3</a></li>
+<li><a href="http://localhost:8888/lab/workspaces/auto-c/tree/resources/aci/ansible/inventory/hosts.ini" target="_blank" title="Sample Inventory File (.ini format)">Sample Inventory File (.ini format)</a></li>
+<li><a href="http://localhost:8888/lab/workspaces/auto-c/tree/resources/aci/ansible/inventory/hosts.yml" target="_blank" title="Sample Inventory File (.yml format)">Sample Inventory File (.yml format)</a></li>
+<li><a href="http://localhost:8888/lab/workspaces/auto-c/tree/resources/aci/ansible/inventory/host_vars/sandboxapicdc.cisco.com.yml" target="_blank" title="Sample Host Variables File">Sample Host Variables File</a></li>
 </ul>
 </li>
-<li><a href="http://localhost:8888/doc/tree/resources/aci/rest-api" target="_blank" title="ACI REST API">ACI REST API</a><ul>
-<li><a href="http://localhost:8888/doc/tree/resources/aci/rest-api/exercises/apic_rest_exercises.ipynb" target="_blank" title="Practice Exercise">Practice Exercise</a></li>
-<li><a href="http://localhost:8888/doc/tree/resources/aci/rest-api/exercises/solutions/apic_rest_exercise_solution.ipynb" target="_blank" title="Practice Exercise Solution">Practice Exercise Solution</a></li>
-<li><a href="http://localhost:8888/doc/tree/resources/aci/rest-api/exercises/examples/apic_rest_exercises_example_1.ipynb" target="_blank" title="Practice Exercise Example #1">Practice Exercise Example #1</a></li>
-<li><a href="http://localhost:8888/doc/tree/resources/aci/rest-api/exercises/examples/apic_rest_exercises_example_2.ipynb" target="_blank" title="Practice Exercise Example #2">Practice Exercise Example #2</a></li>
-<li><a href="http://localhost:8888/doc/tree/resources/aci/rest-api/code-samples/python" target="_blank" title="Python Code Samples">Python Code Samples</a></li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/></svg></span> <a href="http://localhost:8888/lab/workspaces/auto-I/tree/resources/aci/cobra-sdk" target="_blank" title="ACI Python (Cobra) SDK">ACI Python (Cobra) SDK</a><ul>
+<li><a href="http://localhost:8888/lab/workspaces/auto-I/tree/resources/aci/cobra-sdk/exercises/apic_cobra_sdk_exercises.ipynb" target="_blank" title="Practice Exercise">Practice Exercise</a></li>
+<li><a href="http://localhost:8888/lab/workspaces/auto-I/tree/resources/aci/cobra-sdk/exercises/solutions/apic_cobra_sdk_exercise_solution.ipynb" target="_blank" title="Practice Exercise Solution">Practice Exercise Solution</a></li>
+<li><a href="http://localhost:8888/lab/workspaces/auto-I/tree/resources/aci/cobra-sdk/exercises/examples/apic_cobra_sdk_exercises_example_1.ipynb" target="_blank" title="Practice Exercise Example">Practice Exercise Example</a></li>
+</ul>
+</li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 7H5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2m0 4H5V9h2m7-2h-4v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m0 4h-2V9h2m6 0v6h1v2h-4v-2h1V9h-1V7h4v2z"/></svg></span> <a href="http://localhost:8888/lab/tree/resources/aci/rest-api" target="_blank" title="ACI REST API">ACI REST API</a><ul>
+<li><a href="http://localhost:8888/lab/workspaces/auto-I/tree/resources/aci/rest-api/exercises/apic_rest_exercises.ipynb" target="_blank" title="Practice Exercise">Practice Exercise</a></li>
+<li><a href="http://localhost:8888/lab/workspaces/auto-I/tree/resources/aci/rest-api/exercises/solutions/apic_rest_exercise_solution.ipynb" target="_blank" title="Practice Exercise Solution">Practice Exercise Solution</a></li>
+<li><a href="http://localhost:8888/lab/workspaces/auto-I/tree/resources/aci/rest-api/exercises/examples/apic_rest_exercises_example_1.ipynb" target="_blank" title="Practice Exercise Example #1">Practice Exercise Example #1</a></li>
+<li><a href="http://localhost:8888/lab/workspaces/auto-I/tree/resources/aci/rest-api/exercises/examples/apic_rest_exercises_example_2.ipynb" target="_blank" title="Practice Exercise Example #2">Practice Exercise Example #2</a></li>
+<li><a href="http://localhost:8888/lab/workspaces/auto-I/tree/resources/aci/rest-api/code-samples" target="_blank" title="Python Code Samples">Python Code Samples</a></li>
 </ul>
 </li>
 </ul>
+<details class="tip"><summary>New to Jupyter Lab? Expand This Section for Help</summary><details class="example"><summary>1. Open the <a href="http://localhost:8888" target="_blank" title="Jupyter Lab Server">Jupyter Lab Server</a></summary><p><a href="../../images/vs-code-open-terminals.png" target="_blank"><img alt="vs-code-open-terminals" src="../../images/vs-code-open-terminals.png" title="Open New Bash or PowerShell Terminals" /></a></p>
+</details>
+<details class="example"><summary>2. Navigate to the <strong>resources/aci</strong> Directory</summary><p><a href="../../images/vs-code-open-terminals.png" target="_blank"><img alt="vs-code-open-terminals" src="../../images/vs-code-open-terminals.png" title="Open New Bash or PowerShell Terminals" /></a></p>
+</details>
+<details class="example"><summary>3. Open a Jupyter Notebook in Either the <strong>cobra-sdk/exercises</strong> or <strong>rest-api/exercises</strong> Folder</summary><p><a href="../../images/vs-code-open-terminals.png" target="_blank"><img alt="vs-code-open-terminals" src="../../images/vs-code-open-terminals.png" title="Open New Bash or PowerShell Terminals" /></a></p>
+</details>
+</details>
 </details>
 <details class="abstract"><summary>Management Information Tree (MIT) Assembly Challenge</summary><ul>
-<li>Review the scrambled, disconnected ACI MIT diagrams and try to draw them (digitally or on paper) in the correct positions with the correct connections.<ul>
-<li>Option #1 - <a href="http://localhost:8888/doc/tree/resources/aci/mit/png/quiz_1.png" target="_blank" title=".png quiz #1">.png quiz #1</a>, <a href="http://localhost:8888/doc/tree/resources/aci/mit/png/quiz_1.png" target="_blank" title=".png quiz #2">.png quiz #2</a>, and <a href="http://localhost:8888/doc/tree/resources/aci/mit/png/solution/solution.png" target="_blank" title=".png solution">.png solution</a></li>
-<li>Option #2 -  <a href="http://localhost:8888/doc/tree/resources/aci/mit/visio/quizzes_and_solution.vsdx" target="_blank" title="Visio Quiz and Solution File">Visio Quiz and Solution File</a></li>
+<li>Review the scrambled, disconnected ACI MIT diagrams in the <strong>resources/aci/mit</strong> folder, within the development environment, and try to draw them (digitally or on paper) in the correct positions with the correct connections.<ul>
+<li>Option #1 - <a href="http://localhost:8888/lab/tree/resources/aci/mit/png/quiz_1.png" target="_blank" title=".png quiz #1">.png quiz #1</a>, <a href="http://localhost:8888/lab/tree/resources/aci/mit/png/quiz_1.png" target="_blank" title=".png quiz #2">.png quiz #2</a>, and <a href="http://localhost:8888/lab/tree/resources/aci/mit/png/solution/solution.png" target="_blank" title=".png solution">.png solution</a></li>
+<li>Option #2 -  <a href="http://localhost:8888/lab/tree/resources/aci/mit/visio/quizzes_and_solution.vsdx" target="_blank" title="Visio Quiz and Solution File">Visio Quiz and Solution File</a></li>
 </ul>
 </li>
 </ul>
