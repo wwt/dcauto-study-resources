@@ -1,14 +1,19 @@
 #!/usr/bin/env ansible-playbook
-
+# Ansible Playbook to deploy a new ACI Tenant with child objects
+# Usage option #1: ansible-playbook create_aci_tenant_and_children.yml -i inventory
+# Usage option #2: ./create_aci_tenant_and_children.yml -i inventory
 ---
+# Play definition
 - name: Create ACI Tenant and Children
   hosts: devnet
   connection: local
   gather_facts: false
 
+  # Import cisco.aci collection to, optionally, shorten module syntax
   collections:
     - cisco.aci
 
+  # Establish variables which are common to each task, as an anchor
   vars:
     task_common: &task_common
       host: "{{ inventory_hostname }}"
@@ -19,6 +24,7 @@
       # output_level: debug
 
   tasks:
+    # Create a new Tenant object
     - name: Create Tenant
       cisco.aci.aci_tenant:
         tenant: "{{ tenant_name }}"
@@ -27,6 +33,7 @@
         <<: *task_common
       register: apic_tenant
 
+    # Create a new VRF object within the Tenant object
     - name: Create VRF
       cisco.aci.aci_vrf:
         vrf: "{{ vrf_1_name }}"
@@ -36,6 +43,8 @@
         <<: *task_common
       register: apic_vrf
 
+    # Create a new Bridge Domain object within the Tenant object
+    # Associate the Bridge Domain object with a VRF object
     - name: Create Bridge Domain
       cisco.aci.aci_bd:
         bd: "{{ bd_1_name }}"
@@ -46,6 +55,8 @@
         <<: *task_common
       register: apic_bd
 
+    # Create a new Subnet object within the Tenant object
+    # Associate the Subnet object with the Bridge Domain
     - name: Create Subnet
       cisco.aci.aci_bd_subnet:
         subnet_name: "{{ subnet_1_name }}"
@@ -59,6 +70,8 @@
         <<: *task_common
       register: apic_subnet
 
+    # Create a new Filter object within the tenant object
+    # Associate the new Subnet object with the Tenant
     - name: Create Filter
       cisco.aci.aci_filter:
         tenant: "{{ tenant_name }}"
@@ -68,6 +81,8 @@
         <<: *task_common
       register: apic_filter
 
+    # Create a new Filter Entry Object
+    # Associate the Filter Entry Object with a Filter Object
     - name: Create Filter Entry
       cisco.aci.aci_filter_entry:
         tenant: "{{ tenant_name }}"
@@ -82,6 +97,7 @@
         - "{{ filter_1_entry_data }}"
       register: apic_filter_entry
 
+    # Create a new Contract Object within the Tenant Object
     - name: Create Contract
       cisco.aci.aci_contract:
         tenant: "{{ tenant_name }}"
@@ -92,6 +108,8 @@
         <<: *task_common
       register: apic_contract
 
+    # Create a new Subject Object within the Tenant Object
+    # Associate the Subject Object with the Contract Object
     - name: Create Subject
       cisco.aci.aci_contract_subject:
         tenant: "{{ tenant_name }}"
@@ -102,6 +120,7 @@
         <<: *task_common
       register: apic_contract_subject
 
+    # Associate the Subnet Object with the Filter Object
     - name: Create Subject & Filter Binding
       cisco.aci.aci_contract_subject_to_filter:
         tenant: "{{ tenant_name }}"
@@ -112,6 +131,7 @@
         <<: *task_common
       register: apic_subject_filter
 
+    # Create an Application Profile Object within the Tenant Object
     - name: Create Application Profile
       cisco.aci.aci_ap:
         ap: "{{ app_profile_1_name }}"
@@ -121,6 +141,8 @@
         <<: *task_common
       register: apic_ap
 
+    # Create an EPG Object within the Tenant Object
+    # Associate the EPG Object with the Application Profile Object
     - name: Create EPG
       cisco.aci.aci_epg:
         epg: "{{ epg_1_name }}"
@@ -131,6 +153,7 @@
         <<: *task_common
       register: apic_epg
 
+    # Associate the EPG Object with the Contract Object
     - name: Bind EPG to Contract
       cisco.aci.aci_epg_to_contract:
         tenant: "{{ tenant_name }}"
@@ -142,6 +165,7 @@
         <<: *task_common
       register: apic_epg_to_contract
 
+    # Display selective output
     - name: Display Output
       debug:
         msg: 'The current DN is: {{ apic_ap["current"][0]["fvAp"]["attributes"]["dn"] }}'

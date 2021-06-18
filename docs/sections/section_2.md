@@ -23,9 +23,9 @@ This section of the exam topics focuses almost entirely on working with Cisco Ap
 
 ??? abstract "Learning Labs"
     - [ACI Programmability](https://developer.cisco.com/learning/tracks/aci-programmability "Introduction to DevNet Learning Path"){target=_blank}
-        - **Introduction to ACI Programmability** Module, All Labs
-        - **Intermediate ACI Programmability** Module, All Labs
-        - **Introduction to ACI and Ansible** Module, All Labs
+        - **Introduction to ACI Programmability Module** - All Labs
+        - **Intermediate ACI Programmability Module** - All Labs
+        - **Introduction to ACI and Ansible Module** -  All Labs
 
 ---
 
@@ -57,26 +57,50 @@ This section of the exam topics focuses almost entirely on working with Cisco Ap
 ??? abstract "Development Environment Resources"
 
     !!! attention
-        - Use Visual Studio Code to explore the **resources** folder within the Development Environment Container to review code samples and hands-on exercises.
-        - The links below require that the local Jupyter Lab server is active and listening on **http://localhost:8888"
+        - The links below require that the local Jupyter Lab server is active and listening on [**http://localhost:8888**](http://localhost:8888 "Jupyter Lab Server"){target=_blank}
             - The Visual Studio Code Development Environment automatically activates the Jupyter Lab server.
 
-    - [Ansible](http://localhost:8888/lab/tree/resources/aci/ansible "Ansible"){target=_blank}
-    - [ACI Python (Cobra) SDK](http://localhost:8888/lab/tree/resources/aci/cobra-sdk "ACI Python (Cobra) SDK"){target=_blank}
-        - [Practice Exercise](http://localhost:8888/doc/tree/resources/aci/cobra-sdk/exercises/apic_cobra_sdk_exercises.ipynb "Practice Exercise"){target=_blank}
-        - [Practice Exercise Solution](http://localhost:8888/doc/tree/resources/aci/cobra-sdk/exercises/solutions/apic_cobra_sdk_exercise_solution.ipynb "Practice Exercise Solution"){target=_blank}
-        - [Practice Exercise Example](http://localhost:8888/doc/tree/resources/aci/cobra-sdk/exercises/examples/apic_cobra_sdk_exercises_example_1.ipynb "Practice Exercise Example"){target=_blank}
-    - [ACI REST API](http://localhost:8888/doc/tree/resources/aci/rest-api "ACI REST API"){target=_blank}
-        - [Practice Exercise](http://localhost:8888/doc/tree/resources/aci/rest-api/exercises/apic_rest_exercises.ipynb "Practice Exercise"){target=_blank}
-        - [Practice Exercise Solution](http://localhost:8888/doc/tree/resources/aci/rest-api/exercises/solutions/apic_rest_exercise_solution.ipynb "Practice Exercise Solution"){target=_blank}
-        - [Practice Exercise Example #1](http://localhost:8888/doc/tree/resources/aci/rest-api/exercises/examples/apic_rest_exercises_example_1.ipynb "Practice Exercise Example #1"){target=_blank}
-        - [Practice Exercise Example #2](http://localhost:8888/doc/tree/resources/aci/rest-api/exercises/examples/apic_rest_exercises_example_2.ipynb "Practice Exercise Example #2"){target=_blank}
-        - [Python Code Samples](http://localhost:8888/doc/tree/resources/aci/rest-api/code-samples/python "Python Code Samples"){target=_blank}
+        !!! tip
+            - You may also use Visual Studio Code to explore the same code samples and hands-on exercises.  The **resources** folder within the Development Environment Container contains all of the source files.
+        
+
+    - :material-ansible: [Ansible Files](http://localhost:8888/lab/tree/resources/aci/ansible "Ansible Root Folder"){target=_blank}
+        - [Sample Configuration File](http://localhost:8888/lab/workspaces/auto-c/tree/resources/aci/ansible/ansible.cfg "Sample Configuarion File"){target=_blank}
+        - [Sample Playbook 1](http://localhost:8888/lab/workspaces/auto-c/tree/resources/aci/ansible/create_aci_tenant_and_children.yml "Sample Playbook 1"){target=_blank}
+        - [Sample Playbook 2](http://localhost:8888/lab/workspaces/auto-c/tree/resources/aci/ansible/delete_aci_tenant_and_children.yml "Sample Playbooks 2"){target=_blank}
+        - [Sample Playbook 3](http://localhost:8888/lab/workspaces/auto-c/tree/resources/aci/ansible/get_tenant.yml "Sample Playbooks 3"){target=_blank}
+        - [Sample Inventory File (.ini format)](http://localhost:8888/lab/workspaces/auto-c/tree/resources/aci/ansible/inventory/hosts.ini "Sample Inventory File (.ini format)"){target=_blank}
+        - [Sample Inventory File (.yml format)](http://localhost:8888/lab/workspaces/auto-c/tree/resources/aci/ansible/inventory/hosts.yml "Sample Inventory File (.yml format)"){target=_blank}
+        - [Sample Host Variables File](http://localhost:8888/lab/workspaces/auto-c/tree/resources/aci/ansible/inventory/host_vars/sandboxapicdc.cisco.com.yml "Sample Host Variables File"){target=_blank}
+    - :fontawesome-brands-python: [ACI Python (Cobra) SDK](http://localhost:8888/lab/workspaces/auto-I/tree/resources/aci/cobra-sdk "ACI Python (Cobra) SDK"){target=_blank}
+        - [Practice Exercise](http://localhost:8888/lab/workspaces/auto-I/tree/resources/aci/cobra-sdk/exercises/apic_cobra_sdk_exercises.ipynb "Practice Exercise"){target=_blank}
+        - [Practice Exercise Solution](http://localhost:8888/lab/workspaces/auto-I/tree/resources/aci/cobra-sdk/exercises/solutions/apic_cobra_sdk_exercise_solution.ipynb "Practice Exercise Solution"){target=_blank}
+        - [Practice Exercise Example](http://localhost:8888/lab/workspaces/auto-I/tree/resources/aci/cobra-sdk/exercises/examples/apic_cobra_sdk_exercises_example_1.ipynb "Practice Exercise Example"){target=_blank}
+    - :material-api: [ACI REST API](http://localhost:8888/lab/tree/resources/aci/rest-api "ACI REST API"){target=_blank}
+        - [Practice Exercise](http://localhost:8888/lab/workspaces/auto-I/tree/resources/aci/rest-api/exercises/apic_rest_exercises.ipynb "Practice Exercise"){target=_blank}
+        - [Practice Exercise Solution](http://localhost:8888/lab/workspaces/auto-I/tree/resources/aci/rest-api/exercises/solutions/apic_rest_exercise_solution.ipynb "Practice Exercise Solution"){target=_blank}
+        - [Practice Exercise Example #1](http://localhost:8888/lab/workspaces/auto-I/tree/resources/aci/rest-api/exercises/examples/apic_rest_exercises_example_1.ipynb "Practice Exercise Example #1"){target=_blank}
+        - [Practice Exercise Example #2](http://localhost:8888/lab/workspaces/auto-I/tree/resources/aci/rest-api/exercises/examples/apic_rest_exercises_example_2.ipynb "Practice Exercise Example #2"){target=_blank}
+        - [Python Code Samples](http://localhost:8888/lab/workspaces/auto-I/tree/resources/aci/rest-api/code-samples "Python Code Samples"){target=_blank}
+
+    ??? tip "New to Jupyter Lab? Expand This Section for Help"
+
+        ??? example "1. Open the [Jupyter Lab Server](http://localhost:8888 "Jupyter Lab Server"){target=_blank}"
+
+            [![vs-code-open-terminals](../images/vs-code-open-terminals.png "Open New Bash or PowerShell Terminals")](../../images/vs-code-open-terminals.png){target=_blank}
+
+        ??? example "2. Navigate to the **resources/aci** Directory"
+
+            [![vs-code-open-terminals](../images/vs-code-open-terminals.png "Open New Bash or PowerShell Terminals")](../../images/vs-code-open-terminals.png){target=_blank}
+
+        ??? example "3. Open a Jupyter Notebook in Either the **cobra-sdk/exercises** or **rest-api/exercises** Folder"
+
+            [![vs-code-open-terminals](../images/vs-code-open-terminals.png "Open New Bash or PowerShell Terminals")](../../images/vs-code-open-terminals.png){target=_blank}
 
 ??? abstract "Management Information Tree (MIT) Assembly Challenge"
-    - Review the scrambled, disconnected ACI MIT diagrams and try to draw them (digitally or on paper) in the correct positions with the correct connections.
-        - Option #1 - [.png quiz #1](http://localhost:8888/doc/tree/resources/aci/mit/png/quiz_1.png ".png quiz #1"){target=_blank}, [.png quiz #2](http://localhost:8888/doc/tree/resources/aci/mit/png/quiz_1.png ".png quiz #2"){target=_blank}, and [.png solution](http://localhost:8888/doc/tree/resources/aci/mit/png/solution/solution.png ".png solution"){target=_blank}
-        - Option #2 -  [Visio Quiz and Solution File](http://localhost:8888/doc/tree/resources/aci/mit/visio/quizzes_and_solution.vsdx "Visio Quiz and Solution File"){target=_blank}
+    - Review the scrambled, disconnected ACI MIT diagrams in the **resources/aci/mit** folder, within the development environment, and try to draw them (digitally or on paper) in the correct positions with the correct connections.
+        - Option #1 - [.png quiz #1](http://localhost:8888/lab/tree/resources/aci/mit/png/quiz_1.png ".png quiz #1"){target=_blank}, [.png quiz #2](http://localhost:8888/lab/tree/resources/aci/mit/png/quiz_1.png ".png quiz #2"){target=_blank}, and [.png solution](http://localhost:8888/lab/tree/resources/aci/mit/png/solution/solution.png ".png solution"){target=_blank}
+        - Option #2 -  [Visio Quiz and Solution File](http://localhost:8888/lab/tree/resources/aci/mit/visio/quizzes_and_solution.vsdx "Visio Quiz and Solution File"){target=_blank}
 
 ---
 
