@@ -1,0 +1,12 @@
+---
+- name: Configure Python
+  hosts: localhost
+  connection: local
+  gather_facts: false
+
+  tasks:
+    - name: Install Python v3 Packages
+      pip:
+        requirements: "{{ playbook_dir }}/requirements/v3_req.txt"
+        executable: pip3.7
+        extra_args: --upgrade

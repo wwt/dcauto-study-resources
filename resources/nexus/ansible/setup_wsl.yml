@@ -1,0 +1,27 @@
+---
+- name: Configure WSL
+  hosts: localhost
+  connection: local
+  gather_facts: false
+
+  tasks:
+    - name: Update Apt Cache
+      apt:
+        update_cache: true
+
+    - name: Add Python PPA
+      apt_repository:
+        repo: ppa:deadsnakes/ppa
+        mode: 666
+
+    - name: Install OS Packages
+      apt:
+        name:
+          - expect
+          - python3.7
+          - python3-pip
+          - build-essential
+          - libssl-dev
+          - libffi-dev
+          - libpython3.7-dev
+          - python-dev
