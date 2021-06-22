@@ -2,7 +2,7 @@
 
 ## Overview
 
-This section of the exam topics focuses almost entirely on working with Cisco Application Centric Infrastructure (ACI) programmatically.  It is essential to be familiar with its building blocks, specifically the ACI Policy Object Model, in order to effectively construct and parse its API payloads.
+This section of the exam topics has a focus on working with Cisco Application Centric Infrastructure (ACI) programmatically.  It is essential to be familiar with ACI's building blocks, specifically the ACI Policy Object Model, in order to effectively construct and parse its API payloads.
 
 ???+ note "Section 2.0 Topic Details"
     - 2.1 Describe the following:
@@ -22,7 +22,7 @@ This section of the exam topics focuses almost entirely on working with Cisco Ap
 ### :material-code-json: Cisco DevNet
 
 ??? abstract "Learning Labs"
-    - [ACI Programmability](https://developer.cisco.com/learning/tracks/aci-programmability "Introduction to DevNet Learning Path"){target=_blank}
+    - [ACI Programmability](https://developer.cisco.com/learning/tracks/aci-programmability "ACI Programmability Learning Path"){target=_blank}
         - **Introduction to ACI Programmability Module** - All Labs
         - **Intermediate ACI Programmability Module** - All Labs
         - **Introduction to ACI and Ansible Module** -  All Labs
@@ -142,4 +142,4 @@ This section of the exam topics focuses almost entirely on working with Cisco Ap
 
 ## On to Section 3.0
 
-:thumbsup:  Great job getting through ACI!  Let's keep going, click [this link](section_3.md "Section 3.0") to check out **Section 2.0** exam topics and resources.
+:thumbsup:  Great job getting through ACI!  Let's keep going, click [this link](section_3.md "Section 3.0") to check out **Section 3.0** exam topics and resources.
