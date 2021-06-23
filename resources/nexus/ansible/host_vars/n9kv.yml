@@ -1,12 +1,9 @@
+# Sample NX-OS Ansible Host Variables File
 ---
 ansible_host: 192.168.2.109
 ansible_network_os: nxos
-file_path: /mnt/c/Users/admin/Downloads/
-mdt_script: /mnt/c/Users/admin/dcauto-nxos-off-box/lab/code/2_netconf_mdt/googleplex.py
 legacy_os_image: nxos.7.0.3.I7.3.bin
 new_os_target_version: 9.3(2)
 new_os_image: nxos.9.3.2.bin
 new_os_image_checksum: c84203e5bd39c1add7e4119338f75ef2d5934c19
-new_os_retry_url: https://devnet-nxos.s3.us-east-2.amazonaws.com/nxos.9.3.2.bin
-yang_explorer_image: yang-explorer.tar
 openconfig_rpm: mtx-openconfig-all-1.0.0.0-9.3.2.lib32_n9000.rpm

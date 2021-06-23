@@ -1,3 +1,4 @@
+# Sample NX-OS Ansible Group Variables File
 ---
 ansible_user: admin
 ansible_password: cisco
