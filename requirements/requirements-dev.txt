@@ -6,8 +6,11 @@ mkdocs-material
 
 # Python
 ipython
+jinja2
 jupyterlab
+lxml
 ncclient
+pyang
 pyyaml
 requests
 xmltodict
