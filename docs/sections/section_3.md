@@ -31,7 +31,6 @@ This section of the exam topics focuses on the programmability features of the C
     - [NX-OS Programmability](https://developer.cisco.com/learning/tracks/nxos-programmability "NX-OS Programmability Learning Path"){target=_blank}
         - **Introduction to NX-OS Programmability Module** - All Labs
         - **NETCONF/YANG on Nexus** - All Labs
-        - **Introduction to ACI and Ansible Module** -  All Labs
 
 ---
 
