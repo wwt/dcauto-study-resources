@@ -36,16 +36,9 @@ This section of the exam topics focuses on the programmability features of the C
 
 ### Videos on Demand
 
-#### :fontawesome-solid-dollar-sign: Pluralsight
+#### :fontawesome-solid-laptop-code: Cisco Live
 
-??? abstract "Individual Courses"
-    - [Cisco Data Center Core: Implementing Automation](https://www.pluralsight.com/courses/cisco-data-center-core-implementing-automation "Cisco Data Center Core: Implementing Automation"){target=_blank}
-
----
-
-#### :fontawesome-solid-laptop-code: Cisco YouTube
-
-??? abstract "Cisco Live"
+??? abstract "On-Demand Library"
     - [Programmability and Automation on Cisco Nexus Platforms - DEVNET-1467](https://www.ciscolive.com/global/on-demand-library.html?#/session/1511296148544001AtHE "Programmability and Automation on Cisco Nexus Platforms - DEVNET-1467"){target=_blank}
     - [Maximizing Network Programmability and Automation with Open NX-OS](https://www.ciscolive.com/global/on-demand-library.html?#/session/1509501635501001PcDT "Maximizing Network Programmability and Automation with Open NX-OS"){target=_blank}
     - [Data Center Telemetry with Nexus and NX-OS](https://www.ciscolive.com/global/on-demand-library.html?#/session/1517500106507001F3Ph "Data Center Telemetry with Nexus and NX-OS"){target=_blank}
