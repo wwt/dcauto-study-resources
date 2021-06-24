@@ -72,7 +72,7 @@ The setup process takes a little bit of work on the first pass.  Afterwards, the
     6. :fontawesome-solid-server: *Optional - Install a Desktop Hypervisor ([recommendations](/index.html#getting-started "Hypervisor Recommendations"){target=_blank})
 
 ??? abstract "2. Clone the DCAUTO Study Resources Git Repository"
-    1. :fontawesome-solid-terminal: Open the Visual Studio Code Integrated Terminal
+    1. :fontawesome-solid-terminal: Open the Visual Studio Code [Integrated Terminal](https://code.visualstudio.com/docs/editor/integrated-terminal "Visual Studio Code Integrated Terminal"){target=_blank} or the terminal shell of your choice.
     2. :fontawesome-solid-folder: Navigate to the directory where you will clone the Git repository.
     3. :material-bash: Enter the following command:
 
