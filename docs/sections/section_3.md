@@ -31,6 +31,8 @@ This section of the exam topics focuses on the programmability features of the C
     - [NX-OS Programmability](https://developer.cisco.com/learning/tracks/nxos-programmability "NX-OS Programmability Learning Path"){target=_blank}
         - **Introduction to NX-OS Programmability Module** - All Labs
         - **NETCONF/YANG on Nexus** - All Labs
+
+??? abstract "Files and Scripts"
     - [NX-OS OpenConfig YANG Model RPM Artifactory](https://devhub.cisco.com/artifactory/open-nxos-agents/ "NX-OS OpenConfig YANG Model RPM Artifactory"){target=_blank}
     - [NX-OS POAP Python Script - GitHub Repository](https://github.com/datacenter/nexus9000/blob/master/nx-os/poap/poap.py "NX-OS POAP Python Script - GitHub Repository"){target=_blank}
     - [NX-OS gRPC Telemetry Protocol Definitions - GitHub Repository](https://github.com/CiscoDevNet/nx-telemetry-proto "NX-OS gRPC Telemetry Protocol Definitions - GitHub Repository"){target=_blank}
