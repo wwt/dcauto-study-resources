@@ -1,0 +1,34 @@
+<rpc message-id="101" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <edit-config>
+    <target>
+      <running/>
+    </target>
+    <config>
+      <acl xmlns="http://openconfig.net/yang/acl">
+        <interfaces>
+          <interface>
+            <id>eth1/2</id>
+            <config>
+              <id>eth1/2</id>
+            </config>
+            <interface-ref>
+              <config>
+                <interface>eth1/2</interface>
+              </config>
+            </interface-ref>
+            <egress-acl-sets>
+              <egress-acl-set>
+                <set-name>WEB-SERVER</set-name>
+                <type>ACL_IPV4</type>
+                <config>
+                  <set-name>WEB-SERVER</set-name>
+                  <type>ACL_IPV4</type>
+                </config>
+              </egress-acl-set>
+            </egress-acl-sets>
+          </interface>
+        </interfaces>
+      </acl>
+    </config>
+  </edit-config>
+</rpc>

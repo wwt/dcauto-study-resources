@@ -1,0 +1,7 @@
+<rpc-reply message-id="urn:uuid:5c9ae3de-1abb-40d9-bfa8-9f6da24e458e" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <data>
+    <System xmlns="http://cisco.com/ns/yang/cisco-nx-os-device">
+      <serial>9EM8B2YUID3</serial>
+    </System>
+  </data>
+</rpc-reply>

@@ -1,0 +1,42 @@
+<rpc message-id="101" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <edit-config>
+    <target>
+      <running/>
+    </target>
+    <config>
+      <System xmlns="http://cisco.com/ns/yang/cisco-nx-os-device">
+        <intf-items>
+          <phys-items>
+            <PhysIf-list>
+              <id>eth1/2</id>
+              <adminSt>up</adminSt>
+              <layer>Layer3</layer>
+              <userCfgdFlags>admin_layer,admin_state</userCfgdFlags>
+            </PhysIf-list>
+          </phys-items>
+        </intf-items>
+        <ipv4-items>
+          <inst-items>
+            <dom-items>
+              <Dom-list>
+                <name>default</name>
+                <if-items>
+                  <If-list>
+                    <id>eth1/2</id>
+                    <addr-items>
+                      <Addr-list>
+                        <addr>192.168.5.2/24</addr>
+                        <pref>0</pref>
+                        <tag>0</tag>
+                      </Addr-list>
+                    </addr-items>
+                  </If-list>
+                </if-items>
+              </Dom-list>
+            </dom-items>
+          </inst-items>
+        </ipv4-items>
+      </System>
+    </config>
+  </edit-config>
+</rpc>
