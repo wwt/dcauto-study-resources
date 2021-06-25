@@ -77,7 +77,8 @@
     - [Section 4.0 - Data Center Compute](sections/section_4.md "Data Center Compute")
 
 ??? abstract "Appendix"
-    - [Appendix A - Lessons Learned](sections/appendix/#appendix-a-lessons-learned "Appendix A - Lessons Learned")
+    - [Appendix A - Lessons Learned](sections/appendix_a.md "Appendix A - Lessons Learned")
+    - [Appendix B - Jupyter Lab Overview](sections/appendix_b.md "Appendix B - Jupyter Lab Overview")
 
 ---
 

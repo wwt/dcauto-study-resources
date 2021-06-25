@@ -1,6 +1,6 @@
-# Appendix
+# Appendix A
 
-## Appendix A - Lessons Learned
+## Lessons Learned
 
 ---
 
