@@ -1,0 +1,35 @@
+<rpc-reply message-id="urn:uuid:f8b04410-1aad-4c61-a29f-bd40521dbc39" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <data>
+    <System xmlns="http://cisco.com/ns/yang/cisco-nx-os-device">
+      <ipv4-items>
+        <inst-items>
+          <dom-items>
+            <Dom-list>
+              <name>default</name>
+              <if-items>
+                <If-list>
+                  <id>eth1/1</id>
+                  <addr-items>
+                    <Addr-list>
+                      <addr>192.168.2.111/24</addr>
+                      <pref>0</pref>
+                      <tag>0</tag>
+                      <type>primary</type>
+                    </Addr-list>
+                  </addr-items>
+                  <directedBroadcast>disabled</directedBroadcast>
+                  <dropGlean>disabled</dropGlean>
+                  <forward>disabled</forward>
+                  <urpf>disabled</urpf>
+                </If-list>
+              </if-items>
+            </Dom-list>
+            <Dom-list>
+              <name>management</name>
+            </Dom-list>
+          </dom-items>
+        </inst-items>
+      </ipv4-items>
+    </System>
+  </data>
+</rpc-reply>

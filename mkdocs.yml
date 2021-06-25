@@ -14,8 +14,10 @@ nav:
     - Data Center Device-Centric Networking: sections/section_3.md
   - Section 4.0:
     - Data Center Compute: sections/section_4.md
-  - Appendix:
-    - Supplimentary Content: sections/appendix.md
+  - Appendix A:
+    - Supplimentary Content: sections/appendix_a.md
+  - Appendix B:
+    - Jupyter Lab: sections/appendix_b.md
 
 # Repository
 repo_name: "wwt/dcauto-study-resources"

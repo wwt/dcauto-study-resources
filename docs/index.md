@@ -33,7 +33,7 @@
 
 ## Getting Started
 
-:rocket: For us, liftoff is the hardest part of the study process.  Getting our computers setup in a way which allows us to study and takes notes seems to take way more time than we think it will.  To make that process easier for you, we tried to make the study resources in this guide as portable and consumable as possible.
+:rocket: For us, liftoff is the hardest part of the study process.  Getting our computers setup in a way which allows us to study and take notes _always_ seems to take _way_ more time than we think it will.  To make that process easier for you, we tried to make the study resources in this guide as portable and consumable as possible.
 
 :computer: We think the best way to study for the DCAUTO exam is to have a great development environment so we packaged one right into the [GitHub repository](https://github.com/wwt/dcauto-study-resources "DCAUTO Study Resources GitHub Repository"){target=_blank} which supports this site.  The study material content doesn't change whether you choose to use our development environment, use the files in the GitHub repository to build a development environment from source, or use your own development environment.  These are the tools that we *recommend* to get started with your DCAUTO exam study:
 
@@ -55,16 +55,13 @@
 3. :fontawesome-solid-terminal: **Your favorite terminal/shell program (iTerm, PowerShell, Bash, etc.).**
 
     !!! tip
-        In our exmaples, we use either the [Visual Studio Code Integrated Terminal](https://code.visualstudio.com/docs/editor/integrated-terminal "Visual Studio Code Integrated Terminal"){target=_blank} or the [macOS Terminal application](https://support.apple.com/guide/terminal/welcome/mac "macOS Terminal Application"){target=_blank}.
+        In our exmaples, we use a combination of the [Visual Studio Code Integrated Terminal](https://code.visualstudio.com/docs/editor/integrated-terminal "Visual Studio Code Integrated Terminal"){target=_blank}, [PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7.1 "PowerShell Installation Instructions"){target=_blank} and the [macOS Terminal application](https://support.apple.com/guide/terminal/welcome/mac "macOS Terminal Application"){target=_blank}.
 
 ---
 
 ## Topic Navigation
 
-!!! tip
-    Click to expand any topic.
-
-??? abstract "Development Environment Setup"
+???+ abstract "Development Environment Setup"
     - [Visual Studio Code Dev Container](sections/section_0.md "Visual Studio Code Dev Container")
 
 ??? abstract "Section 1.0 - Network Programmability Foundation"
@@ -80,7 +77,8 @@
     - [Section 4.0 - Data Center Compute](sections/section_4.md "Data Center Compute")
 
 ??? abstract "Appendix"
-    - [Appendix A - Lessons Learned](sections/appendix/#appendix-a-lessons-learned "Appendix A - Lessons Learned")
+    - [Appendix A - Lessons Learned](sections/appendix_a.md "Appendix A - Lessons Learned")
+    - [Appendix B - Jupyter Lab Overview](sections/appendix_b.md "Appendix B - Jupyter Lab Overview")
 
 ---
 

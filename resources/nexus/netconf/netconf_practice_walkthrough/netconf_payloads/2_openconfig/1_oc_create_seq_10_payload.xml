@@ -1,0 +1,42 @@
+<rpc message-id="101" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <edit-config>
+    <target>
+      <running/>
+    </target>
+    <config>
+      <acl xmlns="http://openconfig.net/yang/acl">
+        <acl-sets>
+          <acl-set>
+            <name>WEB-SERVER</name>
+            <type>ACL_IPV4</type>
+            <acl-entries>
+              <acl-entry>
+                <sequence-id>10</sequence-id>
+                <config>
+                  <sequence-id>10</sequence-id>
+                </config>
+                <ipv4>
+                  <config>
+                    <source-address>192.168.2.0/24</source-address>
+                    <destination-address>192.168.5.3/32</destination-address>
+                    <protocol>IP_TCP</protocol>
+                  </config>
+                </ipv4>
+                <transport>
+                  <config>
+                    <destination-port>80</destination-port>
+                  </config>
+                </transport>
+                <actions>
+                  <config>
+                    <forwarding-action>ACCEPT</forwarding-action>
+                  </config>
+                </actions>
+              </acl-entry>
+            </acl-entries>
+          </acl-set>
+        </acl-sets>
+      </acl>
+    </config>
+  </edit-config>
+</rpc>

@@ -1,0 +1,15 @@
+<rpc message-id="101" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <get>
+    <filter>
+      <System xmlns="http://cisco.com/ns/yang/cisco-nx-os-device">
+        <intf-items>
+          <phys-items>
+            <PhysIf-list>
+              <id>eth1/1</id>
+            </PhysIf-list>
+          </phys-items>
+        </intf-items>
+      </System>
+    </filter>
+  </get>
+</rpc>

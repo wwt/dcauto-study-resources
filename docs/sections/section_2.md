@@ -60,6 +60,8 @@ This section of the exam topics has a focus on working with Cisco Application Ce
         - The links below require that the local Jupyter Lab server is active and listening on [**http://localhost:8888**](http://localhost:8888 "Jupyter Lab Server"){target=_blank}
             - The Visual Studio Code Development Environment automatically activates the Jupyter Lab server.
 
+        !!! question "New to Jupyter Lab? [Click Here for an Overview](appendix_b.md "Jupyter Lab Overview"){target=_blank}"
+
         !!! tip
             - You may also use Visual Studio Code to explore the same code samples and hands-on exercises.  The **resources** folder within the Development Environment Container contains all of the source files.
         
@@ -82,20 +84,6 @@ This section of the exam topics has a focus on working with Cisco Application Ce
         - [Practice Exercise Example #1](http://localhost:8888/lab/workspaces/auto-I/tree/resources/aci/rest-api/exercises/examples/apic_rest_exercises_example_1.ipynb "Practice Exercise Example #1"){target=_blank}
         - [Practice Exercise Example #2](http://localhost:8888/lab/workspaces/auto-I/tree/resources/aci/rest-api/exercises/examples/apic_rest_exercises_example_2.ipynb "Practice Exercise Example #2"){target=_blank}
         - [Python Code Samples](http://localhost:8888/lab/workspaces/auto-I/tree/resources/aci/rest-api/code-samples "Python Code Samples"){target=_blank}
-
-    ??? tip "New to Jupyter Lab? Expand This Section for Help"
-
-        ??? example "1. Open the [Jupyter Lab Server](http://localhost:8888 "Jupyter Lab Server"){target=_blank}"
-
-            [![vs-code-open-terminals](../images/vs-code-open-terminals.png "Open New Bash or PowerShell Terminals")](../../images/vs-code-open-terminals.png){target=_blank}
-
-        ??? example "2. Navigate to the **resources/aci** Directory"
-
-            [![vs-code-open-terminals](../images/vs-code-open-terminals.png "Open New Bash or PowerShell Terminals")](../../images/vs-code-open-terminals.png){target=_blank}
-
-        ??? example "3. Open a Jupyter Notebook in Either the **cobra-sdk/exercises** or **rest-api/exercises** Folder"
-
-            [![vs-code-open-terminals](../images/vs-code-open-terminals.png "Open New Bash or PowerShell Terminals")](../../images/vs-code-open-terminals.png){target=_blank}
 
 ??? abstract "Management Information Tree (MIT) Assembly Challenge"
     - Review the scrambled, disconnected ACI MIT diagrams in the **resources/aci/mit** folder, within the development environment, and try to draw them (digitally or on paper) in the correct positions with the correct connections.
