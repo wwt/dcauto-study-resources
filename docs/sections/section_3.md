@@ -1,4 +1,4 @@
-# Under Construction - Data Center Device-Centric Networking
+# Data Center Device-Centric Networking
 
 ## Overview
 
@@ -55,6 +55,34 @@ This section of the exam topics focuses on the programmability features of the C
 
 ??? abstract "DevNet Sandbox Labs"
     - [DevNet Reservable Open NX-OS Sandbox](https://devnetsandbox.cisco.com/RM/Diagram/Index/0e22761d-f813-415d-a557-24fa0e17ab50?diagramType=Topology "DevNet Reservable Open NX-OS Sandbox"){target=_blank}
+
+??? abstract "Development Environment Resources"
+
+    !!! attention
+        - The links below require that the local Jupyter Lab server is active and listening on [**http://localhost:8888**](http://localhost:8888 "Jupyter Lab Server"){target=_blank}
+            - The Visual Studio Code Development Environment automatically activates the Jupyter Lab server.
+
+        !!! question "New to Jupyter Lab? [Click Here for an Overview](appendix_b.md "Jupyter Lab Overview"){target=_blank}"
+
+        !!! tip
+            - You may also use Visual Studio Code to explore the same code samples and hands-on exercises.  The **resources** folder within the Development Environment Container contains all of the source files.
+        
+    - :material-ansible: [Ansible Files](http://localhost:8888/lab/tree/resources/nexus/ansible "Ansible Root Folder"){target=_blank}
+        - [Sample Configuration File](http://localhost:8888/lab/workspaces/auto-c/tree/resources/nexus/ansible/ansible.cfg "Sample Configuarion File"){target=_blank}
+        - [Sample Playbook 1](http://localhost:8888/lab/workspaces/auto-c/tree/resources/nexus/ansible/setup_nxos_docker.yml "Sample Playbook 1"){target=_blank}
+        - [Sample Playbook 2](http://localhost:8888/lab/workspaces/auto-c/tree/resources/nexus/ansible/upgrade_nxos_software.yml "Sample Playbooks 2"){target=_blank}
+        - [Sample Inventory File (.yml format)](http://localhost:8888/lab/workspaces/auto-c/tree/resources/nexus/ansible/inventory/hosts.yml "Sample Inventory File (.yml format)"){target=_blank}
+        - [Sample Host Variables File](http://localhost:8888/lab/workspaces/auto-c/tree/resources/nexus/ansible/host_vars/n9kv.yml "Sample Host Variables File"){target=_blank}
+        - [Sample Group Variables File](http://localhost:8888/lab/workspaces/auto-c/tree/resources/nexus/ansible/group_vars/all.yml "Sample Host Variables File"){target=_blank}
+    - :fontawesome-brands-python: [gNMI Telemetry Files](http://localhost:8888/lab/workspaces/auto-I/tree/resources/nexus/gnmi "gNMI Telemetry Files"){target=_blank}
+        - [gNMI Telemetry Subscription Walkthrough](http://localhost:8888/lab/workspaces/auto-I/tree/resources/nexus/gnmi/gnmi_dial_in.ipynb "gNMI Telemetry Subscription Walkthrough"){target=_blank}
+        - [gNMI Telemetry Subscription Python Code](http://localhost:8888/lab/workspaces/auto-I/tree/resources/nexus/gnmi/gnmi.py "gNMI Telemetry Subscription Python Code"){target=_blank}
+        - [gNMI Sample Certificate](http://localhost:8888/lab/workspaces/auto-I/tree/resources/nexus/gnmi/gnmi.pem "gNMI Sample Certificate"){target=_blank}
+    - :material-api: [NETCONF](http://localhost:8888/lab/tree/resources/nexus/netconf "NETCONF"){target=_blank}
+        - [DevNet Learning Lab Hands-On Exercise](http://localhost:8888/lab/workspaces/auto-I/tree/resources/nexus/netconf/devnet_learning_lab_hands_on/nx_os_ncclient_devnet_lab_hands_on.ipynb "DevNet Learning Lab Hands-On Exercise"){target=_blank}
+        - [DevNet Learning Lab Hands-On Exercise Solution](http://localhost:8888/lab/workspaces/auto-I/tree/resources/nexus/netconf/devnet_learning_lab_hands_on/solutions/nx_os_ncclient_devnet_lab_hands_on_solution.ipynb "DevNet Learning Lab Hands-On Exercise Solution"){target=_blank}
+        - [NETCONF Walkthrough Exercise](http://localhost:8888/lab/workspaces/auto-I/tree/resources/nexus/netconf/netconf_practice_walkthrough/netconf_practice_walkthrough.ipynb "NETCONF Walkthrough Exercise"){target=_blank}
+        - [NETCONF Walkthrough Exercise XML Payloads](http://localhost:8888/lab/workspaces/auto-I/tree/resources/nexus/netconf/netconf_practice_walkthrough/netconf_payloads "NETCONF Walkthrough Exercise XML Payloads"){target=_blank}
 
 ??? abstract "WWT On-Demand Labs"
     - [Cisco Ansible Automation Lab](https://www.wwt.com/lab/cisco-ansible-automation-training-lab "WCisco Ansible Automation Lab"){target=_blank}
@@ -114,9 +142,9 @@ This section of the exam topics focuses on the programmability features of the C
 
 - Effective NX-OS hands-on lab resources were hard for us to find.  The lone DevNet NX-OS Sandbox was helpful although had some limitations that kept us from being able to practice certain things, like deploying Docker Containers on NX-OS and configuring POAP.  The WWT Ansible Automation Lab was a good resource that allowed us to study and test Ansible and Docker with NX-OS.  DevNet provides a [Vagrant configuration](https://developer.cisco.com/docs/nx-os/#!developer-tooling/vagrant "DevNet NX-OS Vagrant Configuration"){target=_blank} that we did not use although it is another NX-OS hands-on resource option.
 
-- We did not find documentation that explicitly showed us how to construct Python scripts which consume model-driven telemetry.  Instead, we pieced together many different resources (referenced in the **Documentation** section) and conducted a lot of trial and error testing, in order to successfuly meet our interpretation of the exam topic intent.  For some really good practices, we recommend that you work through the gNMI Jupyter Notebook and sample code we put together and then write your own code to consume telemetry from different XPaths.
+- We did not find documentation that explicitly showed us how to construct Python scripts which consume model-driven telemetry.  Instead, we pieced together many different resources (referenced in the **Documentation** section) and conducted a lot of trial and error testing, in order to successfuly meet our interpretation of the exam topic intent.  For some really good practices, we recommend that you work through the [gNMI Jupyter Walkthrough](http://localhost:8888/lab/workspaces/auto-I/tree/resources/nexus/gnmi/gnmi_dial_in.ipynb "gNMI Telemetry Subscription Walkthrough"){target=_blank} and [sample Python code](http://localhost:8888/lab/workspaces/auto-I/tree/resources/nexus/gnmi/gnmi.py "gNMI Telemetry Subscription Python Code"){target=_blank} we put together and then write your own code to consume telemetry from different XPaths.
 
-- Something we found very beneficial to our comfort level with NETCONF and YANG models was to go through the DevNet Learning Labs on those topics and, instead of copying and pasting commands (into an NX-OS hands-on environment) or even typing out the NETCONF XML paylod examples in the lab guides, we forced ourselves to look at the XPath examples and then try to **manually** type out/construct the XML payloads.  This practice helped us become _much_ more comfortable with YANG models, XML, and NETCONF, in general.  The NETCONF Jupyter Notebook we put together was a great resource for us to get that practice because the interactivity of Jupyter makes it fast and easy to try something, see it not work, make a change, and try again.
+- Something we found very beneficial to our comfort level with NETCONF and YANG models was to go through the DevNet Learning Labs on those topics and, instead of copying and pasting commands (into an NX-OS hands-on environment) or even typing out the NETCONF XML paylod examples in the lab guides, we forced ourselves to look at the XPath examples and then try to **manually** type out/construct the XML payloads.  This practice helped us become _much_ more comfortable with YANG models, XML, and NETCONF, in general.  The [NETCONF Jupyter Notebook](http://localhost:8888/lab/workspaces/auto-I/tree/resources/nexus/netconf/netconf_practice_walkthrough/netconf_practice_walkthrough.ipynb "NETCONF Walkthrough Exercise"){target=_blank} we put together was a great resource for us to get that practice because the interactivity of Jupyter makes it fast and easy to try something, see it not work, make a change, and try again.
 
 ## On to Section 4.0
 
