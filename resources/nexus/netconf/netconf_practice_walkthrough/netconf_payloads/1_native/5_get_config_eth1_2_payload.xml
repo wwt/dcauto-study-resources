@@ -8,7 +8,7 @@
         <intf-items>
           <phys-items>
             <PhysIf-list>
-              <id>eth1/2</id>
+              <id>eth1/10</id>
             </PhysIf-list>
           </phys-items>
         </intf-items>
@@ -19,7 +19,7 @@
                 <name>default</name>
                 <if-items>
                   <If-list>
-                    <id>eth1/2</id>
+                    <id>eth1/10</id>
                   </If-list>
                 </if-items>
               </Dom-list>

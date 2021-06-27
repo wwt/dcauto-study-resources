@@ -4,7 +4,7 @@
       <intf-items>
         <phys-items>
           <PhysIf-list>
-            <id>eth1/2</id>
+            <id>eth1/10</id>
             <FECMode>auto</FECMode>
             <accessVlan>unknown</accessVlan>
             <adminSt>up</adminSt>
@@ -44,7 +44,7 @@
             <physExtd-items>
               <allowMultiTag>disable</allowMultiTag>
               <bufferBoost>enable</bufferBoost>
-              <id>eth1/2</id>
+              <id>eth1/10</id>
               <portTypeFabric>no</portTypeFabric>
               <routerMacIpv6Extract>disable</routerMacIpv6Extract>
               <stormCtrlBCastLevel>100.0</stormCtrlBCastLevel>
@@ -91,7 +91,7 @@
               <name>default</name>
               <if-items>
                 <If-list>
-                  <id>eth1/2</id>
+                  <id>eth1/10</id>
                   <addr-items>
                     <Addr-list>
                       <addr>192.168.5.2/24</addr>
