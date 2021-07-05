@@ -6,9 +6,9 @@ This section of the exam topics focuses on the skills you will want to be very c
 
 During our exam preparation, we didn't spend a ton of dedicated time on the topics in this section because:
 
-  - These particular topics are pretty familiar to us from previous DevNet exam study work (DEVASC, ENAUTO, & DEVCOR)
-  - We help teach these topics in our free, ongoing, open-to-the-public [DevNet Study Group](https://www.wwt.com/community/cisco-devnet-study-groups "WWT DevNet Study Group Community"){target=_blank} meetings.
-  - We work with many of the topics daily.
+- These particular topics are pretty familiar to us from previous DevNet exam study work (DEVASC, ENAUTO, & DEVCOR)
+- We help teach these topics in our free, ongoing, open-to-the-public [DevNet Study Group](https://www.wwt.com/community/cisco-devnet-study-groups "WWT DevNet Study Group Community"){target=_blank} meetings.
+- We work with many of the topics daily.
 
 We do, however, remember exactly how we felt when these topics were new to us, and we have plenty of resources to share.  Also, we included some general Ansible references that we found helpful in this section since the exam topics in each of the subsequent sections have an Ansible automation element.
 
