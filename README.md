@@ -20,9 +20,9 @@
 
 ## About
 
-:mortar_board: We have a lot of people to thank for helping us pass the Cisco DCAUTO exam.  Many of those people we have never met and, likely, will never meet, in-person or otherwise.  Each of these people took time from their lives to publish something they know or built so the rest of us, somehow, via some search engine, could have even a slightly more simple path to whatever it is we want to learn.
+:mortar_board: We have many people to thank for helping us pass the Cisco DCAUTO exam.  We have never met many of those people and, likely, will never meet, in-person or otherwise.  Each of these people took time from their lives to publish something they know or built, so the rest of us, somehow, via some search engine, could have even a slightly more straightforward path to whatever it is we want to learn.
 
-:sunrise_over_mountains: To everyone who took the time to help the entire DevNet community, this guide is a both nod of appreciation to you and also our way of paying it forward to the next person or people who, like us, feel like climbing to the top of the mountain, however strenuous, is worth the view.  It would be disingenuous for us to make the climb using the ropes people left for us without leaving our own ropes to help the people that follow.  We wish you success in your climb.
+:sunrise_over_mountains: To everyone who took the time to help the entire DevNet community, this guide is both nod of appreciation to you and also our way of paying it forward to the next person or people who, like us, feel like climbing to the top of the mountain, however strenuous, is worth the view.  It would be disingenuous for us to make the climb using the ropes people left for us without leaving our own ropes to help the people who follow.  We wish you success in your climb.
 
 ---
 

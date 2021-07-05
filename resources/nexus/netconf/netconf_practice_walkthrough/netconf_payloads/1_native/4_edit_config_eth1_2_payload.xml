@@ -8,7 +8,7 @@
         <intf-items>
           <phys-items>
             <PhysIf-list>
-              <id>eth1/2</id>
+              <id>eth1/10</id>
               <adminSt>up</adminSt>
               <layer>Layer3</layer>
               <userCfgdFlags>admin_layer,admin_state</userCfgdFlags>
@@ -22,7 +22,7 @@
                 <name>default</name>
                 <if-items>
                   <If-list>
-                    <id>eth1/2</id>
+                    <id>eth1/10</id>
                     <addr-items>
                       <Addr-list>
                         <addr>192.168.5.2/24</addr>
