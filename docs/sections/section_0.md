@@ -2,7 +2,7 @@
 
 ## Overview
 
-:computer: In case you're wondering, "_Why do I need a development environment?  I'm studying for an exam, right?_"  In our opinion, this is an exam for operations _developers_ and a developer needs the right tools in order to do their job well.  Because the exam topics cover so many subjects, the array of tools, software packages, etc. is big enough that putting together an effective development environment, even if only for exam study, takes a lot of time.  We want you to save that time and help you get into the study materials as quickly as possible.
+:computer: In case you're wondering, "_Why do I need a development environment?  I'm studying for an exam, right?_"  In our opinion, this is an exam for operations _developers_ and a developer needs the right tools to do their job well.  Because the exam topics cover so many subjects, the array of tools, software packages, etc., is big enough that putting together an effective development environment, even if only for exam study, takes a lot of time.  We want you to save that time and help you get into the study materials as quickly as possible.
 
 ---
 
@@ -10,9 +10,9 @@
 
 :bulb: Our development environment uses the [Development Container](https://code.visualstudio.com/docs/remote/containers "Visual Studio Code Development Containers"){target=_blank} feature in Visual Studio Code.  The reasons we use this particular environment are:
 
-- :white_check_mark: **Consistency:** this development environment will work in the same way on any computer that has Visual Studio Code and Docker installed.
-- :white_check_mark: **Portability:** the development environment is part of the Git repository which supports this guide so simply cloning the repository means you have all of the files you need.
-- :white_check_mark: **Ease of Use:** Getting started with your studies quickly and the ability to easily pick up your studies where you left off means less time spent fussing with a development environment and more time available to focus on exam topic study.
+- [x] **Consistency:** this development environment will work in the same way on any computer with Visual Studio Code and Docker installed.
+- [x] **Portability:** the development environment is part of the Git repository which supports this guide, so simply cloning the repository means you have all of the files you need.
+- [x] **Ease of Use:** Getting started with your studies quickly and the ability to easily pick up your studies where you left off means less time spent fussing with a development environment and more time available to focus on exam topic study.
 
 ---
 
@@ -58,7 +58,7 @@
 
 ## Dev Environment Setup
 
-The setup process takes a little bit of work on the first pass.  Afterwards, the setup and teardown is quick and easy.  Here are the high-level steps to setup the development environment:
+The setup process takes a little bit of work on the first pass.  Afterward, the setup and teardown are quick and easy.  Here are the high-level steps to set up the development environment:
 
 !!! tip
     Click to expand each step.
@@ -116,7 +116,7 @@ The setup process takes a little bit of work on the first pass.  Afterwards, the
         ??? example "1b. Observe the development container build process:"
 
             !!! attention
-                The initial development container build may take 5-10 minutes, please be patient.  Subsequent launches should only take a few seconds.
+                The initial development container build may take 5-10 minutes; please be patient.  Subsequent launches should only take a few seconds.
 
             [![vs-code-devcontainer-building](../images/vs-code-devcontainer-building.png "Observe Development Container Build Process")](../../images/vs-code-devcontainer-building.png){target=_blank}
 
@@ -135,7 +135,7 @@ The setup process takes a little bit of work on the first pass.  Afterwards, the
 
     2. :fontawesome-solid-terminal: Use the Visual Studio Code Integrated Terminal
 
-        ??? example "2a. Use the terminal controls pallete to open new shells:"
+        ??? example "2a. Use the terminal controls pallet to open new shells:"
 
             [![vs-code-open-terminals](../images/vs-code-open-terminals.png "Open New Bash or PowerShell Terminals")](../../images/vs-code-open-terminals.png){target=_blank}
 

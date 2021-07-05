@@ -2,7 +2,7 @@
 
 ## Overview
 
-This section of the exam topics has a focus on working with Cisco Application Centric Infrastructure (ACI) programmatically.  It is essential to be familiar with ACI's building blocks, specifically the ACI Policy Object Model, in order to effectively construct and parse its API payloads.
+This section of the exam topics focuses on working with Cisco Application Centric Infrastructure (ACI) programmatically.  It is essential to be familiar with ACI's building blocks, specifically the ACI Policy Object Model, to effectively construct and parse its API payloads.
 
 ???+ note "Section 2.0 Topic Details"
     - 2.1 Describe the following:
@@ -86,7 +86,7 @@ This section of the exam topics has a focus on working with Cisco Application Ce
         - [Python Code Samples](http://localhost:8888/lab/workspaces/auto-I/tree/resources/aci/rest-api/code-samples "Python Code Samples"){target=_blank}
 
 ??? abstract "Management Information Tree (MIT) Assembly Challenge"
-    - Review the scrambled, disconnected ACI MIT diagrams in the **resources/aci/mit** folder, within the development environment, and try to draw them (digitally or on paper) in the correct positions with the correct connections.
+    - Review the scrambled, disconnected ACI MIT diagrams in the **resources/aci/mit** folder within the development environment, and try to draw them (digitally or on paper) in the correct positions with the proper connections.
         - Option #1 - [.png quiz #1](http://localhost:8888/lab/tree/resources/aci/mit/png/quiz_1.png ".png quiz #1"){target=_blank}, [.png quiz #2](http://localhost:8888/lab/tree/resources/aci/mit/png/quiz_1.png ".png quiz #2"){target=_blank}, and [.png solution](http://localhost:8888/lab/tree/resources/aci/mit/png/solution/solution.png ".png solution"){target=_blank}
         - Option #2 -  [Visio Quiz and Solution File](http://localhost:8888/lab/tree/resources/aci/mit/visio/quizzes_and_solution.vsdx "Visio Quiz and Solution File"){target=_blank}
 
@@ -114,11 +114,11 @@ This section of the exam topics has a focus on working with Cisco Application Ce
 
 ## :fontawesome-solid-lightbulb: Insights
 
-- We spent plenty of time watching the videos and reading the documentation in this guide although we spent most of our time going through the hands-on learning exercises over, and over, and over again.  The practice made a big difference in our ability to retain so many details.  Forcing ourselves to type our way through the Jupyter Lab exercises was really hard and was also our best teacher.
+- We spent plenty of time watching the videos and reading the documentation in this guide, although we spent most of our time going through the hands-on learning exercises over, and over, and over again.  The practice made a big difference in our ability to retain so many details.  Forcing ourselves to type our way through the Jupyter Lab exercises was really hard and was also our best teacher.
 
 - The Cisco DevNet learning labs for ACI were a great starting point for us and set the tone for the things we needed to learn and practice.  Following those up with the Jupyter and MIT exercises was very beneficial.
 
-- The star resource to practice just about any skills related to ACI is the **[DevNet Always-On ACI Sandbox](https://sandboxapicdc.cisco.com "DevNet Always-On ACI Sandbox"){target=_blank}**.  This is a publicly-accessible (no-VPN required), reservationless, read/write, read/write ACI simulator and we used it excessively.  All of the code samples, Jupyter Notebooks, and Ansible Playbooks bundled in this repository use this sandbox.
+- The star resource to practice just about any skills related to ACI is the **[DevNet Always-On ACI Sandbox](https://sandboxapicdc.cisco.com "DevNet Always-On ACI Sandbox"){target=_blank}**.  This is a publicly accessible (no-VPN required), reservation-less, read/write, read/write ACI simulator, and we used it excessively.  All of the code samples, Jupyter Notebooks, and Ansible Playbooks bundled in this repository use this sandbox.
 
 !!! caution
         - From time to time, the **[DevNet Always-On ACI Sandbox](https://sandboxapicdc.cisco.com "DevNet Always-On ACI Sandbox"){target=_blank}** can be a bit slow or fail to respond to your API call, browser session, etc.  Generally, after a minute or two, we found the sandbox would recover from these situations.
@@ -126,7 +126,7 @@ This section of the exam topics has a focus on working with Cisco Application Ce
     !!! tip "tips"
         - Spend plenty of time working with ACI both programmatically _and_ in the APIC GUI.
         - The [ACI visore tool](https://www.cisco.com/c/en/us/support/docs/cloud-systems-management/application-policy-infrastructure-controller-apic/118839-technote-visore-00.html "ACI visore tool"){target=_blank} provides a great way to understand relationships between ACI objects in the MIT.
-        - The [ACI API Inspector](https://aci-prog-lab.ciscolive.com/lab/pod1/references/find-object "ACI API Inspector"){target=_blank} vastly simplifies the process to construct REST payloads for ACI.  We recommend that you spend plenty of time observing how you can use APIC GUI interactions, via the API Inspector, to construct REST payloads within Python.
+        - The [ACI API Inspector](https://aci-prog-lab.ciscolive.com/lab/pod1/references/find-object "ACI API Inspector"){target=_blank} vastly simplifies the process to construct REST payloads for ACI.  We recommend that you spend plenty of time observing how you can use APIC GUI interactions, via the API Inspector, to build REST payloads within Python.
 
 ## On to Section 3.0
 

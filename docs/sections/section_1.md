@@ -2,11 +2,15 @@
 
 ## Overview
 
-This section of the exam topics focuses on the skills that will want to be very comfortable with before you can effectively study for the remaining, product-specific exam topics (in sections 2.0, 3.0, and 4.0).
+This section of the exam topics focuses on the skills you will want to be very comfortable with before effectively studying for the remaining product-specific exam topics (in sections 2.0, 3.0, and 4.0).
 
-In our exam preparation, we didn't spend a ton of dedicated time on the topics in this section because these particular topics are quite familiar to us from previous DevNet exam study work (DEVASC, ENAUTO, & DEVCOR), we help teach these topics in our free, ongoing, open-to-the-public [DevNet Study Group](https://www.wwt.com/community/cisco-devnet-study-groups "WWT DevNet Study Group Community"){target=_blank} meetings, and because we work with many of the topics, daily.
+During our exam preparation, we didn't spend a ton of dedicated time on the topics in this section because:
 
-We do, however, remember exactly how we felt when these topics were new to us and we have plenty of resources to share.  Also, we included some general Ansible references that we found helpful in this section, since the exam topics in each of the subsequent sections have an Ansible automation element.
+  - These particular topics are pretty familiar to us from previous DevNet exam study work (DEVASC, ENAUTO, & DEVCOR)
+  - We help teach these topics in our free, ongoing, open-to-the-public [DevNet Study Group](https://www.wwt.com/community/cisco-devnet-study-groups "WWT DevNet Study Group Community"){target=_blank} meetings.
+  - We work with many of the topics daily.
+
+We do, however, remember exactly how we felt when these topics were new to us, and we have plenty of resources to share.  Also, we included some general Ansible references that we found helpful in this section since the exam topics in each of the subsequent sections have an Ansible automation element.
 
 ???+ note "Section 1.0 Topic Details"
     - 1.1 Utilize common version control operations with git: add, clone, push, commit, diff, branching, merging conflict
@@ -82,9 +86,9 @@ We do, however, remember exactly how we felt when these topics were new to us an
 
 ## :fontawesome-solid-lightbulb: Insights
 
-- Force yourself to use the skills you learn in this section frequently as you study the remaining exam topic sections.  Lots of repetition will help you build and retain these skills and we think it is important that these skills be second-nature to you, as you prepare for a certification exam.
+- Force yourself to use the skills you learn in this section frequently as you study the remaining exam topic sections.  Lots of repetition will help you build and retain these skills, and we think it is essential that these skills be second nature to you as you prepare for a certification exam.
 
-- The Cisco DevNet learning labs and WWT guided walkthroughs are excellent, repeatable learning tools which present you content in small chunks.  You can repeat any or all of this content as many times as you like.
+- The Cisco DevNet learning labs and WWT guided walkthroughs are excellent, repeatable learning tools that present content to you in small chunks.  You can repeat any or all of this content as many times as you like.
 
 - Our favorite resource to learn this material is Pluralsight.  The author of the courses we recommend, Nick Russo, does an absolutely fantastic job of explaining core concepts in a way that we could easily consume.  Yes, Pluralsight is a paid resource and we have our own subscriptions.  In our opinion, the monthly cost is well worth the price.
 

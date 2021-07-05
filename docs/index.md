@@ -2,15 +2,15 @@
 
 ## About
 
-:mortar_board: We have a lot of people to thank for helping us pass the Cisco DCAUTO exam.  Many of those people we have never met and, likely, will never meet, in-person or otherwise.  Each of these people took time from their lives to publish something they know or built so the rest of us, somehow, via some search engine, could have even a slightly more simple path to whatever it is we want to learn.
+:mortar_board: We have many people to thank for helping us pass the Cisco DCAUTO exam.  We have never met many of those people and, likely, will never meet, in-person or otherwise.  Each of these people took time from their lives to publish something they know or built, so the rest of us, somehow, via some search engine, could have even a slightly more straightforward path to whatever it is we want to learn.
 
-:sunrise_over_mountains: To everyone who took the time to help the entire DevNet community, this guide is a both nod of appreciation to you and also our way of paying it forward to the next person or people who, like us, feel like climbing to the top of the mountain, however strenuous, is worth the view.  It would be disingenuous for us to make the climb using the ropes people left for us without leaving our own ropes to help the people that follow.  We wish you success in your climb.
+:sunrise_over_mountains: To everyone who took the time to help the entire DevNet community, this guide is both nod of appreciation to you and also our way of paying it forward to the next person or people who, like us, feel like climbing to the top of the mountain, however strenuous, is worth the view.  It would be disingenuous for us to make the climb using the ropes people left for us without leaving our own ropes to help the people who follow.  We wish you success in your climb.
 
 ---
 
 ## Overview
 
-:clipboard: This guide provides content and references which will help you study and prepare yourself for the [**Cisco 300-635 DCAUTO Exam: Automating and Programming Cisco Data Center Solutions**](https://www.cisco.com/c/en/us/training-events/training-certifications/exams/current-list/dcauto-300-635.html "Cisco DCAUTO (300-635) Exam"){target=_blank} exam.  All of the information in this guide is a curation of study resources which the authors used in order to study for and pass the Cisco DCAUTO exam.
+:clipboard: This guide provides content and references which will help you study and prepare yourself for the [**Cisco 300-635 DCAUTO Exam: Automating and Programming Cisco Data Center Solutions**](https://www.cisco.com/c/en/us/training-events/training-certifications/exams/current-list/dcauto-300-635.html "Cisco DCAUTO (300-635) Exam"){target=_blank} exam.  All of the information in this guide is a curation of study resources that the authors used to study for and pass the Cisco DCAUTO exam.
 
 !!! attention
     All content in this guide strictly complies with the [Cisco Certification and Confidentiality Agreement](https://www.cisco.com/c/dam/en_us/training-events/downloads/certificationNDA.pdf "Cisco Certification and Confidentiality Agreement"){target=_blank}, also known as the Cisco Certification Non-Disclosure Agreement (**NDA**).  We welcome and appreciate any Cisco NDA-compliant contributions from the community.
@@ -19,23 +19,23 @@
     - This guide is neither affiliated with Cisco Systems, Inc. nor any of its affiliates, including Cisco DevNet.
     - All materials in this guide are contributions from the community of Cisco DevNet enthusiasts and certification candidates.
     - Any references to pay-for-use study materials are free of sponsorship, affiliations, royalties, and payments of any kind.
-        - We pay for these resources just like anyone else would and we recommend the paid resources because we think they are highly-valuable.
+        - We pay for these resources just like anyone else would, and we recommend the paid resources because we think they are highly valuable.
 
 ---
 
 ## Exam Topics
 
-:notebook_with_decorative_cover: The [Cisco DCAUTO exam topics](https://learningnetwork.cisco.com/s/dcauto-exam-topics "Cisco DCAUTO Exam Topics"){target=_blank} cover a variety of skills.  Some of those skills are specific to Cisco products and solutions (ACI, Nexus, Intersight, etc.) while others are product-agnostic, foundational infrastructure automation and programmibility skills (Git, Python, Ansible, etc.).
+:notebook_with_decorative_cover: The [Cisco DCAUTO exam topics](https://learningnetwork.cisco.com/s/dcauto-exam-topics "Cisco DCAUTO Exam Topics"){target=_blank} cover a variety of skills.  Some of those skills are specific to Cisco products and solutions (ACI, Nexus, Intersight, etc.), while others are product-agnostic, foundational infrastructure automation and programmability skills (Git, Python, Ansible, etc.).
 
-:books: This is the fourth DevNet exam that we've studied for yet the first for which we struggled to find a curated set of resources to study from.  As we amassed notes, links, and our own code snippets, we organized everything into categories that correspond to the four sections in the Exam Topics list.  As such, we organized everything we have to share into sections which correspond to those same sections, so there is no ambiguity about how to find the resources that you need.
+:books: This is the fourth DevNet exam that we've studied for, yet the first for which we struggled to find a curated set of resources from which to study.  As we amassed notes, links, and our own code snippets, we organized everything into categories corresponding to the four sections in the Exam Topics list, so there is no ambiguity about finding the resources you need.
 
 ---
 
 ## Getting Started
 
-:rocket: For us, liftoff is the hardest part of the study process.  Getting our computers setup in a way which allows us to study and take notes _always_ seems to take _way_ more time than we think it will.  To make that process easier for you, we tried to make the study resources in this guide as portable and consumable as possible.
+:rocket: For us, liftoff is the hardest part of the study process.  Getting our computers set up in a way that allows us to study and take notes _always_ seems to take _way_ more time than we think it will.  To make that process easier for you, we tried to make the study resources in this guide as portable and consumable as possible.
 
-:computer: We think the best way to study for the DCAUTO exam is to have a great development environment so we packaged one right into the [GitHub repository](https://github.com/wwt/dcauto-study-resources "DCAUTO Study Resources GitHub Repository"){target=_blank} which supports this site.  The study material content doesn't change whether you choose to use our development environment, use the files in the GitHub repository to build a development environment from source, or use your own development environment.  These are the tools that we *recommend* to get started with your DCAUTO exam study:
+:computer: We think the best way to study for the DCAUTO exam is to have a great development environment, so we packaged one right into the [GitHub repository](https://github.com/wwt/dcauto-study-resources "DCAUTO Study Resources GitHub Repository"){target=_blank} which supports this site.  The study material content doesn't change whether you choose to use our development environment, use the files in the GitHub repository to build a development environment from source, or use your own development environment.  These are the tools that we *recommend* to get started with your DCAUTO exam study:
 
 1. :fontawesome-solid-cloud: **An account registration with [Cisco DevNet](https://developer.cisco.com "Cisco DevNet"){target=_blank}**.
 
