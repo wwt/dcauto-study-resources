@@ -12,8 +12,8 @@
         "ms-python.python",
         "ms-python.vscode-pylance",
         "ms-vscode.powershell",
+        "redhat.ansible",
         "redhat.vscode-yaml",
-        "zbr.vscode-ansible"
     ],
     "forwardPorts": [
         8000,
