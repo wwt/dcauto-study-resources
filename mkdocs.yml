@@ -69,17 +69,25 @@ theme:
         prebuild_index: true
 
 markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - footnotes
+  - pymdownx.caret
+  - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-  - admonition
-  - attr_list
   - pymdownx.highlight
-  - pymdownx.details
+  - pymdownx.inlinehilite
   - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.tilde
   - toc:
       permalink: true
-
