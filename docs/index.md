@@ -85,3 +85,5 @@
 ## Let's Do This
 
 :medal: You're already to get started! Click [this link](sections/section_0.md "Development Environment Setup") to setup your development environment.
+
+--8<-- "includes/glossary.txt"
