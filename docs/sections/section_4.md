@@ -2,7 +2,7 @@
 
 ## Overview
 
-// Coming Soon
+This section of the exam topics focuses on the programmability features of the Cisco UCS Platform, including both UCSM and Intersight.
 
 ???+ note "Section 4.0 Topic Details"
     - 4.1 Configure Cisco UCS with developer tools
@@ -17,3 +17,5 @@
         - 4.5.b Custom tasks
         - 4.5.c Script libraries
         - 4.6 Utilize UCS Director REST API browser
+
+--8<-- "includes/glossary.txt"

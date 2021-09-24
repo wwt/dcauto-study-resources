@@ -97,3 +97,5 @@ We do, however, remember exactly how we felt when these topics were new to us, a
 ## On to Section 2.0
 
 :thumbsup:  Nice work on the foundational topics!  Keep up the good work and click [this link](section_2.md "Section 2.0") to check out **Section 2.0** exam topics and resources.
+
+--8<-- "includes/glossary.txt"

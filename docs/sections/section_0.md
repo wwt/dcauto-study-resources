@@ -34,7 +34,7 @@
     ??? abstract "Python linting tools"
         - [ansible-lint](https://pypi.org/project/ansible-lint/ "ansible-lint on PyPi"){target=_blank} - Lint YAML files for Ansible.
         - [autopep8](https://pypi.org/project/autopep8/ "autopep8 on PyPi"){target=_blank} - Automatic Python PEP 8 style formatting.
-        - [flake8](https://pypi.org/project/flake8/ "flake8 on PyPi"){target=_blank} - Lint Python files for PEP8 compliance.
+        - [flake8](https://pypi.org/project/flake8/ "flake8 on PyPi"){target=_blank} - Lint Python files for PEP 8 compliance.
         - [yamllint](https://pypi.org/project/yamllint/ "yamllint on PyPi"){target=_blank} - Lint YAML files.
 
     ??? abstract "Product-specific SDKs and tools"
@@ -102,7 +102,7 @@ The setup process takes a little bit of work on the first pass.  Afterward, the 
 
         ??? example "3d. Reopen the current workspace in a Visual Studio Code Development Container:"
 
-            [![vs-code-reopen-in-container](../images/vs-code-reopen-in-confainer.png "Reopen in Visual Studio Code Development Container")](../../images/vs-code-reopen-in-container.png){target=_blank}
+            [![vs-code-reopen-in-container](../images/vs-code-reopen-in-container.png "Reopen in Visual Studio Code Development Container")](../../images/vs-code-reopen-in-container.png){target=_blank}
 
             [![vs-code-choose-repo-folder](../images/vs-code-choose-repo-folder.png "Choose Repository Folder")](../../images/vs-code-choose-repo-folder.png){target=_blank}
 
@@ -161,3 +161,5 @@ The setup process takes a little bit of work on the first pass.  Afterward, the 
 ## Now You're Ready
 
 :thumbsup: Your development environment is ready to go and that means it's time to get to the exam topics. Click [this link](section_1.md "Section 1.0") to check out **Section 1.0** exam topics and resources.
+
+--8<-- "includes/glossary.txt"
