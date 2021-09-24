@@ -1,0 +1,29 @@
+*[ACI]: Cisco Application Centric Infrastructure
+*[API]: Application Programming Interface
+*[APIC]: Application Policy Infrastructure Controller
+*[APIs]: Application Programming Interfaces
+*[CLI]: Command Line Interface
+*[CNI]: Converged Network Infrastructure
+*[DC]: Data Center
+*[DCAUTO]: Cisco Data Center Automation Exam (300-635)
+*[gNMI]: Google Network Management Interface
+*[HTTP]: Hypertext Transfer Protocol
+*[HTTPS]: Hypertext Transfer Protocol Secure
+*[IDE]: Integrated Development Environment
+*[IT]: Information Technology
+*[JSON]: JavaScript Object Notation
+*[MIT]: Management Information Tree
+*[PyPI]: Python Package Index
+*[REST]: Representational State Transfer
+*[RPC]: Remote Procedure Call
+*[SDK]: Software Development Kit
+*[SSH]: Secure Shell
+*[UI]: User Interface
+*[URI]: Uniform Resource Identifier
+*[URL]: Uniform Resource Locator
+*[TLS]: Transport Layer Security
+*[UCS]: Unified Compute System
+*[WWT]: World Wide Technology
+*[XML]: eXtensible Markup Language
+*[YAML]: YAML Ain't Markup Language
+*[YANG]: Yet Another Next Generation
