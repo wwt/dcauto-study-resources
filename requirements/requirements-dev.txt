@@ -1,5 +1,5 @@
 # Ansible
-ansible==2.10.7
+ansible
 
 # MkDocs Core
 mkdocs-material
