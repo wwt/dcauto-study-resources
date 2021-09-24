@@ -55,7 +55,7 @@
 3. :fontawesome-solid-terminal: **Your favorite terminal/shell program (iTerm, PowerShell, Bash, etc.).**
 
     !!! tip
-        In our exmaples, we use a combination of the [Visual Studio Code Integrated Terminal](https://code.visualstudio.com/docs/editor/integrated-terminal "Visual Studio Code Integrated Terminal"){target=_blank}, [PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7.1 "PowerShell Installation Instructions"){target=_blank} and the [macOS Terminal application](https://support.apple.com/guide/terminal/welcome/mac "macOS Terminal Application"){target=_blank}.
+        In our examples, we use a combination of the [Visual Studio Code Integrated Terminal](https://code.visualstudio.com/docs/editor/integrated-terminal "Visual Studio Code Integrated Terminal"){target=_blank}, [PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7.1 "PowerShell Installation Instructions"){target=_blank} and the [macOS Terminal application](https://support.apple.com/guide/terminal/welcome/mac "macOS Terminal Application"){target=_blank}.
 
 ---
 

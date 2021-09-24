@@ -88,7 +88,7 @@ We do, however, remember exactly how we felt when these topics were new to us, a
 
 - Force yourself to use the skills you learn in this section frequently as you study the remaining exam topic sections.  Lots of repetition will help you build and retain these skills, and we think it is essential that these skills be second nature to you as you prepare for a certification exam.
 
-- The Cisco DevNet learning labs and WWT guided walkthroughs are excellent, repeatable learning tools that present content to you in small chunks.  You can repeat any or all of this content as many times as you like.
+- The Cisco DevNet learning labs and WWT guided walk-through exercises are excellent, repeatable learning tools that present content to you in small chunks.  You can repeat any or all of this content as many times as you like.
 
 - Our favorite resource to learn this material is Pluralsight.  The author of the courses we recommend, Nick Russo, does an absolutely fantastic job of explaining core concepts in a way that we could easily consume.  Yes, Pluralsight is a paid resource and we have our own subscriptions.  In our opinion, the monthly cost is well worth the price.
 
