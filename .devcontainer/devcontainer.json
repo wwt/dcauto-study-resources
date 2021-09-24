@@ -8,19 +8,22 @@
         "davidanson.vscode-markdownlint",
         "docsmsft.docs-markdown",
         "docsmsft.docs-yaml",
+        "github.vscode-pull-request-github",
         "ms-azuretools.vscode-docker",
         "ms-python.python",
         "ms-python.vscode-pylance",
         "ms-vscode.powershell",
         "redhat.ansible",
         "redhat.vscode-yaml",
+        "streetsidesoftware.code-spell-checker"
     ],
     "forwardPorts": [
         8000,
         8888
     ],
-    "postStartCommand": ["./requirements/server-launch.sh"],
+    "postAttachCommand": ["./requirements/server-launch.sh"],
     "settings": {
+        "#terminal.integrated.defaultProfile.linux#": "/bin/bash",
         "[yaml]": {
             "editor.insertSpaces": true,
             "editor.tabSize": 2,
