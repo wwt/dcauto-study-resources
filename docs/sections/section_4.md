@@ -25,10 +25,11 @@ This section of the exam topics primarily focuses on the programmability feature
 ### :material-code-json: Cisco DevNet
 
 ??? abstract "Learning Labs"
-    - [ACI Programmability](https://developer.cisco.com/learning/tracks/aci-programmability "ACI Programmability Learning Path"){target=_blank}
-        - **Introduction to ACI Programmability Module** - All Labs
-        - **Intermediate ACI Programmability Module** - All Labs
-        - **Introduction to ACI and Ansible Module** -  All Labs
+    - [UCS Programmability](https://developer.cisco.com/learning/tracks/ucs-compute-prog "UCS Programmability Learning Path"){target=_blank}
+        - **UCS PowerTool Introduction** - All Labs
+        - **UCS Python SDK Introduction** - All Labs
+        - **UCS PowerTool and UCS Python Intermediate** -  All Labs
+        - **Cisco Intersight REST API** - All Labs
 
 ---
 
@@ -37,28 +38,22 @@ This section of the exam topics primarily focuses on the programmability feature
 #### :fontawesome-solid-laptop-code: Cisco Live
 
 ??? abstract "On-Demand Library"
-    - [Programmability and Automation on Cisco Nexus Platforms - DEVNET-1467](https://www.ciscolive.com/global/on-demand-library.html?#/session/1511296148544001AtHE "Programmability and Automation on Cisco Nexus Platforms - DEVNET-1467"){target=_blank}
-
----
-
-#### :fontawesome-solid-laptop-code: Cisco YouTube
-
-??? abstract "Cisco Live"
-    - [Mastering ACI Programmability and Automating Common DC Tasks](https://www.youtube.com/watch?v=8K6MHPZmc5A "Mastering ACI Programmability and Automating Common DC Tasks"){target=_blank}
-
-??? abstract "NetDevOps Live"
-    - [Exploring the ACI networking plugin for Kubernetes](https://www.youtube.com/watch?v=9d0mzB5jUP0 "Exploring the ACI networking plugin for Kubernetes"){target=_blank}
+    - [Automating Your Cisco UCS with Python - Managing Your Infrastructure as Code - DEVNET-1611](https://www.ciscolive.com/global/on-demand-library.html#/session/1510617043449001nob5 "Automating Your Cisco UCS with Python - Managing Your Infrastructure as Code - DEVNET-1611"){target=_blank}
+    - [Cisco UCS & Cisco Intersight - Programmability Automation & Orchestration Overview - DGTL-BRKPRG-2432](https://www.ciscolive.com/global/on-demand-library.html#/session/1573153551744001JcLV "Cisco UCS & Cisco Intersight - Programmability Automation & Orchestration Overview - DGTL-BRKPRG-2432"){target=_blank}
+    - [Creating, Distributing, Maintaining and Utilizing the Cisco Intersight and Cisco UCS Ansible Collections - DGTL-DEVNET-2700](https://www.ciscolive.com/global/on-demand-library.html#/session/1582806029472001wWax "Creating, Distributing, Maintaining and Utilizing the Cisco Intersight and Cisco UCS Ansible Collections - DGTL-DEVNET-2700"){target=_blank}
+    - [UCS Manager Automation with Ansible - DEVNET-1586](https://www.ciscolive.com/global/on-demand-library.html#/session/1542224338659001rvdb "UCS Manager Automation with Ansible - DEVNET-1586"){target=_blank}
+    - [Cisco UCS PowerTool - Deploy at Scale - DEVNET-2562](https://www.ciscolive.com/global/on-demand-library.html#/session/1542224343090001rMoa "Cisco UCS PowerTool - Deploy at Scale - DEVNET-2562"){target=_blank}
 
 ---
 
 ### :fontawesome-regular-keyboard: Hands-On Learning
 
 ??? abstract "DevNet Sandbox Labs"
-    - [DevNet Always-On ACI Sandbox](https://sandboxapicdc.cisco.com "DevNet Always-On ACI Sandbox"){target=_blank}
-        - [Sandbox Access Instructions](https://devnetsandbox.cisco.com/RM/Diagram/Index/5a229a7c-95d5-4cfd-a651-5ee9bc1b30e2?diagramType=Topology "Sandbox Access Instructions"){target=_blank}
+    - [DevNet UCS Management Sandbox](https://devnetsandbox.cisco.com/RM/Diagram/Index/3323b7b0-b70b-4b1e-a929-6bdbff3aac8a?diagramType=Topology "DevNet UCS Management Sandbox"){target=_blank}
+    - [UCS Platform Emulator](https://community.cisco.com/t5/unified-computing-system/ucs-platform-emulator-downloads-ucspe-4-1-2cpe1-ucspe-4-0-4epe1/ta-p/3648177 "UCS Platform Emulator"){target=_blank}
+    - [DevNet Cisco Intersight Sandbox](https://devnetsandbox.cisco.com/RM/Diagram/Index/a63216d2-e891-4856-9f27-309ca61ec862?diagramType=Topology "DevNet Cisco Intersight Sandbox"){target=_blank}
 
 ??? abstract "Development Environment Resources"
-
     !!! attention
         - The links below require that the local Jupyter Lab server is active and listening on [**http://localhost:8888**](http://localhost:8888 "Jupyter Lab Server"){target=_blank}
             - The Visual Studio Code Development Environment automatically activates the Jupyter Lab server.
