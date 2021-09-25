@@ -1,0 +1,2147 @@
+{
+	"info": {
+		"_postman_id": "0450dd6a-c799-4b1d-afde-f6bec602cae5",
+		"name": "Cisco Intersight",
+		"description": "## Cisco Intersight Postman Collection\n\nThe Cisco Intersight Postman Collection provides a subset of all Intersight calls. Cisco Intersight is based on the OpenAPI specification and as such a Postman collection can be created directly from the OpenAPI specification.\n\nHowever the OpenAPI specification does not provide the pre-requestion operation of siging the request.  A request signed with the user's API Key ID and their Secret Key is needed to authenticate the request.  Additionally, the pre-request script pre-processes the Body and URL Postman variable prior to signing the request.\n\nThe pre-request script requires two variables, that must be in the current Postman environment and named exactly as follows;\n\n**api-key** - which is available in the Intersight Web interafce after a successful API Key creation.\n**secret-key** - which is the complete text of the SecretKet.txt file that is downloaded after a successful API Key creation.\n\nWith defined API Key environment variables the provided calls will work within the limits of your Intersight account. With respect to licensing and account capabilities.\n\nThe collection also contains some basic test that determine the success or failure of the request and is the request completed in a certain amount of time.\n\nSeveral of the requests contain post-request tests to perform various activities\n\n- Update the Postman console\n- Set Environment variables\n- Unset Environment variables\n\nCisco DevNet provides several Learning Labs and an Inersight Sandbox to get you started using these Postman Calls.\n\n## Cisco DevNet resources\n\n- [Cisco Intersight DevNet Learning Labs ](https://developer.cisco.com/learning/modules/intersight-rest-api)\n\n- [Cisco Intersight DevNet Sandbox](https://devnetsandbox.cisco.com/RM/Diagram/Index/a63216d2-e891-4856-9f27-309ca61ec862?diagramType=Topology)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Server Profile and Resources",
+			"item": [
+				{
+					"name": "Create Server VMedia Policy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "814243f6-bc0f-45da-bf36-30a27d57b27a",
+								"exec": [
+									"var respJsonData = JSON.parse(responseBody)",
+									"",
+									"if (respJsonData.Moid) {",
+									"  pm.globals.set(\"server-vmedia-policy\", respJsonData.Moid)",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Signature {{httpsig}}"
+							},
+							{
+								"key": "Digest",
+								"value": "{{computed-digest}}"
+							},
+							{
+								"key": "Date",
+								"value": "{{current-date}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Name\":\"server-vmedia-policy\",\n\t\"Mappings\":[\n\t\t{\n\t\t\t\"AuthenticationProtocol\":\"none\",\n\t\t\t\"DeviceType\":\"cdd\",\n\t\t\t\"HostName\":\"172.22.250.163\",\n\t\t\t\"MountOptions\":\"\",\n\t\t\t\"MountProtocol\":\"http\",\n\t\t\t\"RemoteFile\":\"Vmware-ESXi-6.5a.0-4887370-Custom-Cisco-6.5.0.2-LD.iso\",\n\t\t\t\"RemotePath\":\"/\",\n\t\t\t\"Username\":\"\",\n\t\t\t\"VolumeName\":\"ESXi-6.5a-LD\"\n\t\t}\n\t]\n}"
+						},
+						"url": {
+							"raw": "https://www.intersight.com/api/v1/vmedia/Policies",
+							"protocol": "https",
+							"host": [
+								"www",
+								"intersight",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"vmedia",
+								"Policies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve Server VMedia Policy by Moid",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Signature {{httpsig}}"
+							},
+							{
+								"key": "Digest",
+								"value": "{{computed-digest}}"
+							},
+							{
+								"key": "Date",
+								"value": "{{current-date}}"
+							}
+						],
+						"url": {
+							"raw": "https://intersight.com/api/v1/vmedia/Policies/{{server-vmedia-policy}}",
+							"protocol": "https",
+							"host": [
+								"intersight",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"vmedia",
+								"Policies",
+								"{{server-vmedia-policy}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Server Boot Policy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a2a7cd4e-98fc-41df-8206-dcfc8c41b6f5",
+								"exec": [
+									"var respJsonData = JSON.parse(responseBody)",
+									"",
+									"if (respJsonData.Moid) {",
+									"  pm.globals.set(\"server-boot-from-local-disk-policy\", respJsonData.Moid)",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Signature {{httpsig}}"
+							},
+							{
+								"key": "Digest",
+								"value": "{{computed-digest}}"
+							},
+							{
+								"key": "Date",
+								"value": "{{current-date}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Name\":\"server-boot-from-local-disk-policy\",\n\t\"Description\":\"Boot Server from Local Disk\",\n\t\"BootDevices\":[\n\t\t{\n\t\t\t\"ObjectType\":\"boot.LocalDisk\",\n\t\t\t\"Enabled\":true,\"Name\":\"boot\",\n\t\t\t\"Slot\":\"SAS\"\n\t\t},\n\t\t{\n\t\t\t\"ObjectType\":\"boot.LocalCdd\",\n\t\t\t\"Enabled\":true,\"Name\":\"vmedia\"\n\t\t}\n\t]\n}"
+						},
+						"url": {
+							"raw": "https://intersight.com/api/v1/boot/PrecisionPolicies",
+							"protocol": "https",
+							"host": [
+								"intersight",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"boot",
+								"PrecisionPolicies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve Server Boot Policy by Moid",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Signature {{httpsig}}"
+							},
+							{
+								"key": "Digest",
+								"value": "{{computed-digest}}"
+							},
+							{
+								"key": "Date",
+								"value": "{{current-date}}"
+							}
+						],
+						"url": {
+							"raw": "https://intersight.com/api/v1/boot/PrecisionPolicies/{{server-boot-from-local-disk-policy}}",
+							"protocol": "https",
+							"host": [
+								"intersight",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"boot",
+								"PrecisionPolicies",
+								"{{server-boot-from-local-disk-policy}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Server NTP Policy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "aafba98d-8f40-4a79-a566-a968fb13507e",
+								"exec": [
+									"var respJsonData = JSON.parse(responseBody)",
+									"",
+									"if (respJsonData.Moid) {",
+									"  pm.globals.set(\"server-ntp-policy\", respJsonData.Moid)",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Signature {{httpsig}}"
+							},
+							{
+								"key": "Digest",
+								"value": "{{computed-digest}}"
+							},
+							{
+								"key": "Date",
+								"value": "{{current-date}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"Name\":\"server-ntp-policy\",\n  \"Description\":\"NTP Policy for ntp.org\",\n  \"Enabled\":true,\n  \"NtpServers\":[\n  \t\"pool.ntp.org\"\n  \t],\n  \"Tags\":[]\n}"
+						},
+						"url": {
+							"raw": "https://intersight.com/api/v1/ntp/Policies",
+							"protocol": "https",
+							"host": [
+								"intersight",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"ntp",
+								"Policies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve NTP Policy by Moid",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Signature {{httpsig}}"
+							},
+							{
+								"key": "Digest",
+								"value": "{{computed-digest}}"
+							},
+							{
+								"key": "Date",
+								"value": "{{current-date}}"
+							}
+						],
+						"url": {
+							"raw": "https://intersight.com/api/v1/ntp/Policies/{{server-ntp-policy}}",
+							"protocol": "https",
+							"host": [
+								"intersight",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"ntp",
+								"Policies",
+								"{{server-ntp-policy}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create 'server-01' Server Profile",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "4d585908-3e95-4608-bbed-d76d2edfdccd",
+								"exec": [
+									"var respJsonData = JSON.parse(responseBody)",
+									"",
+									"if (respJsonData.Moid) {",
+									"  pm.globals.set(\"server-server-profile-01\", respJsonData.Moid)",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Signature {{httpsig}}"
+							},
+							{
+								"key": "Digest",
+								"value": "{{computed-digest}}"
+							},
+							{
+								"key": "Date",
+								"value": "{{current-date}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Name\":\"server-01\",\n\t\"Description\":\"Server Profile for a Server\",\n\t\"Tags\":[]\n}"
+						},
+						"url": {
+							"raw": "https://www.intersight.com/api/v1/server/Profiles",
+							"protocol": "https",
+							"host": [
+								"www",
+								"intersight",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"server",
+								"Profiles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve 'server-01' Server Profile by Moid",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Signature {{httpsig}}"
+							},
+							{
+								"key": "Digest",
+								"value": "{{computed-digest}}"
+							},
+							{
+								"key": "Date",
+								"value": "{{current-date}}"
+							}
+						],
+						"url": {
+							"raw": "https://intersight.com/api/v1/server/Profiles/{{server-server-profile-01}}",
+							"protocol": "https",
+							"host": [
+								"intersight",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"server",
+								"Profiles",
+								"{{server-server-profile-01}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create 'server-02' Server Profile",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "4d585908-3e95-4608-bbed-d76d2edfdccd",
+								"exec": [
+									"var respJsonData = JSON.parse(responseBody)",
+									"",
+									"if (respJsonData.Moid) {",
+									"  pm.globals.set(\"server-server-profile-02\", respJsonData.Moid)",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Signature {{httpsig}}"
+							},
+							{
+								"key": "Digest",
+								"value": "{{computed-digest}}"
+							},
+							{
+								"key": "Date",
+								"value": "{{current-date}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Name\":\"server-02\",\n\t\"Description\":\"Server Profile for a Server\",\n\t\"Tags\":[]\n}"
+						},
+						"url": {
+							"raw": "https://www.intersight.com/api/v1/server/Profiles",
+							"protocol": "https",
+							"host": [
+								"www",
+								"intersight",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"server",
+								"Profiles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve 'server-02' Server Profile by Moid",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Signature {{httpsig}}"
+							},
+							{
+								"key": "Digest",
+								"value": "{{computed-digest}}"
+							},
+							{
+								"key": "Date",
+								"value": "{{current-date}}"
+							}
+						],
+						"url": {
+							"raw": "https://intersight.com/api/v1/server/Profiles/{{server-server-profile-02}}",
+							"protocol": "https",
+							"host": [
+								"intersight",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"server",
+								"Profiles",
+								"{{server-server-profile-02}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update vmedia/Profiles Profiles list with 'server-01' and 'server-02' Server Profiles",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "814243f6-bc0f-45da-bf36-30a27d57b27a",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "f18fde3b-23f6-4b6d-a3ec-3ec0cb7be1c0",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Signature {{httpsig}}"
+							},
+							{
+								"key": "Digest",
+								"value": "{{computed-digest}}"
+							},
+							{
+								"key": "Date",
+								"value": "{{current-date}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n\t{\n\t\t\"ObjectType\":\"server.Profile\",\n\t\t\"Moid\": \"{{server-server-profile-01}}\"\n\t\t\n\t},\n\t{\n\t\t\"ObjectType\":\"server.Profile\",\n\t\t\"Moid\": \"{{server-server-profile-02}}\"\n\t\t\n\t}\n]"
+						},
+						"url": {
+							"raw": "https://intersight.com/api/v1/vmedia/Policies/{{server-vmedia-policy}}/Profiles",
+							"protocol": "https",
+							"host": [
+								"intersight",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"vmedia",
+								"Policies",
+								"{{server-vmedia-policy}}",
+								"Profiles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Boot/PrecisionPolicies Profiles with 'server-01' and 'server-02' Server Profiles",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "814243f6-bc0f-45da-bf36-30a27d57b27a",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "f18fde3b-23f6-4b6d-a3ec-3ec0cb7be1c0",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Signature {{httpsig}}"
+							},
+							{
+								"key": "Digest",
+								"value": "{{computed-digest}}"
+							},
+							{
+								"key": "Date",
+								"value": "{{current-date}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n\t{\n\t\t\"ObjectType\":\"server.Profile\",\n\t\t\"Moid\": \"{{server-server-profile-01}}\"\n\t\t\n\t},\n\t{\n\t\t\"ObjectType\":\"server.Profile\",\n\t\t\"Moid\": \"{{server-server-profile-02}}\"\n\t\t\n\t}\n]"
+						},
+						"url": {
+							"raw": "https://intersight.com/api/v1/boot/PrecisionPolicies/{{server-boot-from-local-disk-policy}}/Profiles",
+							"protocol": "https",
+							"host": [
+								"intersight",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"boot",
+								"PrecisionPolicies",
+								"{{server-boot-from-local-disk-policy}}",
+								"Profiles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update NTP/Policies Profiles files with 'server-01' and 'server-02' Server Profiles",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "814243f6-bc0f-45da-bf36-30a27d57b27a",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "f18fde3b-23f6-4b6d-a3ec-3ec0cb7be1c0",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Signature {{httpsig}}"
+							},
+							{
+								"key": "Digest",
+								"value": "{{computed-digest}}"
+							},
+							{
+								"key": "Date",
+								"value": "{{current-date}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n\t{\n\t\t\"ObjectType\":\"server.Profile\",\n\t\t\"Moid\": \"{{server-server-profile-01}}\"\n\t\t\n\t},\n\t{\n\t\t\"ObjectType\":\"server.Profile\",\n\t\t\"Moid\": \"{{server-server-profile-02}}\"\n\t\t\n\t}\n]"
+						},
+						"url": {
+							"raw": "https://intersight.com/api/v1/ntp/Policies/{{server-ntp-policy}}/Profiles",
+							"protocol": "https",
+							"host": [
+								"intersight",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"ntp",
+								"Policies",
+								"{{server-ntp-policy}}",
+								"Profiles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve Server RackUnit Resource 'server-01' by UserLabel",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "dc287cff-79ed-41cb-bfd7-3cf7c029d444",
+								"exec": [
+									"var respJsonData = JSON.parse(responseBody)",
+									"",
+									"if (respJsonData.Results[0].Moid) {",
+									"  pm.globals.set(\"server-compute-resource\", respJsonData.Results[0].Moid)",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Signature {{httpsig}}"
+							},
+							{
+								"key": "Digest",
+								"value": "{{computed-digest}}"
+							},
+							{
+								"key": "Date",
+								"value": "{{current-date}}"
+							}
+						],
+						"url": {
+							"raw": "https://intersight.com/api/v1/compute/RackUnits?$filter=UserLabel eq 'server-01'",
+							"protocol": "https",
+							"host": [
+								"intersight",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"compute",
+								"RackUnits"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "UserLabel eq 'server-01'"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Assign Compute Resource to Server Profile 'server-01'",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "814243f6-bc0f-45da-bf36-30a27d57b27a",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Signature {{httpsig}}"
+							},
+							{
+								"key": "Digest",
+								"value": "{{computed-digest}}"
+							},
+							{
+								"key": "Date",
+								"value": "{{current-date}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"AssignedServer\": \"{{server-compute-resource}}\"\n}\n"
+						},
+						"url": {
+							"raw": "https://intersight.com/api/v1/server/Profiles/{{server-server-profile-01}}",
+							"protocol": "https",
+							"host": [
+								"intersight",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"server",
+								"Profiles",
+								"{{server-server-profile-01}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deploy Server Profile 'server-01'",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "814243f6-bc0f-45da-bf36-30a27d57b27a",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Signature {{httpsig}}"
+							},
+							{
+								"key": "Digest",
+								"value": "{{computed-digest}}"
+							},
+							{
+								"key": "Date",
+								"value": "{{current-date}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Action\": \"Deploy\"\n}\n"
+						},
+						"url": {
+							"raw": "https://intersight.com/api/v1/server/Profiles/{{server-server-profile-01}}",
+							"protocol": "https",
+							"host": [
+								"intersight",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"server",
+								"Profiles",
+								"{{server-server-profile-01}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UnAssign Compute Resource to Server Profile 'server-01'",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "814243f6-bc0f-45da-bf36-30a27d57b27a",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Signature {{httpsig}}"
+							},
+							{
+								"key": "Digest",
+								"value": "{{computed-digest}}"
+							},
+							{
+								"key": "Date",
+								"value": "{{current-date}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Action\": \"Unassign\"\n}\n"
+						},
+						"url": {
+							"raw": "https://intersight.com/api/v1/server/Profiles/{{server-server-profile-01}}",
+							"protocol": "https",
+							"host": [
+								"intersight",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"server",
+								"Profiles",
+								"{{server-server-profile-01}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Replace NTP/Policies Profiles list with 'server-01' Server Profile",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "814243f6-bc0f-45da-bf36-30a27d57b27a",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Signature {{httpsig}}"
+							},
+							{
+								"key": "Digest",
+								"value": "{{computed-digest}}"
+							},
+							{
+								"key": "Date",
+								"value": "{{current-date}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Profiles\": [\n\t\t{\n\t\t\t\"ObjectType\":\"server.Profile\",\n\t\t\t\"Moid\":\"{{server-server-profile-01}}\",\n\t\t\t\"link\": \"https://www.intersight.com/api/v1/server/Profiles/{{server-server-profile-01}}\"\n\t\t}\n\t]\n}\n"
+						},
+						"url": {
+							"raw": "https://intersight.com/api/v1/ntp/Policies/{{server-ntp-policy}}",
+							"protocol": "https",
+							"host": [
+								"intersight",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"ntp",
+								"Policies",
+								"{{server-ntp-policy}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Device Claiming",
+			"item": [
+				{
+					"name": "Device Claim",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "aafba98d-8f40-4a79-a566-a968fb13507e",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Signature {{httpsig}}"
+							},
+							{
+								"key": "Digest",
+								"value": "{{computed-digest}}"
+							},
+							{
+								"key": "Date",
+								"value": "{{current-date}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"SecurityToken\": \"{{security-token}}\",\n  \"SerialNumber\": \"{{serial-number}}\"\n}"
+						},
+						"url": {
+							"raw": "https://intersight.com/api/v1/asset/DeviceClaims",
+							"protocol": "https",
+							"host": [
+								"intersight",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"asset",
+								"DeviceClaims"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Use this call to claim a device"
+		},
+		{
+			"name": "Api Key Managment",
+			"item": [
+				{
+					"name": "API Key Creation",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "aafba98d-8f40-4a79-a566-a968fb13507e",
+								"exec": [
+									"var respJsonData = JSON.parse(responseBody)",
+									"",
+									"if (respJsonData.Moid) {",
+									"  pm.globals.set(\"api-key\", respJsonData.Moid)",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Signature {{httpsig}}"
+							},
+							{
+								"key": "Digest",
+								"value": "{{computed-digest}}"
+							},
+							{
+								"key": "Date",
+								"value": "{{current-date}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Purpose\": \"API Key Create\"\n}"
+						},
+						"url": {
+							"raw": "https://intersight.com/api/v1/iam/ApiKeys",
+							"protocol": "https",
+							"host": [
+								"intersight",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"iam",
+								"ApiKeys"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "API Key Update",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "aafba98d-8f40-4a79-a566-a968fb13507e",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Signature {{httpsig}}"
+							},
+							{
+								"key": "Digest",
+								"value": "{{computed-digest}}"
+							},
+							{
+								"key": "Date",
+								"value": "{{current-date}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"Purpose\": \"API Key Update\"\n}"
+						},
+						"url": {
+							"raw": "https://intersight.com/api/v1/iam/ApiKeys/{{api-key}}",
+							"protocol": "https",
+							"host": [
+								"intersight",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"iam",
+								"ApiKeys",
+								"{{api-key}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "API Key Delete",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "aafba98d-8f40-4a79-a566-a968fb13507e",
+								"exec": [
+									"pm.globals.unset(\"api-key\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Signature {{httpsig}}"
+							},
+							{
+								"key": "Digest",
+								"value": "{{computed-digest}}"
+							},
+							{
+								"key": "Date",
+								"value": "{{current-date}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://intersight.com/api/v1/iam/ApiKeys/{{api-key}}",
+							"protocol": "https",
+							"host": [
+								"intersight",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"iam",
+								"ApiKeys",
+								"{{api-key}}"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Use these calls to manage Intersight API Keys"
+		},
+		{
+			"name": "Any Query",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ace0e7ae-0f92-4789-b6dd-24d17e67ca56",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Signature {{httpsig}}"
+					},
+					{
+						"key": "Digest",
+						"value": "{{computed-digest}}"
+					},
+					{
+						"key": "Date",
+						"value": "{{current-date}}"
+					}
+				],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Compute / PhysicalSummaries",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "dc287cff-79ed-41cb-bfd7-3cf7c029d444",
+						"exec": [
+							"if (responseBody.length > 0) {",
+							"  var jsonData = JSON.parse(responseBody);",
+							"  for (var i = 0; i < jsonData.Results.length; i++) {",
+							"    var object = jsonData.Results[i];",
+							"    console.log(",
+							"        object.Dn,",
+							"        \"AvailableMemory: \" + object.AvailableMemory,",
+							"        \"NumCpus: \" + object.NumCpus);",
+							"  }",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Signature {{httpsig}}"
+					},
+					{
+						"key": "Digest",
+						"value": "{{computed-digest}}"
+					},
+					{
+						"key": "Date",
+						"value": "{{current-date}}"
+					}
+				],
+				"url": {
+					"raw": "https://intersight.com/api/v1/compute/PhysicalSummaries",
+					"protocol": "https",
+					"host": [
+						"intersight",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"compute",
+						"PhysicalSummaries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Compute / RackUnits",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b79e7a35-b399-48f2-bbc1-95d0088c4721",
+						"exec": [
+							"var rackunits = [];",
+							"",
+							"if (responseBody.length > 0) {",
+							"  var jsonData = JSON.parse(responseBody);",
+							"  for (var i = 0; i < jsonData.Results.length; i++) {",
+							"    var object = jsonData.Results[i];",
+							"    rackunits.push(object.Moid)",
+							"    console.log(",
+							"        object.Dn,",
+							"        \"AvailableMemory: \" + object.AvailableMemory,",
+							"        \"NumCpus: \" + object.NumCpus);",
+							"  }",
+							"}",
+							"pm.globals.set(\"rackunits\", JSON.stringify(rackunits));",
+							"pm.globals.set(\"rackunit_index\", 0)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Signature {{httpsig}}"
+					},
+					{
+						"key": "Digest",
+						"value": "{{computed-digest}}"
+					},
+					{
+						"key": "Date",
+						"value": "{{current-date}}"
+					}
+				],
+				"url": {
+					"raw": "https://intersight.com/api/v1/compute/RackUnits",
+					"protocol": "https",
+					"host": [
+						"intersight",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"compute",
+						"RackUnits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Single Compute / RackUnit",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a0bb7258-dc37-4906-90ac-12ab000427c0",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "2f7ee53d-c40d-4e7f-8de6-d6dfad9e091c",
+						"exec": [
+							"// Fetch the variables set in \"Get Compute RackUnitsTenants\"",
+							"",
+							"rackunits = JSON.parse(pm.variables.get('rackunits'))",
+							"index = parseInt(pm.variables.get('rackunit_index'))",
+							"pm.globals.set('rackunit_moid', rackunits[index])",
+							"",
+							"// If we are *not* on the last item in the list,",
+							"// increment the index and set the next request ",
+							"// back to this one. Otherwise end the loop.",
+							"",
+							"if (index + 1 < rackunits.length){",
+							"    pm.globals.set('rackunit_index', index + 1)",
+							"    postman.setNextRequest('GET Single Compute / RackUnit')",
+							"}else{",
+							"    postman.setNextRequest(null)",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Signature {{httpsig}}"
+					},
+					{
+						"key": "Digest",
+						"value": "{{computed-digest}}"
+					},
+					{
+						"key": "Date",
+						"value": "{{current-date}}"
+					}
+				],
+				"url": {
+					"raw": "https://intersight.com/api/v1/compute/RackUnits/{{rackunit_moid}}",
+					"protocol": "https",
+					"host": [
+						"intersight",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"compute",
+						"RackUnits",
+						"{{rackunit_moid}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET NTP Policy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Signature {{httpsig}}"
+					},
+					{
+						"key": "Digest",
+						"value": "{{computed-digest}}"
+					},
+					{
+						"key": "Date",
+						"value": "{{current-date}}"
+					}
+				],
+				"url": {
+					"raw": "https://intersight.com/api/v1/ntp/Policies",
+					"protocol": "https",
+					"host": [
+						"intersight",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"ntp",
+						"Policies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST NTP Policy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "662374a2-8323-45fc-bd0e-241c4fcd53bc",
+						"exec": [
+							"var respJsonData = JSON.parse(responseBody)",
+							"",
+							"if (respJsonData.Moid) {",
+							"  pm.globals.set(\"ntp-policy\", respJsonData.Moid)",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Signature {{httpsig}}"
+					},
+					{
+						"key": "Digest",
+						"value": "{{computed-digest}}"
+					},
+					{
+						"key": "Date",
+						"value": "{{current-date}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Enabled\":true,\n\t\"Name\": \"ntp-policy\",\n\t\"Description\": \"NTP Policy for ntp.org\",\n\t\"NtpServers\": [ \"pool.ntp.org\" ],\n\t\"Tags\":[]\n}"
+				},
+				"url": {
+					"raw": "https://intersight.com/api/v1/ntp/Policies",
+					"protocol": "https",
+					"host": [
+						"intersight",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"ntp",
+						"Policies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Intiate Firmware Upgrade",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "662374a2-8323-45fc-bd0e-241c4fcd53bc",
+						"exec": [
+							"var respJsonData = JSON.parse(responseBody)",
+							"",
+							"if (respJsonData.Moid) {",
+							"  pm.globals.set(\"ntp-policy\", respJsonData.Moid)",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Signature {{httpsig}}"
+					},
+					{
+						"key": "Digest",
+						"value": "{{computed-digest}}"
+					},
+					{
+						"key": "Date",
+						"value": "{{current-date}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"DirectDownload\":{},\n\t\"NetworkShare\":{\n\t\t\"MapType\":\"www\",\n\t\t\"Upgradeoption\":\"nw_upgrade_full\",\n\t\t\"HttpServer\":{\n\t\t\t\"LocationLink\":\"10.10.10.10/ucs-c240m4-huu-4.1.1f.iso\"\n\t\t}\n\t},\n\t\"UpgradeType\":\"network_upgrade\",\n\t\"Server\":\"5e21ec636176752d31b17ff8\"\n}"
+				},
+				"url": {
+					"raw": "https://www.intersight.com/api/v1/firmware/Upgrades",
+					"protocol": "https",
+					"host": [
+						"www",
+						"intersight",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"firmware",
+						"Upgrades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET NTP Policy by Moid",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Signature {{httpsig}}"
+					},
+					{
+						"key": "Digest",
+						"value": "{{computed-digest}}"
+					},
+					{
+						"key": "Date",
+						"value": "{{current-date}}"
+					}
+				],
+				"url": {
+					"raw": "https://intersight.com/api/v1/ntp/Policies/{{ntp-policy}}",
+					"protocol": "https",
+					"host": [
+						"intersight",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"ntp",
+						"Policies",
+						"{{ntp-policy}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE NTP Policy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "662374a2-8323-45fc-bd0e-241c4fcd53bc",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Signature {{httpsig}}"
+					},
+					{
+						"key": "Digest",
+						"value": "{{computed-digest}}"
+					},
+					{
+						"key": "Date",
+						"value": "{{current-date}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"NtpServers\":[\n  \t\"pool.ntp.org\",\n  \t\"10.10.10.30\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "https://intersight.com/api/v1/ntp/Policies/{{ntp-policy}}",
+					"protocol": "https",
+					"host": [
+						"intersight",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"ntp",
+						"Policies",
+						"{{ntp-policy}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE NTP Policy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1e022489-7373-4dec-b238-7b043ac3e008",
+						"exec": [
+							"pm.globals.unset(\"ntp-policy\");"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Signature {{httpsig}}"
+					},
+					{
+						"key": "Digest",
+						"value": "{{computed-digest}}"
+					},
+					{
+						"key": "Date",
+						"value": "{{current-date}}"
+					}
+				],
+				"url": {
+					"raw": "https://intersight.com/api/v1/ntp/Policies/{{ntp-policy}}",
+					"protocol": "https",
+					"host": [
+						"intersight",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"ntp",
+						"Policies",
+						"{{ntp-policy}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Creation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Signature {{httpsig}}",
+						"type": "text"
+					},
+					{
+						"key": "Digest",
+						"value": "{{computed-digest}}",
+						"type": "text"
+					},
+					{
+						"key": "Date",
+						"value": "{{current-date}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Email\":\"person@email.com\",\n\t\"Idpreference\": {\n\t\t\"Selector\": \"$filter=Name eq 'Cisco'\"\n\t},\n\t\"Permissions\": [\n\t\t{\n\t\t\t\"Selector\": \"$filter=Name eq 'Device Administrator'\"\n\t\t},\n\t\t{\n\t\t\t\"Selector\": \"$filter=Name eq 'HyperFlex Cluster Administrator'\"\n\t\t}\n\t]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.intersight.com/api/v1/iam/Users",
+					"protocol": "https",
+					"host": [
+						"www",
+						"intersight",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"iam",
+						"Users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Query",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Signature {{httpsig}}",
+						"type": "text"
+					},
+					{
+						"key": "Digest",
+						"value": "{{computed-digest}}",
+						"type": "text"
+					},
+					{
+						"key": "Date",
+						"value": "{{current-date}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.intersight.com/api/v1/iam/Users",
+					"protocol": "https",
+					"host": [
+						"www",
+						"intersight",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"iam",
+						"Users"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "1f10ec49-ace0-4628-879a-3f93dee1db1b",
+				"type": "text/javascript",
+				"exec": [
+					"function doHttpSig() {",
+					"",
+					"    var navigator = {}; //fake a navigator object for the lib",
+					"    var window    = {}; //fake a window object for the lib",
+					"    ",
+					"    eval(postman.getGlobalVariable(\"jsrsasign-js\")); //import javascript jsrsasign",
+					"    ",
+					"    ",
+					"    function computeHttpSignature(config, headerHash) {",
+					"      var template = 'keyId=\"${keyId}\",algorithm=\"${algorithm}\",headers=\"${headers}\",signature=\"${signature}\"',",
+					"          sig = template;",
+					"    ",
+					"      // compute sig here",
+					"      var signingBase = '';",
+					"      config.headers.forEach(function(h){",
+					"        if (signingBase !== '') { signingBase += '\\n'; }",
+					"        signingBase += h.toLowerCase() + \": \" + headerHash[h];",
+					"      });",
+					"      console.log(signingBase);",
+					"    ",
+					"      var kjursig = new KJUR.crypto.Signature({\"alg\": \"SHA256withRSA\"});",
+					"      kjursig.init(config.secretkey);",
+					"      kjursig.updateString(signingBase);",
+					"      var hash = kjursig.sign();",
+					"    ",
+					"      var signatureOptions = {",
+					"            keyId : config.keyId,",
+					"            algorithm: config.algorithm,",
+					"            headers: config.headers,",
+					"            signature : hextob64(hash) ",
+					"          };",
+					"    ",
+					"      // build sig string here",
+					"      Object.keys(signatureOptions).forEach(function(key) {",
+					"        var pattern = \"${\" + key + \"}\",",
+					"            value = (typeof signatureOptions[key] != 'string') ? signatureOptions[key].join(' ') : signatureOptions[key];",
+					"        sig = sig.replace(pattern, value);",
+					"      });",
+					"",
+					"      return sig;",
+					"    }",
+					"",
+					"    // Resolve all the Postman variables that are part of the request or URI",
+					"    let sdk = require('postman-collection');",
+					"    let newRequest = new sdk.Request(pm.request.toJSON());",
+					"    let resolvedRequest = newRequest.toObjectResolved(",
+					"        null, [pm.variables.toObject()], { ignoreOwnVariables: true }",
+					"        );",
+					"    ",
+					"    console.log(\"Resolved Request:\");",
+					"    console.log(resolvedRequest);",
+					"    ",
+					"    var body = \"\";",
+					"    if (",
+					"        request.method.toLowerCase() == \"get\" ||",
+					"        request.method.toLowerCase() == \"delete\" ) {",
+					"        body=\"\";",
+					"    } else {",
+					"        body=resolvedRequest.body.raw;",
+					"    }",
+					"",
+					"    var computedDigest = 'SHA-256=' + CryptoJS.enc.Base64.stringify(CryptoJS.SHA256(body));",
+					"    console.log(\"computedDigest:\");",
+					"    console.log(computedDigest);",
+					"    ",
+					"    var curDate = new Date().toGMTString();",
+					"    var targetUrl = \"/\" + resolvedRequest.url.path.join(\"/\");",
+					"    var host = resolvedRequest.url.host.join(\".\");",
+					"    ",
+					"    // Process Query String",
+					"    console.log(\"Query String:\");",
+					"    var queryString  = \"\";",
+					"    for (var i = 0; i < resolvedRequest.url.query.length; ++i) {",
+					"            console.log(\"Key:\" + resolvedRequest.url.query[i].key);",
+					"            console.log(\"Value: \" + resolvedRequest.url.query[i].value);",
+					"            ",
+					"            if (i>0) {",
+					"                queryString += '&';",
+					"            }",
+					"            // Append each URL encoded parameter to the targetUrl unencode ",
+					"            // 24 $ Dollar Sign",
+					"            // 28 ( Left Parenthesis ",
+					"            // 29 ) Right Parenthesis",
+					"            // 2B + Plus Sign",
+					"            // 2C , Comma",
+					"            // 2F / Forward Slash",
+					"            // 3A : Colon",
+					"            // 3D = Equals Sign",
+					"            // 40 @ At Sign",
+					"            //",
+					"            queryString += (",
+					"                resolvedRequest.url.query[i].key + \"=\" +",
+					"                encodeURIComponent(resolvedRequest.url.query[i].value).",
+					"                replace(/['()=]/g, escape).",
+					"                replace(/%(?:24|28|29|2B|2C|2F|3A|3D|40)/g, unescape)",
+					"            );",
+					"    }",
+					"    ",
+					"    if (queryString.length > 0) {",
+					"        queryStringTmp = queryString.replace(\"%25\",\"%\")",
+					"        targetUrl += \"?\" + queryStringTmp;",
+					"        console.log(\"Target Url: \" + targetUrl );",
+					"    }",
+					"    ",
+					"    var headerHash = {",
+					"          date : curDate,",
+					"          digest : computedDigest,",
+					"          host : host,",
+					"          '(request-target)' : request.method.toLowerCase() + ' ' + targetUrl.toLowerCase()",
+					"        };",
+					"    ",
+					"    console.log(headerHash);",
+					"    ",
+					"    var configHash = {",
+					"          algorithm : 'rsa-sha256',",
+					"          keyId : environment['api-key-id'],",
+					"          secretkey : environment['secret-key'],",
+					"          headers : [ '(request-target)', 'date', 'digest', 'host' ]",
+					"        };",
+					"    var sig = computeHttpSignature(configHash, headerHash);",
+					"    ",
+					"    postman.setEnvironmentVariable('httpsig', sig);",
+					"    postman.setEnvironmentVariable('computed-digest', computedDigest);",
+					"    postman.setEnvironmentVariable(\"current-date\", curDate);",
+					"    postman.setEnvironmentVariable(\"target-url\", targetUrl);",
+					"}",
+					"",
+					"if (globals['jsrsasign-js'] === undefined || globals['jsrsasign-js'] == \"\") {",
+					"    console.log(\"jsrasign library not already downloaded. Downloading now. \");",
+					"    ",
+					"    pm.sendRequest({",
+					"        url: \"http://kjur.github.io/jsrsasign/jsrsasign-latest-all-min.js\",",
+					"        method: \"GET\",",
+					"        body: {}",
+					"    }, function (err, res) {",
+					"        postman.setGlobalVariable(\"jsrsasign-js\", res.text());",
+					"        doHttpSig();",
+					"    });",
+					"    ",
+					"} else {",
+					"    console.log(\"Do doHttpSig\")",
+					"    doHttpSig();",
+					"}"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "1247d526-0aaa-4519-bd82-b349c2866a5e",
+				"type": "text/javascript",
+				"exec": [
+					"tests[\"Status code is 200\"] = responseCode.code === 200;",
+					"tests[\"Response time is less than 500ms\"] = responseTime < 500;",
+					"",
+					"if (responseBody.length > 0) {",
+					"  var jsonData = JSON.parse(responseBody);",
+					"  console.log(jsonData);",
+					"",
+					"  if (jsonData.Results) {",
+					"    console.log(jsonData.Results.length);",
+					"  }",
+					"}"
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
