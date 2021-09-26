@@ -55,24 +55,24 @@ This section of the exam topics primarily focuses on the programmability feature
     - [Intersight Managed Object Browser](https://intersight.com/mobrowser "Intersight Managed Object Browser"){target=_blank}
 
 ??? abstract "Development Environment Resources"
-    - :material-ansible: [Ansible Files](http://localhost:8888/lab/tree/resources/aci/ansible "Ansible Root Folder"){target=_blank}
-        - [Sample Configuration File](http://localhost:8888/lab/workspaces/auto-c/tree/resources/aci/ansible/ansible.cfg "Sample Configuration File"){target=_blank}
-        - [Sample Playbook 1](http://localhost:8888/lab/workspaces/auto-c/tree/resources/aci/ansible/create_aci_tenant_and_children.yml "Sample Playbook 1"){target=_blank}
-        - [Sample Playbook 2](http://localhost:8888/lab/workspaces/auto-c/tree/resources/aci/ansible/delete_aci_tenant_and_children.yml "Sample Playbooks 2"){target=_blank}
-        - [Sample Playbook 3](http://localhost:8888/lab/workspaces/auto-c/tree/resources/aci/ansible/get_tenant.yml "Sample Playbooks 3"){target=_blank}
-        - [Sample Inventory File (.ini format)](http://localhost:8888/lab/workspaces/auto-c/tree/resources/aci/ansible/inventory/hosts.ini "Sample Inventory File (.ini format)"){target=_blank}
-        - [Sample Inventory File (.yml format)](http://localhost:8888/lab/workspaces/auto-c/tree/resources/aci/ansible/inventory/hosts.yml "Sample Inventory File (.yml format)"){target=_blank}
-        - [Sample Host Variables File](http://localhost:8888/lab/workspaces/auto-c/tree/resources/aci/ansible/inventory/host_vars/sandboxapicdc.cisco.com.yml "Sample Host Variables File"){target=_blank}
-    - :fontawesome-brands-python: [ACI Python (Cobra) SDK](http://localhost:8888/lab/workspaces/auto-I/tree/resources/aci/cobra-sdk "ACI Python (Cobra) SDK"){target=_blank}
-        - [Practice Exercise](http://localhost:8888/lab/workspaces/auto-I/tree/resources/aci/cobra-sdk/exercises/apic_cobra_sdk_exercises.ipynb "Practice Exercise"){target=_blank}
-        - [Practice Exercise Solution](http://localhost:8888/lab/workspaces/auto-I/tree/resources/aci/cobra-sdk/exercises/solutions/apic_cobra_sdk_exercise_solution.ipynb "Practice Exercise Solution"){target=_blank}
-        - [Practice Exercise Example](http://localhost:8888/lab/workspaces/auto-I/tree/resources/aci/cobra-sdk/exercises/examples/apic_cobra_sdk_exercises_example_1.ipynb "Practice Exercise Example"){target=_blank}
-    - :material-api: [ACI REST API](http://localhost:8888/lab/tree/resources/aci/rest-api "ACI REST API"){target=_blank}
-        - [Practice Exercise](http://localhost:8888/lab/workspaces/auto-I/tree/resources/aci/rest-api/exercises/apic_rest_exercises.ipynb "Practice Exercise"){target=_blank}
-        - [Practice Exercise Solution](http://localhost:8888/lab/workspaces/auto-I/tree/resources/aci/rest-api/exercises/solutions/apic_rest_exercise_solution.ipynb "Practice Exercise Solution"){target=_blank}
-        - [Practice Exercise Example #1](http://localhost:8888/lab/workspaces/auto-I/tree/resources/aci/rest-api/exercises/examples/apic_rest_exercises_example_1.ipynb "Practice Exercise Example #1"){target=_blank}
-        - [Practice Exercise Example #2](http://localhost:8888/lab/workspaces/auto-I/tree/resources/aci/rest-api/exercises/examples/apic_rest_exercises_example_2.ipynb "Practice Exercise Example #2"){target=_blank}
-        - [Python Code Samples](http://localhost:8888/lab/workspaces/auto-I/tree/resources/aci/rest-api/code-samples "Python Code Samples"){target=_blank}
+
+    !!! attention
+            - The links below require that the local Jupyter Lab server is active and listening on [**http://localhost:8888**](http://localhost:8888 "Jupyter Lab Server"){target=_blank}
+                - The Visual Studio Code Development Environment automatically activates the Jupyter Lab server.
+    
+            !!! question "New to Jupyter Lab? [Click Here for an Overview](appendix_b.md "Jupyter Lab Overview"){target=_blank}"
+    
+            !!! tip
+                - You may also use Visual Studio Code to explore the same code samples and hands-on exercises.  The **resources** folder within the Development Environment Container contains all of the source files.
+    
+        - :material-ansible: [Ansible Files](http://localhost:8888/lab/tree/resources/ucs/ansible "Ansible Root Folder"){target=_blank}
+            - [Sample Configuration File](http://localhost:8888/lab/workspaces/auto-c/tree/resources/ucs/ansible/ansible.cfg "Sample Configuration File"){target=_blank}
+            - [Sample Playbook 1](http://localhost:8888/lab/workspaces/auto-c/tree/resources/ucs/ansible/ucspe_test.yml "Sample Playbook 1"){target=_blank}
+            - [Sample Inventory File (.ini format)](http://localhost:8888/lab/workspaces/auto-c/tree/resources/ucs/ansible/inventory/hosts.ini "Sample Inventory File (.ini format)"){target=_blank}
+        - :fontawesome-brands-python: [UCS Python SDK Examples](http://localhost:8888/lab/workspaces/auto-I/tree/resources/ucs/ucsm/python_sdk_examples.ipynb "UCS Python SDK Examples"){target=_blank}
+        - :material-api: [Intersight REST API](http://localhost:8888/lab/tree/resources/ucs/intersight "Intersight REST API"){target=_blank}
+        - :material-api: [UCS Director Notes](http://localhost:8888/lab/tree/resources/ucs/ucsd/ucsd_notes.md "UCS Director Notes"){target=_blank}
+        - :material-api: [DCNM Notes](http://localhost:8888/lab/tree/resources/ucs/dcnm/dcnm_notes.md "DCNM Notes"){target=_blank}
 
 ---
 
@@ -85,7 +85,7 @@ This section of the exam topics primarily focuses on the programmability feature
         - The resources in this Docker Container are already built-in to the Visual Studio Development Container in this repository.
 
 ??? abstract "Cisco Intersight Programmability"
-    - [Cisco Intersight RESTful API Guide](https://intersight.com/apidocs/introduction/overview/ "ACisco Intersight RESTful API"){target=_blank}
+    - [Cisco Intersight RESTful API Guide](https://intersight.com/apidocs/introduction/overview/ "Cisco Intersight RESTful API"){target=_blank}
 
 ??? abstract "Ansible with UCS and Intersight"
     - [Ansible Galaxy UCS Manager Collection](https://galaxy.ansible.com/cisco/ucs "Ansible Galaxy UCS Manager Collection"){target=_blank}
