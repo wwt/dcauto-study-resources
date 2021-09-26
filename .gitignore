@@ -4,6 +4,10 @@
 # _gitignore folder
 _gitignore
 
+# Intersight API key files
+keyId.txt
+keySecret.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
