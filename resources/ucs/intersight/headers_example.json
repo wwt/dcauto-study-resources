@@ -3,9 +3,9 @@
   "Accept-Encoding": "gzip, deflate",
   "Accept": "*/*",
   "Connection": "keep-alive",
-  "Digest": "SHA-256=47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+  "Digest": "SHA-256=473EQpj8HBSa+/TImW+5JCeuQeRcm5NMpJWZG3hSuFU=",
   "Date": "Sat, 08 May 2021 22:09:29 GMT",
-  "Authorization": "Signature keyId=\"6096c31c7564612d339be0f9/6096c31c7564612d339be0fd/6096c3557564612d339be2cb\",algorithm=\"rsa-sha256\",headers=\"(request-target) date host content-type digest\", signature=\"Pz9uysAzcfywgqBQ1pEq6ruM45ba9KUwZV5Ax2fSAKE0++wCuSqahVdld+9b/MsbnLxnzrThZNSP3fHgEtFV1cRS/YkGn5qwddOa4cmGKsv9FNpNbigy2aAUCUQYdTNGgPcBsyWb3DUMHb1Ai00Fm0rFXTMM1mPwAHC6U1z+6lYYUZsPjWjyWgAiopA31h1aF6NNfPHdm6jMdnGHB9x+IO7g8ngN9/VzSe50+KV3QYAy8k70Lr1wqBk56dZ23UqjBuDVoQjBBreFNW5BiexHljYOmfnyLXMzw8KSRd7GGp4i52qVueTPiGW/zIap41Y02DLwhLw8t+DEKG4Gro0XNw==\"",
+  "Authorization": "Signature keyId=\"6096c31c7564602d339be0f9/6096c31c75d4612d339be0fd/6096c3557564612d339be2cb\",algorithm=\"rsa-sha256\",headers=\"(request-target) date host content-type digest\", signature=\"Pz9uysAzcfywgqBQ1pEq6ruM45ba9KUwZV5Ax2fSAKE0++wCuSqahVdld+9b/MsbnLxnzrThZNSP3fHgEtFV1cRS/YkGn5qwddOa4cmGKsv9FNpNbigy2aAUCUQYdTNGgPcBsyWb3DUMHb1Ai00Fm0rFXTMM1mPwAHC6U1z+6lYYUZsPjWjyWgAiopA31h1aF6NNfPHdm6jMdnGHB9x+IO7g8ngN9/VzSe50+KV3QYAy8k70Lr1wqBk56dZ23UqjBuDVoQjBBreFNW5BiexHljYOmfnyLXMzw8KSRd7GGp4i52qVueTPiGW/zIap41Y02DLwhLw8t+DEKG4Gro0XNw==\"",
   "Host": "www.intersight.com",
   "Content-Type": "application/json"
 }
