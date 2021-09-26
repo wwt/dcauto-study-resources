@@ -1,4 +1,10 @@
-# coding: utf-8
+#!/usr/bin/env python3
+""" Example payload for sending POST/PUT/PATCH requests
+    to the Intersight API.
+
+    Updates NTP servers list.
+"""
+
 ntp_policy = {
     'Description': 'Python NTP Policy',
     'Name': 'Python_NTP_Policy',

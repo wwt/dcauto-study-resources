@@ -1,4 +1,36 @@
 #!/usr/bin/env python3
+""" Helper functions for use with the Intersight REST API.
+
+    Capabilities:
+        1. Establishes UCS Intersight REST API prerequisites.
+
+            - Imports required modules.
+            - Performs Intersight authentication setup.
+            - Prepares required Intersight HTTP headers.
+
+        2. The `intersight` function sends requests to the
+           Cisco Intersight REST API.
+
+        3. The `sort_items` function sorts the items in an
+           Intersight REST API response object based on a specified
+           field.
+
+    Dependencies:
+        1. Within the directory that contains this file, clone
+        the following Git repository:
+            https://github.com/movinalot/intersight-rest-api
+
+            - The Git repository contains the file 'intersight_auth.py'
+
+        2. Valid Intersight API Key ID, stored in the file:
+            ./api_keys/keyId.txt
+
+        3. Valid Intersight API Key Secret, stored in the file:
+            ./api_keys/keySecret.txt
+
+        ** Instructions to obtain an API Key ID and Key Secret are at:
+            https://developer.cisco.com/learning/tracks/ucs-compute-prog/intersight-rest-api/cisco-intersight-rest-api-keys/step/1
+"""
 
 # Imports
 import requests
@@ -40,23 +72,31 @@ def intersight(
     json_data: dict = None
 ) -> requests.Response:
 
-    """Send request to Cisco Intersight REST API
+    """ Send request to Cisco Intersight REST API
 
-       Args:
-            method (str): HTTP method ('GET', 'POST', 'PATCH', or 'DELETE').
-            endpoint (str): Intersight API endpoint ('/compute/Blades').
-            params (str): Query parameters ('$select=Dn,Model,Moid')
-            json_data (dict): Request body.
+        Args:
+            method (str):
+                HTTP method ('GET', 'POST', 'PATCH', or 'DELETE').
 
-       Prints:
+            endpoint (str):
+                Intersight API endpoint ('/compute/Blades').
+
+            params (str, optional):
+                Query parameters ('$select=Dn,Model,Moid')
+
+            json_data (dict, optional):
+                Request body for PUT/POST/PATCH HTTP methods.
+
+        Prints:
             HTTP status code and reason (200 OK) and the number of
             objects returned.
             Example:
                 HTTP response: 200 OK
                 Objects returned: 9
 
-       Returns:
-            response (requests.Response): Requests library response object.
+        Returns:
+            response (requests.Response):
+                Requests library response object.
     """
 
     # Format request fields
@@ -104,14 +144,18 @@ def sort_items(
     response: dict,
     sort_field: str = 'Dn'
 ) -> None:
-    """Sorts the items in an intersight response based on a specific field.
+    """ Sorts the items in an Intersight REST API response object
+        based on a specified field.
 
-       Args:
-            response (dict): Dictionary of response from intersight,
-                             converted from JSON with the .json() method.
-            sort_field (str): Name of an alternate sort field (default is Dn).
+        Args:
+            response (dict):
+                Dictionary of response from intersight,
+                converted from JSON with the .json() method.
 
-       Prints:
+            sort_field (str):
+                Name of an alternate sort field (default is Dn).
+
+        Prints:
             Sorted, numbered list of results with columns for DN and Model.
             Example:
                 Sorted by "Dn"
@@ -126,8 +170,8 @@ def sort_items(
                 8. DN: sys/chassis-5/blade-2     Model: UCSB-B200-M5
                 9. DN: sys/chassis-5/blade-3     Model: UCSB-B480-M5
 
-       Returns:
-            None
+        Returns:
+            None.
     """
 
     items = sorted(
