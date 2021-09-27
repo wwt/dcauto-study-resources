@@ -1,4 +1,4 @@
-# Development Dockerfile for WWT - Cisco DevNet DCAUTO Study Resources
+# Dockerfile for WWT - Cisco DevNet DCAUTO Study Resources
 
 FROM python:3.9-slim-buster
 
@@ -29,6 +29,10 @@ RUN dpkg -i requirements/ucs/packages-microsoft-prod.deb && \
     apt-get update && \
     apt-get install -y powershell && \
     ./requirements/ucs/ucs-powertool-setup.sh
+
+# Clone the Intersight REST API repository
+RUN git clone https://github.com/movinalot/intersight-rest-api \
+              requirements/ucs/intersight_rest_api
 
 # Run script to launch server services
 ENTRYPOINT [ "./requirements/server-launch.sh" ]
