@@ -30,6 +30,8 @@ This section of the exam topics primarily focuses on the programmability feature
         - **UCS Python SDK Introduction** - All Labs
         - **UCS PowerTool and UCS Python Intermediate** -  All Labs
         - **Cisco Intersight REST API** - All Labs
+    - [UCS for Application Developers](https://developer.cisco.com/learning/tracks/ucsd-resource-automation "UCS for Application Developers Learning Pat"){target=_blank}
+        - **UCS Director REST API Introduction** - All Labs
 
 ---
 
@@ -57,22 +59,92 @@ This section of the exam topics primarily focuses on the programmability feature
 ??? abstract "Development Environment Resources"
 
     !!! attention
-            - The links below require that the local Jupyter Lab server is active and listening on [**http://localhost:8888**](http://localhost:8888 "Jupyter Lab Server"){target=_blank}
-                - The Visual Studio Code Development Environment automatically activates the Jupyter Lab server.
-    
-            !!! question "New to Jupyter Lab? [Click Here for an Overview](appendix_b.md "Jupyter Lab Overview"){target=_blank}"
-    
-            !!! tip
-                - You may also use Visual Studio Code to explore the same code samples and hands-on exercises.  The **resources** folder within the Development Environment Container contains all of the source files.
-    
+        - The links below require that the local Jupyter Lab server is active and listening on [**http://localhost:8888**](http://localhost:8888 "Jupyter Lab Server"){target=_blank}
+            - The Visual Studio Code Development Environment automatically activates the Jupyter Lab server.
+
+        !!! question "New to Jupyter Lab? [Click Here for an Overview](appendix_b.md "Jupyter Lab Overview"){target=_blank}"
+
+        !!! tip
+            - You may also use Visual Studio Code to explore the same code samples and hands-on exercises.  The **resources** folder within the Development Environment Container contains all of the source files.
+
         - :material-ansible: [Ansible Files](http://localhost:8888/lab/tree/resources/ucs/ansible "Ansible Root Folder"){target=_blank}
             - [Sample Configuration File](http://localhost:8888/lab/workspaces/auto-c/tree/resources/ucs/ansible/ansible.cfg "Sample Configuration File"){target=_blank}
             - [Sample Playbook 1](http://localhost:8888/lab/workspaces/auto-c/tree/resources/ucs/ansible/ucspe_test.yml "Sample Playbook 1"){target=_blank}
             - [Sample Inventory File (.ini format)](http://localhost:8888/lab/workspaces/auto-c/tree/resources/ucs/ansible/inventory/hosts.ini "Sample Inventory File (.ini format)"){target=_blank}
+
+        ---
+
         - :fontawesome-brands-python: [UCS Python SDK Examples](http://localhost:8888/lab/workspaces/auto-I/tree/resources/ucs/ucsm/python_sdk_examples.ipynb "UCS Python SDK Examples"){target=_blank}
+
+        ---
+
         - :material-api: [Intersight REST API](http://localhost:8888/lab/tree/resources/ucs/intersight "Intersight REST API"){target=_blank}
-        - :material-api: [UCS Director Notes](http://localhost:8888/lab/tree/resources/ucs/ucsd/ucsd_notes.md "UCS Director Notes"){target=_blank}
-        - :material-api: [DCNM Notes](http://localhost:8888/lab/tree/resources/ucs/dcnm/dcnm_notes.md "DCNM Notes"){target=_blank}
+
+        ??? danger "Important Intersight Code Usage Notes"
+            Cisco Intersight REST API keys require an HTTP signature, and the initial setup of Intersight authentication requires several manual steps.  This repository already includes the [Intersight Authentication Repository](https://github.com/movinalot/intersight-rest-api "Intersight Authentication Repository") files recommended by Cisco DevNet.  These files provide the functionality required to support Intersight authentication via Python.
+
+            If you would like to use the Intersight Python code and Jupyter Notebook examples, you must first perform the following steps:
+
+            1. Obtain Intersight `keyId` and `keySecret` data using the [Intersight API Authorization](https://intersight.com/apidocs/introduction/security/#benefits-of-using-api-keys "Intersight API Authorization") instructions.
+            2. Create new blank text files within your local copy of the **dcauto-study-resources** repository with the paths:
+
+                - `/resources/ucs/intersight/api_keys/keyId.txt`
+                - `/resources/ucs/intersight/api_keys/keySecret.txt`
+
+            3. Paste the contents of your Intersight `keyId` into the `keyId.txt` file.
+
+            ??? abstract "`keyId.txt` example file contents"
+                4196c31c7562012c339be0b/6129f1c7564612d331be0fd/6096c3552128512d339be2cb
+
+            4. Paste the contents of your Intersight `keySecret` into the `keySecret.txt` file.
+
+            ??? abstract "`keySecret.txt` example file contents"
+                -----BEGIN RSA PRIVATE KEY-----
+                WuJ1V54N4uHj9rjDRvl9zp2eoA0J6SFB+dwp2Hoj24+pSnr4FPJ/9+PgcRsgUVjq
+                IEHbVKRnrr2xWcXtQnUsa0Dxbdw8biyoo2UiHlCyxUqJEtzSEeeWf9V8hjyqUwtr
+                UyIeWZOhQ2NYbboUgrCMeHhgE6LNTbrGAaSmNZ3BSJnPvRCM7u5xRkFvAoGBAPcN
+                skfHYw23WHTTZD/Z1m1kYZj2LkgAI3/LDQNHaE/enxvq0q+/SrrSVraYBhp8B7xO
+                Vg7gbMXRczSCh5jhQqMm5K1I8ZBlWG0kNdQcuuabAGewNr7bRc+LVZQN+RKsQ8BJ
+                /00bV3GmkD30YYF7pS6LrDiErvYudS0C+9NYeMXgST1OTnRh+YVNisBwvS02Gbyc
+                Uv+Eiy2ZnsIxDiqlvWlGlIrMeLiwmPDVeoM0XyfkZ+5DLFKQYFYABf7LFQuWaKfw
+                LndthGB60BM2nZXohSJzgPsCgYEAi2zlYnD6S/FfMH9kokxUIWR3WBYHRIcfga2c
+                aG9SRVEERoMd6CVzDUBLw7zEJQo+a11iX/70JCfydn37/KGUM/NtNwZlnfI0F1RK
+                NK0KJb7wWZQvMUMagOjHoUjJempRyiEDJpm96VxMWCotG/likj052PxdctvHsRg8
+                Ad0L3K0CgYAgmXD6dUCJqDOwfs9BBbD6bbr6aE7kitLEoOZ0Rz37MSmenJMt6/mf
+                tIuV+MMhHKWxXtLCUPZjP60nk/d2oR6tN7X75QL9ioduN/QIArZGog==
+                -----END RSA PRIVATE KEY-----
+
+        - [Intersight API Python Helper Functions](http://localhost:8888/lab/tree/resources/ucs/intersight/intersight_helper.py "Intersight API Python Helper Functions"){target=_blank}
+            - The docstrings in `intersight_helper.py` include usage instructions.
+            - Use these helper functions from your Python interpreter/REPL with the expression:
+                - `from intersight_helper import *`
+
+??? abstract "UCS Director REST API Notes"
+
+    - API endpoint to request an API key:
+        - `https://{{ucsd}}/app/api/rest?opName=getRESTKey&user={{username}}&password={{password}}`
+    - Authentication header name:
+        - `X-Cloupia-Request-Key`
+    - Possible query parameters:
+        - `opName` - name of the current operation.
+        - `opData`- payload body.
+        - `formatType` - json (default) or xml.
+
+??? abstract "DCNM REST API Notes"
+
+    - DCNM has Multiple APIs:
+        - LAN Fabric.
+        - L4-L7 Services.
+        - Endpoint Locator.
+        - Media Controller (DCNM control plane).
+        - SAN Management.
+
+    - APIs support `GET`, `POST`, `PUT`, & `DELETE` operations.
+    - API Authentication:
+        - API URI Endpoint - `/logon`
+        - Authentication mechanism - **HTTP Basic**
+            - Successful authentication requests return a token which must be sent in subsequent API requests, in a custom header with the format:
+                - `{"DCNM-Token": token}`
 
 ---
 
