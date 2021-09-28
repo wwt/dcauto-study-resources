@@ -15,6 +15,7 @@
 *[JSON]: JavaScript Object Notation
 *[MIT]: Management Information Tree
 *[PyPI]: Python Package Index
+*[REPL]: Read Evaluate Print Loop
 *[REST]: Representational State Transfer
 *[RPC]: Remote Procedure Call
 *[SDK]: Software Development Kit
