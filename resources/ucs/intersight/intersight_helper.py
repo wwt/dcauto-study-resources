@@ -30,6 +30,13 @@
 
         ** Instructions to obtain an API Key ID and Key Secret are at:
             https://developer.cisco.com/learning/tracks/ucs-compute-prog/intersight-rest-api/cisco-intersight-rest-api-keys/step/1
+
+    Usage:
+        from intersight_helper import *
+        results = intersight(
+            method='GET',
+            endpoint='/compute/Blades'
+        )
 """
 
 # Imports
