@@ -29,3 +29,12 @@
 ## Usage
 
 Navigate to [https://wwt.github.io/dcauto-study-resources](https://wwt.github.io/dcauto-study-resources) and follow the guided walkthrough instructions.
+
+---
+
+## Authors
+
+- Timothy Hull
+    - [@timothyhull](https://github.com/timothyhull)
+- Jeff Shively
+    - [@jshively37](https://github.com/jshively37)
