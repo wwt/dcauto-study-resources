@@ -41,7 +41,7 @@ This section of the exam topics focuses on working with Cisco Application Centri
 #### :fontawesome-solid-laptop-code: Cisco YouTube
 
 ??? abstract "Cisco Live"
-    - [Mastering ACI Programmability and Automating common DC Tasks](https://www.youtube.com/watch?v=8K6MHPZmc5A "Mastering ACI Programmability and Automating common DC Tasks"){target=_blank}
+    - [Mastering ACI Programmability and Automating Common DC Tasks](https://www.youtube.com/watch?v=8K6MHPZmc5A "Mastering ACI Programmability and Automating Common DC Tasks"){target=_blank}
 
 ??? abstract "NetDevOps Live"
     - [Exploring the ACI networking plugin for Kubernetes](https://www.youtube.com/watch?v=9d0mzB5jUP0 "Exploring the ACI networking plugin for Kubernetes"){target=_blank}
@@ -131,3 +131,5 @@ This section of the exam topics focuses on working with Cisco Application Centri
 ## On to Section 3.0
 
 :thumbsup:  Great job getting through ACI!  Let's keep going, click [this link](section_3.md "Section 3.0") to check out **Section 3.0** exam topics and resources.
+
+--8<-- "includes/glossary.txt"

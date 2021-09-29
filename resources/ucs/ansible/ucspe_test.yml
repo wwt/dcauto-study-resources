@@ -1,0 +1,24 @@
+---
+- name: Test Playbook
+  hosts: ucspe
+  gather_facts: false
+  connection: local
+
+  collections:
+    - cisco.ucs
+
+  tasks:
+    - name: Test Task 1
+      cisco.ucs.ucs_timezone:
+        hostname: "192.168.72.4"
+        password: ucspe
+        username: ucspe
+        state: present
+        description: ansible_tz
+        timezone: America/Los_Angeles
+        use_ssl: false
+      register: ucs_test
+
+    - name: Output
+      debug:
+        var: ucs_test

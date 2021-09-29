@@ -149,3 +149,5 @@ This section of the exam topics focuses on the programmability features of the C
 ## On to Section 4.0
 
 :thumbsup:  You finished going through all of the Open NX-OS resources!  One more section to go, click [this link](section_4.md "Section 4.0") to check out **Section 4.0** exam topics and resources.
+
+--8<-- "includes/glossary.txt"
