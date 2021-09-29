@@ -2,20 +2,21 @@
 
 ## JupyterLab Overview
 
-[Project Jupyter](https://jupyter.org/ "Project Jupyter"){target=_blank} is an open-source software project that helps people work with different programming languages interactively, through a web browser.  
+[Project Jupyter](https://jupyter.org/ "Project Jupyter"){target=_blank} creates open-source software that helps people work with different programming languages interactively through a web browser, and [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/ "JupyterLab Documentation"){target=_blank} is the Jupyter web interface.  Think of JupyterLab sort of like a web-based Python IDE that allows you to write and step through code one block at a time, while also allowing you to document your work using markdown.
 
-// Under construction
+Many of the hands-on exercises in this repository use JupyterLab because we found that JupyterLab is a great way to work through our code development in small, repeatable steps, visualize an entire automated workflow, and provide inline documentation that make our study materials reusable.
 
-??? example "1. Open the [JupyterLab Server](http://localhost:8888 "JupyterLab Server"){target=_blank}"
+If you use the [development environments](section_0.md "Development Environment Setup Instructions") included in this repository, all you need to know before you can use JupyterLab is:
 
-    [![vs-code-open-terminals](../images/vs-code-open-terminals.png "Open New Bash or PowerShell Terminals")](../../images/vs-code-open-terminals.png){target=_blank}
+1. The JupyterLab server starts automatically when you bring the development environment container online.
+2. You can connect to the JupyterLab server by navigating to [http://localhost:8888](http://localhost:8888 "Local JupyterLab Python Exercises"){target=_blank}.
+3. Any file in the repository with an ==**.ipynb**== extension is an interactive Jupyter Notebook that you can open in JupyterLab.
+4. You can open other file types in JupyterLab, including text files, images, etc., for viewing.
 
-??? example "2. Navigate to the **resources/aci** Directory"
+---
 
-    [![vs-code-open-terminals](../images/vs-code-open-terminals.png "Open New Bash or PowerShell Terminals")](../../images/vs-code-open-terminals.png){target=_blank}
+### More Information
 
-??? example "3. Open a Jupyter Notebook in Either the **cobra-sdk/exercises** or **rest-api/exercises** Folder"
-
-    [![vs-code-open-terminals](../images/vs-code-open-terminals.png "Open New Bash or PowerShell Terminals")](../../images/vs-code-open-terminals.png){target=_blank}
+Our experience is, most people find JupyterLab to be intuitive and simple to use.  If you are new to JupyterLab, have questions about the UI, or if you just want more information, the [JupyterLab User Guide](https://jupyterlab.readthedocs.io/en/latest/user/interface.html "JupyterLab User Guide"){target=_blank} provides a short yet helpful introduction.  The JupyterLab user guide has descriptions of JupyterLab interface elements, short video demonstrations, keyboard shortcut help, answers to common questions, and much more.
 
 --8<-- "includes/glossary.txt"
