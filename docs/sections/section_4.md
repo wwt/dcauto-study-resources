@@ -118,6 +118,7 @@ This section of the exam topics primarily focuses on the programmability feature
             - The docstrings in `intersight_helper.py` include usage instructions.
             - Use these helper functions from your Python interpreter/REPL with the expression:
                 - `from intersight_helper import *`
+        - [Intersight REST API Jupyter Notebook Exercises](http://localhost:8888/lab/workspaces/auto-a/tree/resources/ucs/intersight/intersight.ipynb "Intersight REST API Jupyter Notebook Exercises"){target=_blank}
 
 ??? abstract "UCS Director REST API Notes"
 
@@ -171,11 +172,18 @@ This section of the exam topics primarily focuses on the programmability feature
 
 ## :fontawesome-solid-lightbulb: Insights
 
-- We spent plenty of time watching the videos and reading the documentation in this guide, although we spent most of our time going through the hands-on learning exercises over, and over, and over again.  The practice made a big difference in our ability to retain so many details.  Forcing ourselves to type our way through the Jupyter Lab exercises was really hard and was also our best teacher.
+- Preparing for the exam topics in this section was an exercise in us spending almost all of our study time in the CLI of our [development environments](section_0.md "Development Environment Setup Instructions"). If you didn't already notice, we included quite a few [DevNet Sandbox Labs](#hands-on-learning "DevNet Sandbox Lab Recommendations") in the list of materials that we recommend.  We did that for good reason, those labs are really, *really* good, because they provide many interactive and repeatable exercises for the UCS PowerTool, the UCS Python SDK, and the Intersight REST API.  We probably went through each of those lab exercises 10+ times, to really commit UCS programmability to memory.  We think all of that practice was time well spent.
 
-- The Cisco DevNet learning labs for ACI were a great starting point for us and set the tone for the things we needed to learn and practice.  Following those up with the Jupyter and MIT exercises was very beneficial.
+- For our UCS lab resources, we used a combination of the [DevNet UCS Management Sandbox](https://devnetsandbox.cisco.com/RM/Diagram/Index/3323b7b0-b70b-4b1e-a929-6bdbff3aac8a?diagramType=Topology "DevNet UCS Management Sandbox"){target=_blank} and the [UCS Platform Emulator](https://community.cisco.com/t5/unified-computing-system/ucs-platform-emulator-downloads-ucspe-4-1-2cpe1-ucspe-4-0-4epe1/ta-p/3648177 "UCS Platform Emulator"){target=_blank}.  Personally, I preferred to have a couple of UCS Platform Emulator instances as virtual machines on my computer.  I did that mostly because I didn't have to reserve DevNet Sandbox resources.  That said, we did not find any glaring limitations with either option, so you can't really go wrong.
 
-- The star resource to practice just about any skills related to ACI is the **[DevNet Always-On ACI Sandbox](https://sandboxapicdc.cisco.com "DevNet Always-On ACI Sandbox"){target=_blank}**.  This is a publicly accessible (no-VPN required), reservation-less, read/write, read/write ACI simulator, and we used it excessively.  All of the code samples, Jupyter Notebooks, and Ansible Playbooks bundled in this repository use this sandbox.
+- For our Intersight study, the API guide was solid gold.  We made sure to get plenty of hands-on time with:
+    - The [development environment](section_0.md "Development Environment Setup Instructions") included in this repository.
+    - The [Intersight REST API Jupyter Notebook Exercises](http://localhost:8888/lab/workspaces/auto-a/tree/resources/ucs/intersight/intersight.ipynb "Intersight REST API Jupyter Notebook Exercises"){target=_blank}, which will help you get an practice and working examples of the many query Intersight options.
+    - The Intersight [API reference](https://intersight.com/apidocs/apirefs/aaa/AuditRecords/model/ "Intersight API Reference").
+
+- One more plug for the [Intersight API reference](https://intersight.com/apidocs/apirefs/aaa/AuditRecords/model/ "Intersight API Reference"), we found it very valuable to get plenty of practice understanding which parameters you can expect to receive in a REST API query response from Intersight.  The same is true for our practice determining which Intersight parameters you need to specify in the body of HTTP requests, to either add new objects to or modify existing Intersight objects.
+
+- We ended up getting a bit of tunnel vision in our UCS and Intersight studies, and we almost forgot to get some work in with UCSD and DCNM.  The respective DevNet learning [DevNet Sandbox Labs](#hands-on-learning "DevNet Sandbox Lab Recommendations") for UCSD and DCNM were a big help.
 
 ## Lessons Learned
 
