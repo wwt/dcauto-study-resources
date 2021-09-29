@@ -17,7 +17,7 @@ nav:
   - Appendix A:
     - Supplementary Content: sections/appendix_a.md
   - Appendix B:
-    - Jupyter Lab: sections/appendix_b.md
+    - JupyterLab: sections/appendix_b.md
 
 # Repository
 repo_name: "wwt/dcauto-study-resources"

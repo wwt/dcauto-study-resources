@@ -9,7 +9,7 @@ WORKDIR /app
 # TCP 8000 for MkDocs server
 EXPOSE 8000/tcp
 
-# TCP 8888 for Jupyter Lab Server
+# TCP 8888 for JupyterLab Server
 EXPOSE 8888/tcp
 
 # Update repositories and install Git
