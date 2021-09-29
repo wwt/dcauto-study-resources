@@ -19,7 +19,7 @@
 ??? info "Development Environment Contents Reference"
     ??? abstract "Local web servers"
         - :material-web-box: MkDocs at [http://localhost:8000](http://localhost:8000 "Local MkDocs Documentation Site"){target=_blank} - for offline documentation access.
-        - :fontawesome-brands-python: Jupyter Lab at [http://localhost:8888](http://localhost:8888 "Local Jupyter Lab Python Exercises"){target=_blank} - for Python code walk-through exercises.
+        - :fontawesome-brands-python: JupyterLab at [http://localhost:8888](http://localhost:8888 "Local JupyterLab Python Exercises"){target=_blank} - for Python code walk-through exercises.
 
     ??? abstract "Container OS packages"
         - :fontawesome-brands-git-alt: [Git](https://git-scm.com/download/linux "Git for Debian Linux"){target=_blank} - to work with local or remote repositories.

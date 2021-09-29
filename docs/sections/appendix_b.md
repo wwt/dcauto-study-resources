@@ -1,12 +1,12 @@
 # Appendix A
 
-## Jupyter Lab Overview
+## JupyterLab Overview
 
----
+[Project Jupyter](https://jupyter.org/ "Project Jupyter"){target=_blank} is an open-source software project that helps people work with different programming languages interactively, through a web browser.  
 
 // Under construction
 
-??? example "1. Open the [Jupyter Lab Server](http://localhost:8888 "Jupyter Lab Server"){target=_blank}"
+??? example "1. Open the [JupyterLab Server](http://localhost:8888 "JupyterLab Server"){target=_blank}"
 
     [![vs-code-open-terminals](../images/vs-code-open-terminals.png "Open New Bash or PowerShell Terminals")](../../images/vs-code-open-terminals.png){target=_blank}
 

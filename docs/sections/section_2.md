@@ -57,10 +57,10 @@ This section of the exam topics focuses on working with Cisco Application Centri
 ??? abstract "Development Environment Resources"
 
     !!! attention
-        - The links below require that the local Jupyter Lab server is active and listening on [**http://localhost:8888**](http://localhost:8888 "Jupyter Lab Server"){target=_blank}
-            - The Visual Studio Code Development Environment automatically activates the Jupyter Lab server.
+        - The links below require that the local JupyterLab server is active and listening on [**http://localhost:8888**](http://localhost:8888 "JupyterLab Server"){target=_blank}
+            - The Visual Studio Code Development Environment automatically activates the JupyterLab server.
 
-        !!! question "New to Jupyter Lab? [Click Here for an Overview](appendix_b.md "Jupyter Lab Overview"){target=_blank}"
+        !!! question "New to JupyterLab? [Click Here for an Overview](appendix_b.md "JupyterLab Overview"){target=_blank}"
 
         !!! tip
             - You may also use Visual Studio Code to explore the same code samples and hands-on exercises.  The **resources** folder within the Development Environment Container contains all of the source files.
@@ -114,7 +114,7 @@ This section of the exam topics focuses on working with Cisco Application Centri
 
 ## :fontawesome-solid-lightbulb: Insights
 
-- We spent plenty of time watching the videos and reading the documentation in this guide, although we spent most of our time going through the hands-on learning exercises over, and over, and over again.  The practice made a big difference in our ability to retain so many details.  Forcing ourselves to type our way through the Jupyter Lab exercises was really hard and was also our best teacher.
+- We spent plenty of time watching the videos and reading the documentation in this guide, although we spent most of our time going through the hands-on learning exercises over, and over, and over again.  The practice made a big difference in our ability to retain so many details.  Forcing ourselves to type our way through the JupyterLab exercises was really hard and was also our best teacher.
 
 - The Cisco DevNet learning labs for ACI were a great starting point for us and set the tone for the things we needed to learn and practice.  Following those up with the Jupyter and MIT exercises was very beneficial.
 

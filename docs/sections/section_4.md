@@ -59,10 +59,10 @@ This section of the exam topics primarily focuses on the programmability feature
 ??? abstract "Development Environment Resources"
 
     !!! attention
-        - The links below require that the local Jupyter Lab server is active and listening on [**http://localhost:8888**](http://localhost:8888 "Jupyter Lab Server"){target=_blank}
-            - The Visual Studio Code Development Environment automatically activates the Jupyter Lab server.
+        - The links below require that the local JupyterLab server is active and listening on [**http://localhost:8888**](http://localhost:8888 "JupyterLab Server"){target=_blank}
+            - The Visual Studio Code Development Environment automatically activates the JupyterLab server.
 
-        !!! question "New to Jupyter Lab? [Click Here for an Overview](appendix_b.md "Jupyter Lab Overview"){target=_blank}"
+        !!! question "New to JupyterLab? [Click Here for an Overview](appendix_b.md "JupyterLab Overview"){target=_blank}"
 
         !!! tip
             - You may also use Visual Studio Code to explore the same code samples and hands-on exercises.  The **resources** folder within the Development Environment Container contains all of the source files.

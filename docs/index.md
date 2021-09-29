@@ -78,7 +78,7 @@
 
 ??? abstract "Appendix"
     - [Appendix A - Lessons Learned](sections/appendix_a.md "Appendix A - Lessons Learned")
-    - [Appendix B - Jupyter Lab Overview](sections/appendix_b.md "Appendix B - Jupyter Lab Overview")
+    - [Appendix B - JupyterLab Overview](sections/appendix_b.md "Appendix B - JupyterLab Overview")
 
 ---
 
