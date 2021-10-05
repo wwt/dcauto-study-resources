@@ -7,17 +7,26 @@
 *[DC]: Data Center
 *[DCNM]: Data Center Network Manager
 *[DCAUTO]: Cisco Data Center Automation Exam (300-635)
+*[DME]: Data Management Engine
+*[EEM]: Embedded Event Manager
 *[gNMI]: Google Network Management Interface
+*[gRPC]: Google Remote Procedure Call
+*[GUI]: Graphical User Interface
 *[HTTP]: Hypertext Transfer Protocol
 *[HTTPS]: Hypertext Transfer Protocol Secure
 *[IDE]: Integrated Development Environment
+*[iPXE]: Preboot eXecution Environment
 *[IT]: Information Technology
 *[JSON]: JavaScript Object Notation
+*[LAN]: Local Area Network
 *[MIT]: Management Information Tree
+*[NETCONF]: Network Configuration Protocol
+*[POAP]: PowerOn Auto Provisioning
 *[PyPI]: Python Package Index
 *[REPL]: Read Evaluate Print Loop
 *[REST]: Representational State Transfer
 *[RPC]: Remote Procedure Call
+*[SAN]: Storage Area Network
 *[SDK]: Software Development Kit
 *[SSH]: Secure Shell
 *[TLS]: Transport Layer Security
@@ -30,4 +39,5 @@
 *[WWT]: World Wide Technology
 *[XML]: eXtensible Markup Language
 *[YAML]: YAML Ain't Markup Language
+*[VPN]: Virtual Private Network
 *[YANG]: Yet Another Next Generation

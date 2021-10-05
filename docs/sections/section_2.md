@@ -2,7 +2,7 @@
 
 ## Overview
 
-This section of the exam topics focuses on working with Cisco Application Centric Infrastructure (ACI) programmatically.  It is essential to be familiar with ACI's building blocks, specifically the ACI Policy Object Model, to effectively construct and parse its API payloads.
+This section of the exam topics focuses on working with Cisco ACI programmatically.  It is essential to be familiar with ACI's building blocks, specifically the ACI Policy Object Model, to effectively construct and parse its API payloads.
 
 ???+ note "Section 2.0 Topic Details"
     - 2.1 Describe the following:
