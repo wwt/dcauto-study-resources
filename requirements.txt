@@ -25,17 +25,17 @@ markdown==3.3.4
     #   pymdown-extensions
 markupsafe==2.0.1
     # via jinja2
-mkdocs-material-extensions==1.0.1
-    # via mkdocs-material
-mkdocs-material==7.1.6
-    # via
-    #   -r requirements.in
-    #   mkdocs-material-extensions
 mkdocs==1.1.2
     # via
     #   -r requirements.in
     #   mkdocs-material
-nltk==3.6.2
+mkdocs-material==7.1.6
+    # via
+    #   -r requirements.in
+    #   mkdocs-material-extensions
+mkdocs-material-extensions==1.0.1
+    # via mkdocs-material
+nltk==3.6.5
     # via lunr
 pygments==2.9.0
     # via mkdocs-material
@@ -43,7 +43,7 @@ pymdown-extensions==8.2
     # via mkdocs-material
 pyyaml==5.4.1
     # via mkdocs
-regex==2021.4.4
+regex==2021.10.8
     # via nltk
 six==1.16.0
     # via
