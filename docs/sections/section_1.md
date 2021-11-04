@@ -4,13 +4,13 @@
 
 This section of the exam topics focuses on the skills you will want to be very comfortable with before effectively studying for the remaining product-specific exam topics (in sections 2.0, 3.0, and 4.0).
 
-During our exam preparation, we didn't spend a ton of dedicated time on the topics in this section because:
+During our exam preparation we didn't spend a ton of dedicated time on the topics in this section because:
 
 - These particular topics are pretty familiar to us from previous DevNet exam study work (DEVASC, ENAUTO, & DEVCOR)
 - We help teach these topics in our free, ongoing, open-to-the-public [DevNet Study Group](https://www.wwt.com/community/cisco-devnet-study-groups "WWT DevNet Study Group Community"){target=_blank} meetings.
 - We work with many of the topics daily.
 
-We do, however, remember exactly how we felt when these topics were new to us, and we have plenty of resources to share.  Also, we included some general Ansible references that we found helpful in this section since the exam topics in each of the subsequent sections have an Ansible automation element.
+We do, however, remember exactly how we felt when these topics were new to us, and we have plenty of resources to share.  Also, we included some general Ansible references that we found helpful in this section, since the exam topics in each of the subsequent sections have an Ansible automation element.
 
 ???+ note "Section 1.0 Topic Details"
     - 1.1 Utilize common version control operations with git: add, clone, push, commit, diff, branching, merging conflict
