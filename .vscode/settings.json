@@ -1,0 +1,19 @@
+{
+    "cSpell.words": [
+        "Buildx",
+        "DOCKERHUB",
+        "inlinehilite",
+        "materialx",
+        "nosborn",
+        "prebuild",
+        "pymdownx",
+        "Roboto",
+        "superfences",
+        "tasklist",
+        "twemoji"
+    ],
+    "yaml.customTags": [
+        "tag:yaml.org,2002:python/name:materialx.emoji.twemoji scalar",
+        "tag:yaml.org,2002:python/name:materialx.emoji.to_svg scalar"
+    ]
+}
