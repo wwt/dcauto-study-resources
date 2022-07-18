@@ -30,6 +30,7 @@ theme:
   icon:
     repo: fontawesome/brands/github
   language: en
+  favicon: images/logos/wwt_color.svg
   features:
     - navigation.expand
     - navigation.instant
