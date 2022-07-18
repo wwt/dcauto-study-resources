@@ -14,7 +14,7 @@ EXPOSE 8888/tcp
 
 # Update repositories and install Git
 RUN apt-get update && \
-    apt-get install -y git
+    apt-get install -y curl gcc git libicu63
 
 # Copy requirements files to Image
 COPY requirements/ requirements/
@@ -24,11 +24,19 @@ RUN python -m pip install --upgrade pip && \
     python -m pip install -r requirements/requirements-dev.txt && \
     ansible-galaxy collection install -r requirements/ansible-galaxy.yml
 
+# Install .NET Core SDK
+# https://docs.microsoft.com/en-us/dotnet/core/install/linux-scripted-manual#scripted-install
+RUN ./requirements/ucs/dotnet-install.sh -c Current
+
 # Install and configure PowerShell
-RUN dpkg -i requirements/ucs/packages-microsoft-prod.deb && \
-    apt-get update && \
-    apt-get install -y powershell && \
-    ./requirements/ucs/ucs-powertool-setup.sh
+# https://docs.microsoft.com/en-us/powershell/scripting/install/install-other-linux?view=powershell-7.2#installation-using-a-binary-archive-file
+RUN mkdir -p /opt/microsoft/powershell/7 && \
+    tar zxfv requirements/ucs/powershell-7.2.5-linux-arm64.tar.gz -C /opt/microsoft/powershell/7 && \
+    chmod +x /opt/microsoft/powershell/7/pwsh && \
+    ln -s /opt/microsoft/powershell/7/pwsh /usr/bin/pwsh
+
+# Configure the USC PowerShell Tool
+RUN ./requirements/ucs/ucs-powertool-setup.sh
 
 # Clone the Intersight REST API repository
 RUN git clone https://github.com/movinalot/intersight-rest-api \
