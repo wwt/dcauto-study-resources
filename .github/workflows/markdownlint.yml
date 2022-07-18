@@ -16,15 +16,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # checkout@v2 action documentation
+      # checkout action documentation
       # https://github.com/marketplace/actions/checkout
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       # markdownlint-cli action documentation
       # https://github.com/marketplace/actions/markdownlint-cli
       - name: markdownlint-cli
-        uses: nosborn/github-action-markdown-cli@v1.1.1
+        uses: nosborn/github-action-markdown-cli@v3.1.0
         with:
           files: .
           config_file: .markdownlint.json
