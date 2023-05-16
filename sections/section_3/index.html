@@ -883,28 +883,28 @@
 
 <h1 id="data-center-device-centric-networking">Data Center Device-Centric Networking<a class="headerlink" href="#data-center-device-centric-networking" title="Permanent link">&para;</a></h1>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>This section of the exam topics focuses on the programmability features of the Cisco Nexus series of switches, when the switches run the <strong>Cisco Open NX-OS</strong> operating system.  We found this particular exam topic section has the most technical variety of its counterparts and, thus, required us to build and practice a pretty diverse set of skills in the course of our <abbr title="Cisco Data Center Automation Exam (300-635)">DCAUTO</abbr> exam prep.  We spent a good amount of time learning to pay close attention to discreet differences between the many types of Open NX-OS programmatic interfaces plus how Open NX-OS models its configuration and state data using its Data Management Engine (<abbr title="Data Management Engine">DME</abbr>) and <abbr title="Yet Another Next Generation">YANG</abbr> model options (both Native and OpenConfig).</p>
+<p>This section of the exam topics focuses on the programmability features of the Cisco Nexus series of switches, when the switches run the <strong>Cisco Open NX-OS</strong> operating system.  We found this particular exam topic section has the most technical variety of its counterparts and, thus, required us to build and practice a pretty diverse set of skills in the course of our DCAUTO exam prep.  We spent a good amount of time learning to pay close attention to discreet differences between the many types of Open NX-OS programmatic interfaces plus how Open NX-OS models its configuration and state data using its Data Management Engine (DME) and YANG model options (both Native and OpenConfig).</p>
 <details class="note" open="open">
 <summary>Section 3.0 Topic Details</summary>
 <ul>
 <li>3.1 Describe Day 0 provisioning with NX-OS<ul>
-<li>3.1.a Cisco <abbr title="PowerOn Auto Provisioning">POAP</abbr></li>
-<li>3.1.b NX-OS <abbr title="Preboot eXecution Environment">iPXE</abbr></li>
+<li>3.1.a Cisco POAP</li>
+<li>3.1.b NX-OS iPXE</li>
 </ul>
 </li>
 <li>3.2 Implement On-Box Programmability and Automation with NX-OS<ul>
 <li>3.2.a Bash</li>
 <li>3.2.b Linux containers (LXC and Docker using provided container)</li>
 <li>3.2.c NX-OS guest shell</li>
-<li>3.2.d Embedded Event Manager (<abbr title="Embedded Event Manager">EEM</abbr>)</li>
+<li>3.2.d Embedded Event Manager (EEM)</li>
 <li>3.2.e On-box Python Scripting</li>
 </ul>
 </li>
-<li>3.3 Compare model-driven telemetry such as <abbr title="Yet Another Next Generation">YANG</abbr> Push and <abbr title="Google Remote Procedure Call">gRPC</abbr> to traditional network monitoring strategies such as SMNP, Netflow, and SYSLOG</li>
+<li>3.3 Compare model-driven telemetry such as YANG Push and gRPC to traditional network monitoring strategies such as SMNP, Netflow, and SYSLOG</li>
 <li>3.4 Construct Python script that consumes model-driven telemetry data with NX-OS</li>
 <li>3.5 Implement Off-Box Programmability and Automation with NX-OS<ul>
-<li>3.5.a Nexus NX-<abbr title="Application Programming Interface">API</abbr> (NX-<abbr title="Application Programming Interface">API</abbr> <abbr title="Representational State Transfer">REST</abbr> and NX-<abbr title="Application Programming Interface">API</abbr> <abbr title="Command Line Interface">CLI</abbr>)</li>
-<li>3.5.b Nexus <abbr title="Network Configuration Protocol">NETCONF</abbr> using native and OpenConfig</li>
+<li>3.5.a Nexus NX-API (NX-API REST and NX-API CLI)</li>
+<li>3.5.b Nexus NETCONF using native and OpenConfig</li>
 <li>3.5.c Network configuration tools with NX-OS (Ansible)</li>
 </ul>
 </li>
@@ -918,7 +918,7 @@
 <ul>
 <li><a href="https://developer.cisco.com/learning/tracks/nxos-programmability" target="_blank" title="NX-OS Programmability Learning Path">NX-OS Programmability</a><ul>
 <li><strong>Introduction to NX-OS Programmability Module</strong> - All Labs</li>
-<li><strong><abbr title="Network Configuration Protocol">NETCONF</abbr>/<abbr title="Yet Another Next Generation">YANG</abbr> on Nexus</strong> - All Labs</li>
+<li><strong>NETCONF/YANG on Nexus</strong> - All Labs</li>
 </ul>
 </li>
 </ul>
@@ -926,9 +926,9 @@
 <details class="abstract">
 <summary>Files and Scripts</summary>
 <ul>
-<li><a href="https://devhub.cisco.com/artifactory/open-nxos-agents/" target="_blank" title="NX-OS OpenConfig YANG Model RPM Artifactory">NX-OS OpenConfig <abbr title="Yet Another Next Generation">YANG</abbr> Model RPM Artifactory</a></li>
-<li><a href="https://github.com/datacenter/nexus9000/blob/master/nx-os/poap/poap.py" target="_blank" title="NX-OS POAP Python Script - GitHub Repository">NX-OS <abbr title="PowerOn Auto Provisioning">POAP</abbr> Python Script - GitHub Repository</a></li>
-<li><a href="https://github.com/CiscoDevNet/nx-telemetry-proto" target="_blank" title="NX-OS gRPC Telemetry Protocol Definitions - GitHub Repository">NX-OS <abbr title="Google Remote Procedure Call">gRPC</abbr> Telemetry Protocol Definitions - GitHub Repository</a></li>
+<li><a href="https://devhub.cisco.com/artifactory/open-nxos-agents/" target="_blank" title="NX-OS OpenConfig YANG Model RPM Artifactory">NX-OS OpenConfig YANG Model RPM Artifactory</a></li>
+<li><a href="https://github.com/datacenter/nexus9000/blob/master/nx-os/poap/poap.py" target="_blank" title="NX-OS POAP Python Script - GitHub Repository">NX-OS POAP Python Script - GitHub Repository</a></li>
+<li><a href="https://github.com/CiscoDevNet/nx-telemetry-proto" target="_blank" title="NX-OS gRPC Telemetry Protocol Definitions - GitHub Repository">NX-OS gRPC Telemetry Protocol Definitions - GitHub Repository</a></li>
 </ul>
 </details>
 <hr />
@@ -981,23 +981,23 @@
 <li><a href="http://localhost:8888/lab/workspaces/auto-c/tree/resources/nexus/ansible/group_vars/all.yml" target="_blank" title="Sample Host Variables File">Sample Group Variables File</a></li>
 </ul>
 </li>
-<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/></svg></span> <a href="http://localhost:8888/lab/workspaces/auto-I/tree/resources/nexus/gnmi" target="_blank" title="gNMI Telemetry Files"><abbr title="Google Network Management Interface">gNMI</abbr> Telemetry Files</a><ul>
-<li><a href="http://localhost:8888/lab/workspaces/auto-I/tree/resources/nexus/gnmi/gnmi_dial_in.ipynb" target="_blank" title="gNMI Telemetry Subscription Walk-Through"><abbr title="Google Network Management Interface">gNMI</abbr> Telemetry Subscription Walk-Through Exercises</a></li>
-<li><a href="http://localhost:8888/lab/workspaces/auto-I/tree/resources/nexus/gnmi/gnmi.py" target="_blank" title="gNMI Telemetry Subscription Python Code"><abbr title="Google Network Management Interface">gNMI</abbr> Telemetry Subscription Python Code</a></li>
-<li><a href="http://localhost:8888/lab/workspaces/auto-I/tree/resources/nexus/gnmi/gnmi.pem" target="_blank" title="gNMI Sample Certificate"><abbr title="Google Network Management Interface">gNMI</abbr> Sample Certificate</a></li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/></svg></span> <a href="http://localhost:8888/lab/workspaces/auto-I/tree/resources/nexus/gnmi" target="_blank" title="gNMI Telemetry Files">gNMI Telemetry Files</a><ul>
+<li><a href="http://localhost:8888/lab/workspaces/auto-I/tree/resources/nexus/gnmi/gnmi_dial_in.ipynb" target="_blank" title="gNMI Telemetry Subscription Walk-Through">gNMI Telemetry Subscription Walk-Through Exercises</a></li>
+<li><a href="http://localhost:8888/lab/workspaces/auto-I/tree/resources/nexus/gnmi/gnmi.py" target="_blank" title="gNMI Telemetry Subscription Python Code">gNMI Telemetry Subscription Python Code</a></li>
+<li><a href="http://localhost:8888/lab/workspaces/auto-I/tree/resources/nexus/gnmi/gnmi.pem" target="_blank" title="gNMI Sample Certificate">gNMI Sample Certificate</a></li>
 </ul>
 </li>
-<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 7H5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2m0 4H5V9h2m7-2h-4v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m0 4h-2V9h2m6 0v6h1v2h-4v-2h1V9h-1V7h4v2Z"/></svg></span> <a href="http://localhost:8888/lab/tree/resources/nexus/netconf" target="_blank" title="NETCONF"><abbr title="Network Configuration Protocol">NETCONF</abbr></a><ul>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 7H5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2m0 4H5V9h2m7-2h-4v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m0 4h-2V9h2m6 0v6h1v2h-4v-2h1V9h-1V7h4v2Z"/></svg></span> <a href="http://localhost:8888/lab/tree/resources/nexus/netconf" target="_blank" title="NETCONF">NETCONF</a><ul>
 <li><a href="http://localhost:8888/lab/workspaces/auto-I/tree/resources/nexus/netconf/devnet_learning_lab_hands_on/nx_os_ncclient_devnet_lab_hands_on.ipynb" target="_blank" title="DevNet Learning Lab Hands-On Exercise">DevNet Learning Lab Hands-On Exercise</a></li>
 <li><a href="http://localhost:8888/lab/workspaces/auto-I/tree/resources/nexus/netconf/devnet_learning_lab_hands_on/solutions/nx_os_ncclient_devnet_lab_hands_on_solution.ipynb" target="_blank" title="DevNet Learning Lab Hands-On Exercise Solution">DevNet Learning Lab Hands-On Exercise Solution</a></li>
-<li><a href="http://localhost:8888/lab/workspaces/auto-I/tree/resources/nexus/netconf/netconf_practice_walkthrough/netconf_practice_walkthrough.ipynb" target="_blank" title="NETCONF Walk-Through Exercise"><abbr title="Network Configuration Protocol">NETCONF</abbr> Walk-Through Exercise</a></li>
-<li><a href="http://localhost:8888/lab/workspaces/auto-I/tree/resources/nexus/netconf/netconf_practice_walkthrough/netconf_payloads" target="_blank" title="NETCONF Walk-Through Exercise XML Payloads"><abbr title="Network Configuration Protocol">NETCONF</abbr> Walk-Through Exercise <abbr title="eXtensible Markup Language">XML</abbr> Payloads</a></li>
+<li><a href="http://localhost:8888/lab/workspaces/auto-I/tree/resources/nexus/netconf/netconf_practice_walkthrough/netconf_practice_walkthrough.ipynb" target="_blank" title="NETCONF Walk-Through Exercise">NETCONF Walk-Through Exercise</a></li>
+<li><a href="http://localhost:8888/lab/workspaces/auto-I/tree/resources/nexus/netconf/netconf_practice_walkthrough/netconf_payloads" target="_blank" title="NETCONF Walk-Through Exercise XML Payloads">NETCONF Walk-Through Exercise XML Payloads</a></li>
 </ul>
 </li>
 </ul>
 </details>
 <details class="abstract">
-<summary><abbr title="World Wide Technology">WWT</abbr> On-Demand Labs</summary>
+<summary>WWT On-Demand Labs</summary>
 <ul>
 <li><a href="https://www.wwt.com/lab/cisco-ansible-automation-training-lab" target="_blank" title="WCisco Ansible Automation Lab">Cisco Ansible Automation Lab</a><ul>
 <li>We did not follow the provided lab guide, although you may certainly do so if you are new to Ansible or want some Ansible practice.</li>
@@ -1011,8 +1011,8 @@
 <details class="abstract">
 <summary>Day 0 Provisioning</summary>
 <ul>
-<li><a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/progammability/guide/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x_chapter_01001.html" target="_blank" title="iPXE - NX-OS Programmability Guide"><abbr title="Preboot eXecution Environment">iPXE</abbr> - NX-OS Programmability Guide</a></li>
-<li><a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/fundamentals/configuration/guide/b-cisco-nexus-9000-nx-os-fundamentals-configuration-guide-93x/b-cisco-nexus-9000-nx-os-fundamentals-configuration-guide-93x_chapter_0100.html" target="_blank" title="POAP - NX-OS Configuration Guide"><abbr title="PowerOn Auto Provisioning">POAP</abbr> - NX-OS Configuration Guide</a></li>
+<li><a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/progammability/guide/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x_chapter_01001.html" target="_blank" title="iPXE - NX-OS Programmability Guide">iPXE - NX-OS Programmability Guide</a></li>
+<li><a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/fundamentals/configuration/guide/b-cisco-nexus-9000-nx-os-fundamentals-configuration-guide-93x/b-cisco-nexus-9000-nx-os-fundamentals-configuration-guide-93x_chapter_0100.html" target="_blank" title="POAP - NX-OS Configuration Guide">POAP - NX-OS Configuration Guide</a></li>
 </ul>
 </details>
 <details class="abstract">
@@ -1021,8 +1021,8 @@
 <li><a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/progammability/guide/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x_chapter_0101100.html" target="_blank" title="Bash - NX-OS Programmability Guide">Bash - NX-OS Programmability Guide</a></li>
 <li><a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/progammability/guide/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x_chapter_0100001.html" target="_blank" title="Docker on NX-OS - NX-OS Programmability Guide">Docker on NX-OS - NX-OS Programmability Guide</a></li>
 <li><a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/progammability/guide/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x_chapter_0100.html" target="_blank" title="Guest Shell - NX-OS Programmability Guide">Guest Shell - NX-OS Programmability Guide</a></li>
-<li><a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/system-management/b-cisco-nexus-9000-series-nx-os-system-management-configuration-guide-93x/b-cisco-nexus-9000-series-nx-os-system-management-configuration-guide-93x_chapter_0100010.html" target="_blank" title="EEM Configuration - NX-OS Configuration Guide"><abbr title="Embedded Event Manager">EEM</abbr> Configuration - NX-OS Configuration Guide</a></li>
-<li><a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/system-management/b-cisco-nexus-9000-series-nx-os-system-management-configuration-guide-93x/b-cisco-nexus-9000-series-nx-os-system-management-configuration-guide-93x_appendix_011101.html" target="_blank" title="EEM Examples - NX-OS Configuration Guide"><abbr title="Embedded Event Manager">EEM</abbr> Examples - NX-OS Configuration Guide</a></li>
+<li><a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/system-management/b-cisco-nexus-9000-series-nx-os-system-management-configuration-guide-93x/b-cisco-nexus-9000-series-nx-os-system-management-configuration-guide-93x_chapter_0100010.html" target="_blank" title="EEM Configuration - NX-OS Configuration Guide">EEM Configuration - NX-OS Configuration Guide</a></li>
+<li><a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/system-management/b-cisco-nexus-9000-series-nx-os-system-management-configuration-guide-93x/b-cisco-nexus-9000-series-nx-os-system-management-configuration-guide-93x_appendix_011101.html" target="_blank" title="EEM Examples - NX-OS Configuration Guide">EEM Examples - NX-OS Configuration Guide</a></li>
 <li><a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/progammability/guide/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x_chapter_0110000.html" target="_blank" title="On-Box Python Scripting - NX-OS Programmability Guide">On-Box Python Scripting - NX-OS Programmability Guide</a></li>
 </ul>
 </details>
@@ -1031,29 +1031,29 @@
 <ul>
 <li><a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/progammability/guide/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x_chapter_010111.html" target="_blank" title="Infrastructure Overview - NX-OS Programmability Guide">Infrastructure Overview - NX-OS Programmability Guide</a></li>
 <li><a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/progammability/guide/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x_chapter_011000.html" target="_blank" title="Managing Components - NX-OS Programmability Guide">Managing Components - NX-OS Programmability Guide</a></li>
-<li><a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/progammability/guide/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x_chapter_011001.html" target="_blank" title="OpenConfig YANG - NX-OS Programmability Guide">OpenConfig <abbr title="Yet Another Next Generation">YANG</abbr> - NX-OS Programmability Guide</a></li>
-<li><a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/progammability/guide/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x_chapter_0100110.html" target="_blank" title="NETCONF Agent - NX-OS Programmability Guide"><abbr title="Network Configuration Protocol">NETCONF</abbr> Agent - NX-OS Programmability Guide</a></li>
+<li><a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/progammability/guide/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x_chapter_011001.html" target="_blank" title="OpenConfig YANG - NX-OS Programmability Guide">OpenConfig YANG - NX-OS Programmability Guide</a></li>
+<li><a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/progammability/guide/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x_chapter_0100110.html" target="_blank" title="NETCONF Agent - NX-OS Programmability Guide">NETCONF Agent - NX-OS Programmability Guide</a></li>
 <li><a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/progammability/guide/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x_chapter_011011.html" target="_blank" title="XMLIN Tool - NX-OS Programmability Guide">XMLIN Tool - NX-OS Programmability Guide</a></li>
-<li><a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/progammability/guide/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x_chapter_0101111.html" target="_blank" title="gRPC Agent - NX-OS Programmability Guide"><abbr title="Google Remote Procedure Call">gRPC</abbr> Agent - NX-OS Programmability Guide</a></li>
-<li><a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/progammability/guide/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x_chapter_0110001.html" target="_blank" title="gNMI Interface - NX-OS Programmability Guide"><abbr title="Google Network Management Interface">gNMI</abbr> Interface - NX-OS Programmability Guide</a></li>
+<li><a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/progammability/guide/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x_chapter_0101111.html" target="_blank" title="gRPC Agent - NX-OS Programmability Guide">gRPC Agent - NX-OS Programmability Guide</a></li>
+<li><a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/progammability/guide/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x_chapter_0110001.html" target="_blank" title="gNMI Interface - NX-OS Programmability Guide">gNMI Interface - NX-OS Programmability Guide</a></li>
 <li><a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/progammability/guide/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x_chapter_0101001.html" target="_blank" title="Model-Driven Telemetry - NX-OS Programmability Guide">Model-Driven Telemetry - NX-OS Programmability Guide</a></li>
 </ul>
 </details>
 <details class="abstract">
 <summary>Consuming Model-Driven Telemetry with Python</summary>
 <ul>
-<li><a href="https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/white-paper-c11-744191.html" target="_blank" title="Nexus Telemetry with gNMI &amp; OpenConfig White Paper">Nexus Telemetry with <abbr title="Google Network Management Interface">gNMI</abbr> &amp; OpenConfig White Paper</a></li>
-<li><a href="https://blogs.cisco.com/datacenter/telemetry-in-action-netconf-and-gnmi-with-a-custom-built-collector" target="_blank" title="Nexus Telemetry with NETCONF &amp; gNMI Blog">Nexus Telemetry with <abbr title="Network Configuration Protocol">NETCONF</abbr> &amp; <abbr title="Google Network Management Interface">gNMI</abbr> Blog</a></li>
-<li><a href="https://github.com/cisco-ie/cisco-gnmi-python" target="_blank" title="Cisco gNMI Python Library - GitHub Repository">Cisco <abbr title="Google Network Management Interface">gNMI</abbr> Python Library - GitHub Repository</a></li>
+<li><a href="https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/white-paper-c11-744191.html" target="_blank" title="Nexus Telemetry with gNMI &amp; OpenConfig White Paper">Nexus Telemetry with gNMI &amp; OpenConfig White Paper</a></li>
+<li><a href="https://blogs.cisco.com/datacenter/telemetry-in-action-netconf-and-gnmi-with-a-custom-built-collector" target="_blank" title="Nexus Telemetry with NETCONF &amp; gNMI Blog">Nexus Telemetry with NETCONF &amp; gNMI Blog</a></li>
+<li><a href="https://github.com/cisco-ie/cisco-gnmi-python" target="_blank" title="Cisco gNMI Python Library - GitHub Repository">Cisco gNMI Python Library - GitHub Repository</a></li>
 </ul>
 </details>
 <details class="abstract">
-<summary>NX-<abbr title="Application Programming Interface">API</abbr></summary>
+<summary>NX-API</summary>
 <ul>
-<li><a href="https://developer.cisco.com/site/nxapi-dme-model-reference-api/?version=9.3(5)" target="_blank" title="NX-OS DME Model Reference">NX-OS <abbr title="Data Management Engine">DME</abbr> Model Reference</a></li>
-<li><a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/progammability/guide/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x_chapter_010011.html" target="_blank" title="NX-API CLI">NX-<abbr title="Application Programming Interface">API</abbr> <abbr title="Command Line Interface">CLI</abbr></a></li>
-<li><a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/progammability/guide/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x_chapter_0101110.html" target="_blank" title="NX-API REST">NX-<abbr title="Application Programming Interface">API</abbr> <abbr title="Representational State Transfer">REST</abbr></a></li>
-<li><a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/progammability/guide/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x_chapter_010110.html" target="_blank" title="NX-API Developer Sandbox">NX-<abbr title="Application Programming Interface">API</abbr> Developer Sandbox</a></li>
+<li><a href="https://developer.cisco.com/site/nxapi-dme-model-reference-api/?version=9.3(5)" target="_blank" title="NX-OS DME Model Reference">NX-OS DME Model Reference</a></li>
+<li><a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/progammability/guide/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x_chapter_010011.html" target="_blank" title="NX-API CLI">NX-API CLI</a></li>
+<li><a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/progammability/guide/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x_chapter_0101110.html" target="_blank" title="NX-API REST">NX-API REST</a></li>
+<li><a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/progammability/guide/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x_chapter_010110.html" target="_blank" title="NX-API Developer Sandbox">NX-API Developer Sandbox</a></li>
 </ul>
 </details>
 <details class="abstract">
@@ -1077,17 +1077,17 @@
 <p>Cisco documentation was our predominant resource for this exam topic section.  We absolutely did <strong>NOT</strong> arbitrarily insert every link from the NX-OS Programmability Guide into this page, just to fill space.  There were only a few DevNet Learning Labs available which address the NX-OS exam topics, so we had to rely heavily on tediously walking through commands and configuration examples in official Cisco documentation.  We <strong>highly</strong> recommend that you invest a lot of hands-on time with the examples in Cisco NX-OS documentation.</p>
 </li>
 <li>
-<p>Effective NX-OS hands-on lab resources were hard for us to find.  The lone DevNet NX-OS Sandbox was helpful, although it had some limitations that kept us from practicing certain things, like deploying Docker Containers on NX-OS and configuring <abbr title="PowerOn Auto Provisioning">POAP</abbr>.  The <abbr title="World Wide Technology">WWT</abbr> Ansible Automation Lab was a good resource for studying and testing Ansible and Docker with NX-OS.  DevNet provides a <a href="https://developer.cisco.com/docs/nx-os/#!developer-tooling/vagrant" target="_blank" title="DevNet NX-OS Vagrant Configuration">Vagrant configuration</a> that we did not use, although it is another NX-OS hands-on resource option.</p>
+<p>Effective NX-OS hands-on lab resources were hard for us to find.  The lone DevNet NX-OS Sandbox was helpful, although it had some limitations that kept us from practicing certain things, like deploying Docker Containers on NX-OS and configuring POAP.  The WWT Ansible Automation Lab was a good resource for studying and testing Ansible and Docker with NX-OS.  DevNet provides a <a href="https://developer.cisco.com/docs/nx-os/#!developer-tooling/vagrant" target="_blank" title="DevNet NX-OS Vagrant Configuration">Vagrant configuration</a> that we did not use, although it is another NX-OS hands-on resource option.</p>
 </li>
 <li>
-<p>We did not find documentation that explicitly showed us how to construct Python scripts that consume model-driven telemetry.  Instead, we pieced together many different resources (referenced in the <strong>Documentation</strong> section) and conducted a lot of trial-and-error testing in order to meet our interpretation of the exam topic intent successfully.  For some really good practice, we recommend that you work through the <a href="http://localhost:8888/lab/workspaces/auto-I/tree/resources/nexus/gnmi/gnmi_dial_in.ipynb" target="_blank" title="gNMI Telemetry Subscription Walk-Through"><abbr title="Google Network Management Interface">gNMI</abbr> Jupyter Walk-Through</a> and <a href="http://localhost:8888/lab/workspaces/auto-I/tree/resources/nexus/gnmi/gnmi.py" target="_blank" title="gNMI Telemetry Subscription Python Code">sample Python code</a> we put together and then write your own code to consume telemetry from different XPaths.</p>
+<p>We did not find documentation that explicitly showed us how to construct Python scripts that consume model-driven telemetry.  Instead, we pieced together many different resources (referenced in the <strong>Documentation</strong> section) and conducted a lot of trial-and-error testing in order to meet our interpretation of the exam topic intent successfully.  For some really good practice, we recommend that you work through the <a href="http://localhost:8888/lab/workspaces/auto-I/tree/resources/nexus/gnmi/gnmi_dial_in.ipynb" target="_blank" title="gNMI Telemetry Subscription Walk-Through">gNMI Jupyter Walk-Through</a> and <a href="http://localhost:8888/lab/workspaces/auto-I/tree/resources/nexus/gnmi/gnmi.py" target="_blank" title="gNMI Telemetry Subscription Python Code">sample Python code</a> we put together and then write your own code to consume telemetry from different XPaths.</p>
 </li>
 <li>
-<p>Something we found very beneficial to our comfort level with <abbr title="Network Configuration Protocol">NETCONF</abbr> and <abbr title="Yet Another Next Generation">YANG</abbr> models was to go through the DevNet Learning Labs on those topics and, instead of copying and pasting commands (into an NX-OS hands-on environment) or even typing out the <abbr title="Network Configuration Protocol">NETCONF</abbr> <abbr title="eXtensible Markup Language">XML</abbr> payload examples in the lab guides, we forced ourselves to look at the XPath examples and then try to <strong>manually</strong> type out/construct the <abbr title="eXtensible Markup Language">XML</abbr> payloads.  This practice helped us become <em>much</em> more comfortable with <abbr title="Yet Another Next Generation">YANG</abbr> models, <abbr title="eXtensible Markup Language">XML</abbr>, and <abbr title="Network Configuration Protocol">NETCONF</abbr>, in general.  The <a href="http://localhost:8888/lab/workspaces/auto-I/tree/resources/nexus/netconf/netconf_practice_walkthrough/netconf_practice_walkthrough.ipynb" target="_blank" title="NETCONF Walk-Through Exercise"><abbr title="Network Configuration Protocol">NETCONF</abbr> Jupyter Notebook</a> we put together was an excellent resource for us to get that practice because the interactivity of Jupyter makes it fast and easy to try something, see it not work, make a change, and try again.</p>
+<p>Something we found very beneficial to our comfort level with NETCONF and YANG models was to go through the DevNet Learning Labs on those topics and, instead of copying and pasting commands (into an NX-OS hands-on environment) or even typing out the NETCONF XML payload examples in the lab guides, we forced ourselves to look at the XPath examples and then try to <strong>manually</strong> type out/construct the XML payloads.  This practice helped us become <em>much</em> more comfortable with YANG models, XML, and NETCONF, in general.  The <a href="http://localhost:8888/lab/workspaces/auto-I/tree/resources/nexus/netconf/netconf_practice_walkthrough/netconf_practice_walkthrough.ipynb" target="_blank" title="NETCONF Walk-Through Exercise">NETCONF Jupyter Notebook</a> we put together was an excellent resource for us to get that practice because the interactivity of Jupyter makes it fast and easy to try something, see it not work, make a change, and try again.</p>
 </li>
 </ul>
 <h2 id="on-to-section-40">On to Section 4.0<a class="headerlink" href="#on-to-section-40" title="Permanent link">&para;</a></h2>
-<p><img alt="👍" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f44d.svg" title=":thumbsup:" />  You finished going through all of the Open NX-OS resources!  One more section to go, click <a href="../section_4/" title="Section 4.0">this link</a> to check out <strong>Section 4.0</strong> exam topics and resources.</p>
+<p><img alt="👍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f44d.svg" title=":thumbsup:" />  You finished going through all of the Open NX-OS resources!  One more section to go, click <a href="../section_4/" title="Section 4.0">this link</a> to check out <strong>Section 4.0</strong> exam topics and resources.</p>
 
               
             </article>
