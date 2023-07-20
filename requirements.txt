@@ -33,7 +33,7 @@ mkdocs-material-extensions==1.0.3
     # via mkdocs-material
 packaging==21.3
     # via mkdocs
-pygments==2.12.0
+pygments==2.15.0
     # via mkdocs-material
 pymdown-extensions==10.0
     # via mkdocs-material
