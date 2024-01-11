@@ -152,7 +152,7 @@ This section of the exam topics primarily focuses on the programmability feature
 ## :material-file-document-outline: Documentation
 
 ??? abstract "UCS Developer Tools"
-    - [UCS Python SDK Reference Guide](hhttps://ciscoucs.github.io/ucsmsdk_docs/ucsmsdk_ug.html "UCS Python SDK Reference Guide"){target=_blank}
+    - [UCS Python SDK Reference Guide](https://ciscoucs.github.io/ucsmsdk_docs/ucsmsdk_ug.html "UCS Python SDK Reference Guide"){target=_blank}
     - [UCS PowerTool Resource Landing Page](https://community.cisco.com/t5/cisco-developed-ucs-integrations/cisco-ucs-powertool-suite-powershell-modules-for-cisco-ucs/ta-p/3639523 "UCS PowerTool Resource Landing Page"){target=_blank}
     - [DevNet UCS PowerTool Docker Container on Docker Hub](https://hub.docker.com/r/ciscodevnet/ucs-powertool-core-ms "DevNet UCS PowerTool Docker Container on Docker Hub"){target=_blank}
         - The resources in this Docker Container are already built-in to the Visual Studio Development Container in this repository.
