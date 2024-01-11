@@ -10,8 +10,15 @@
       
         <link rel="canonical" href="https://wwt.github.io/dcauto-study-resources/sections/section_4/">
       
+      
+        <link rel="prev" href="../section_3/">
+      
+      
+        <link rel="next" href="../appendix_a/">
+      
+      
       <link rel="icon" href="../../images/logos/wwt_color.svg">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
     
     
       
@@ -19,14 +26,17 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.50c56a3b.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
-        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
+
+
     
+    
+      
     
     
       
@@ -38,10 +48,11 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
+    
     
     
   </head>
@@ -56,9 +67,6 @@
     
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
-    
-    
-      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -80,7 +88,7 @@
 
   
 
-<header class="md-header md-header--lifted" data-md-component="header">
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="WWT - Cisco DevNet DCAUTO Study Resources" class="md-header__button md-logo" aria-label="WWT - Cisco DevNet DCAUTO Study Resources" data-md-component="logo">
       
@@ -88,6 +96,7 @@
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
+      
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
@@ -107,31 +116,39 @@
       </div>
     </div>
     
-      <form class="md-header__option" data-md-component="palette">
-        
-          
-          
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
-          
-            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
-            </label>
-          
-        
-          
-          
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="red"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
-          
-            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
-            </label>
-          
-        
-      </form>
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="red"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
       <label class="md-header__button md-icon" for="__search">
+        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
@@ -140,16 +157,20 @@
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
+        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
           </a>
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -163,7 +184,7 @@
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -175,7 +196,7 @@
         <a href="https://github.com/wwt/dcauto-study-resources" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     wwt/dcauto-study-resources
@@ -188,86 +209,96 @@
     
       
 <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-tabs__inner md-grid">
+  <div class="md-grid">
     <ul class="md-tabs__list">
       
         
   
   
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
+  Home
 
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
-        Home
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../section_0/" class="md-tabs__link">
-        Setup
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
         
   
   
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../section_0/" class="md-tabs__link">
+          
+  
+  Setup
 
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../section_1/" class="md-tabs__link">
-        Section 1.0
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../section_2/" class="md-tabs__link">
-        Section 2.0
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
         
   
   
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../section_1/" class="md-tabs__link">
+          
+  
+  Section 1.0
 
+        </a>
+      </li>
+    
+  
 
+      
+        
   
   
   
-    <li class="md-tabs__item">
-      <a href="../section_3/" class="md-tabs__link">
-        Section 3.0
-      </a>
-    </li>
+    
+    
+      <li class="md-tabs__item">
+        <a href="../section_2/" class="md-tabs__link">
+          
+  
+  Section 2.0
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../section_3/" class="md-tabs__link">
+          
+  
+  Section 3.0
+
+        </a>
+      </li>
+    
   
 
       
@@ -276,48 +307,54 @@
   
     
   
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  Section 4.0
 
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
-        Section 4.0
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../appendix_a/" class="md-tabs__link">
-        Appendix A
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
         
   
   
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../appendix_a/" class="md-tabs__link">
+          
+  
+  Appendix A
 
+        </a>
+      </li>
+    
+  
 
+      
+        
   
   
   
-    <li class="md-tabs__item">
-      <a href="../appendix_b/" class="md-tabs__link">
-        Appendix B
-      </a>
-    </li>
+    
+    
+      <li class="md-tabs__item">
+        <a href="../appendix_b/" class="md-tabs__link">
+          
+  
+  Appendix B
+
+        </a>
+      </li>
+    
   
 
       
@@ -343,6 +380,7 @@
                   <div class="md-sidebar__inner">
                     
 
+
   
 
 
@@ -362,7 +400,7 @@
       <a href="https://github.com/wwt/dcauto-study-resources" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     wwt/dcauto-study-resources
@@ -374,296 +412,431 @@
     
       
       
-      
-
+  
   
   
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    
+    
+    
+    
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
-      
-      
-      
-        <label class="md-nav__link" for="__nav_1">
-          Home
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Home" data-md-level="1">
-        <label class="md-nav__title" for="__nav_1">
-          <span class="md-nav__icon md-icon"></span>
-          Home
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        
           
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../.." class="md-nav__link">
-        DCAUTO Study Resources
+        
+  
+  <span class="md-ellipsis">
+    DCAUTO Study Resources
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
+  
   
   
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    
+    
+    
+    
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
-      
-      
-      
-        <label class="md-nav__link" for="__nav_2">
-          Setup
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Setup" data-md-level="1">
-        <label class="md-nav__title" for="__nav_2">
-          <span class="md-nav__icon md-icon"></span>
-          Setup
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        
           
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Setup
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Setup
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../section_0/" class="md-nav__link">
-        Development Environment Setup
+        
+  
+  <span class="md-ellipsis">
+    Development Environment Setup
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
+  
   
   
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    
+    
+    
+    
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3">
-          Section 1.0
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Section 1.0" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
-          Section 1.0
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        
           
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Section 1.0
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Section 1.0
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../section_1/" class="md-nav__link">
-        Network Programmability Foundation
+        
+  
+  <span class="md-ellipsis">
+    Network Programmability Foundation
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
+  
   
   
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    
+    
+    
+    
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
-      
-      
-      
-        <label class="md-nav__link" for="__nav_4">
-          Section 2.0
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Section 2.0" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
-          <span class="md-nav__icon md-icon"></span>
-          Section 2.0
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        
           
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Section 2.0
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Section 2.0
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../section_2/" class="md-nav__link">
-        Controller Based Data Center Networking
+        
+  
+  <span class="md-ellipsis">
+    Controller Based Data Center Networking
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
+  
   
   
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    
+    
+    
+    
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
-      
-      
-      
-        <label class="md-nav__link" for="__nav_5">
-          Section 3.0
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Section 3.0" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
-          <span class="md-nav__icon md-icon"></span>
-          Section 3.0
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        
           
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Section 3.0
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Section 3.0
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../section_3/" class="md-nav__link">
-        Data Center Device-Centric Networking
+        
+  
+  <span class="md-ellipsis">
+    Data Center Device-Centric Networking
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
   
   
     
   
   
+  
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    
+    
+    
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
-      
-      
-      
-        <label class="md-nav__link" for="__nav_6">
-          Section 4.0
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Section 4.0" data-md-level="1">
-        <label class="md-nav__title" for="__nav_6">
-          <span class="md-nav__icon md-icon"></span>
-          Section 4.0
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
           
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Section 4.0
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Section 4.0
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
   
   
     
+  
   
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
         
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Data Center Compute
+          
+  
+  <span class="md-ellipsis">
+    Data Center Compute
+  </span>
+  
+
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Data Center Compute
+        
+  
+  <span class="md-ellipsis">
+    Data Center Compute
+  </span>
+  
+
       </a>
       
         
@@ -683,14 +856,18 @@
       
         <li class="md-nav__item">
   <a href="#overview" class="md-nav__link">
-    Overview
+    <span class="md-ellipsis">
+      Overview
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#resources" class="md-nav__link">
-    Resources
+    <span class="md-ellipsis">
+      Resources
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Resources">
@@ -698,14 +875,18 @@
         
           <li class="md-nav__item">
   <a href="#cisco-devnet" class="md-nav__link">
-     Cisco DevNet
+    <span class="md-ellipsis">
+       Cisco DevNet
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#videos-on-demand" class="md-nav__link">
-    Videos on Demand
+    <span class="md-ellipsis">
+      Videos on Demand
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Videos on Demand">
@@ -713,7 +894,9 @@
         
           <li class="md-nav__item">
   <a href="#cisco-live" class="md-nav__link">
-     Cisco Live
+    <span class="md-ellipsis">
+       Cisco Live
+    </span>
   </a>
   
 </li>
@@ -725,7 +908,9 @@
         
           <li class="md-nav__item">
   <a href="#hands-on-learning" class="md-nav__link">
-     Hands-On Learning
+    <span class="md-ellipsis">
+       Hands-On Learning
+    </span>
   </a>
   
 </li>
@@ -737,21 +922,27 @@
       
         <li class="md-nav__item">
   <a href="#documentation" class="md-nav__link">
-     Documentation
+    <span class="md-ellipsis">
+       Documentation
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#insights" class="md-nav__link">
-     Insights
+    <span class="md-ellipsis">
+       Insights
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#lessons-learned" class="md-nav__link">
-    Lessons Learned
+    <span class="md-ellipsis">
+      Lessons Learned
+    </span>
   </a>
   
 </li>
@@ -763,106 +954,151 @@
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
+  
   
   
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    
+    
+    
+    
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
-      
-      
-      
-        <label class="md-nav__link" for="__nav_7">
-          Appendix A
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Appendix A" data-md-level="1">
-        <label class="md-nav__title" for="__nav_7">
-          <span class="md-nav__icon md-icon"></span>
-          Appendix A
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        
           
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Appendix A
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Appendix A
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../appendix_a/" class="md-nav__link">
-        Supplementary Content
+        
+  
+  <span class="md-ellipsis">
+    Supplementary Content
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
+  
   
   
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    
+    
+    
+    
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" checked>
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
-      
-      
-      
-        <label class="md-nav__link" for="__nav_8">
-          Appendix B
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Appendix B" data-md-level="1">
-        <label class="md-nav__title" for="__nav_8">
-          <span class="md-nav__icon md-icon"></span>
-          Appendix B
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        
           
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Appendix B
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Appendix B
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../appendix_b/" class="md-nav__link">
-        JupyterLab
+        
+  
+  <span class="md-ellipsis">
+    JupyterLab
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -875,32 +1111,33 @@
             
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
+                  
 
 
 <h1 id="data-center-compute">Data Center Compute<a class="headerlink" href="#data-center-compute" title="Permanent link">&para;</a></h1>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>This section of the exam topics primarily focuses on the programmability features of the Cisco UCS Platform, including UCSM and <a href="https://www.intersight.com" target="_blank" title="Cisco Intersight">Cisco Intersight</a>.  There are many programmable interfaces for UCS platforms, including a Python SDK, Windows PowerShell (via the UCS PowerTool), and various REST APIs.  Our study for this section required us to spend a lot of time in our Visual Studio Code development environment, using the UCS PowerTool CLI, writing Python using the UCS Python SDK, and writing Python to interact with the Intersight API.</p>
+<p>This section of the exam topics primarily focuses on the programmability features of the Cisco <abbr title="Unified Compute System">UCS</abbr> Platform, including <abbr title="Unified Compute System Manager">UCSM</abbr> and <a href="https://www.intersight.com" target="_blank" title="Cisco Intersight">Cisco Intersight</a>.  There are many programmable interfaces for <abbr title="Unified Compute System">UCS</abbr> platforms, including a Python <abbr title="Software Development Kit">SDK</abbr>, Windows PowerShell (via the <abbr title="Unified Compute System">UCS</abbr> PowerTool), and various <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interfaces">APIs</abbr>.  Our study for this section required us to spend a lot of time in our Visual Studio Code development environment, using the <abbr title="Unified Compute System">UCS</abbr> PowerTool <abbr title="Command Line Interface">CLI</abbr>, writing Python using the <abbr title="Unified Compute System">UCS</abbr> Python <abbr title="Software Development Kit">SDK</abbr>, and writing Python to interact with the Intersight <abbr title="Application Programming Interface">API</abbr>.</p>
 <details class="note" open="open">
 <summary>Section 4.0 Topic Details</summary>
 <ul>
-<li>4.1 Configure Cisco UCS with developer tools<ul>
-<li>4.1.a UCS PowerTool</li>
-<li>4.1.b UCS Python SDK</li>
+<li>4.1 Configure Cisco <abbr title="Unified Compute System">UCS</abbr> with developer tools<ul>
+<li>4.1.a <abbr title="Unified Compute System">UCS</abbr> PowerTool</li>
+<li>4.1.b <abbr title="Unified Compute System">UCS</abbr> Python <abbr title="Software Development Kit">SDK</abbr></li>
 <li>4.1.c Ansible</li>
 </ul>
 </li>
-<li>4.2 Describe the capabilities of the DCNM API</li>
-<li>4.3 Identify the steps in the Intersight API authentication method</li>
-<li>4.4 Construct an Intersight API call given documentation to accomplish tasks such as manage server policies, service profiles, and firmware updates</li>
-<li>4.5 Describe the process to implement workflows for physical and virtual infrastructure using UCS Director<ul>
+<li>4.2 Describe the capabilities of the <abbr title="Data Center Network Manager">DCNM</abbr> <abbr title="Application Programming Interface">API</abbr></li>
+<li>4.3 Identify the steps in the Intersight <abbr title="Application Programming Interface">API</abbr> authentication method</li>
+<li>4.4 Construct an Intersight <abbr title="Application Programming Interface">API</abbr> call given documentation to accomplish tasks such as manage server policies, service profiles, and firmware updates</li>
+<li>4.5 Describe the process to implement workflows for physical and virtual infrastructure using <abbr title="Unified Compute System">UCS</abbr> Director<ul>
 <li>4.5.a Pre-defined tasks</li>
 <li>4.5.b Custom tasks</li>
 <li>4.5.c Script libraries</li>
-<li>4.6 Utilize UCS Director REST API browser</li>
+<li>4.6 Utilize <abbr title="Unified Compute System">UCS</abbr> Director <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> browser</li>
 </ul>
 </li>
 </ul>
@@ -911,39 +1148,39 @@
 <details class="abstract">
 <summary>Learning Labs</summary>
 <ul>
-<li><a href="https://developer.cisco.com/learning/tracks/ucs-compute-prog" target="_blank" title="UCS Programmability Learning Path">UCS Programmability</a><ul>
-<li><strong>UCS PowerTool Introduction</strong> - All Labs</li>
-<li><strong>UCS Python SDK Introduction</strong> - All Labs</li>
-<li><strong>UCS PowerTool and UCS Python Intermediate</strong> -  All Labs</li>
-<li><strong>Cisco Intersight REST API</strong> - All Labs</li>
+<li><a href="https://developer.cisco.com/learning/tracks/ucs-compute-prog" target="_blank" title="UCS Programmability Learning Path"><abbr title="Unified Compute System">UCS</abbr> Programmability</a><ul>
+<li><strong><abbr title="Unified Compute System">UCS</abbr> PowerTool Introduction</strong> - All Labs</li>
+<li><strong><abbr title="Unified Compute System">UCS</abbr> Python <abbr title="Software Development Kit">SDK</abbr> Introduction</strong> - All Labs</li>
+<li><strong><abbr title="Unified Compute System">UCS</abbr> PowerTool and <abbr title="Unified Compute System">UCS</abbr> Python Intermediate</strong> -  All Labs</li>
+<li><strong>Cisco Intersight <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr></strong> - All Labs</li>
 </ul>
 </li>
-<li><a href="https://developer.cisco.com/learning/tracks/ucsd-resource-automation" target="_blank" title="UCS for Application Developers Learning Pat">UCS for Application Developers</a><ul>
-<li><strong>UCS Director REST API Introduction</strong> - All Labs</li>
+<li><a href="https://developer.cisco.com/learning/tracks/ucsd-resource-automation" target="_blank" title="UCS for Application Developers Learning Pat"><abbr title="Unified Compute System">UCS</abbr> for Application Developers</a><ul>
+<li><strong><abbr title="Unified Compute System">UCS</abbr> Director <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> Introduction</strong> - All Labs</li>
 </ul>
 </li>
 </ul>
 </details>
 <hr />
 <h3 id="videos-on-demand">Videos on Demand<a class="headerlink" href="#videos-on-demand" title="Permanent link">&para;</a></h3>
-<h4 id="cisco-live"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M128 96h384v256h64V80c0-26.37-21.6-48-48-48H112c-26.37 0-48 21.63-48 48v272h64V96zm496 288H16c-8.75 0-16 7.3-16 16v16c0 35.25 28.75 64 64 64h512c35.25 0 64-28.75 64-64v-16c0-8.7-7.2-16-16-16zm-258.1-97.8c3.9 3.9 9 5.8 14.1 5.8s10.23-1.938 14.14-5.844l48-48c7.812-7.813 7.812-20.5 0-28.31l-48-48c-7.812-7.813-20.47-7.813-28.28 0-7.812 7.813-7.812 20.5 0 28.31l33.86 33.84-33.86 33.84C358 265.7 358 278.4 365.9 286.2zm-91.8-124.3c-7.812-7.813-20.47-7.813-28.28 0l-48 48c-7.812 7.813-7.812 20.5 0 28.31l48 48C249.8 290.1 254.9 292 260 292s10.23-1.938 14.14-5.844c7.812-7.813 7.812-20.5 0-28.31L240.3 224l33.86-33.84c6.94-7.76 6.94-20.46-.06-28.26z"/></svg></span> Cisco Live<a class="headerlink" href="#cisco-live" title="Permanent link">&para;</a></h4>
+<h4 id="cisco-live"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M64 96c0-35.3 28.7-64 64-64h384c35.3 0 64 28.7 64 64v256h-64V96H128v256H64V96zM0 403.2C0 392.6 8.6 384 19.2 384h601.6c10.6 0 19.2 8.6 19.2 19.2 0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zm112-34 48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/></svg></span> Cisco Live<a class="headerlink" href="#cisco-live" title="Permanent link">&para;</a></h4>
 <details class="abstract">
 <summary>On-Demand Library</summary>
 <ul>
-<li><a href="https://www.ciscolive.com/global/on-demand-library.html#/session/1510617043449001nob5" target="_blank" title="Automating Your Cisco UCS with Python - Managing Your Infrastructure as Code - DEVNET-1611">Automating Your Cisco UCS with Python - Managing Your Infrastructure as Code - DEVNET-1611</a></li>
-<li><a href="https://www.ciscolive.com/global/on-demand-library.html#/session/1573153551744001JcLV" target="_blank" title="Cisco UCS &amp; Cisco Intersight - Programmability Automation &amp; Orchestration Overview - DGTL-BRKPRG-2432">Cisco UCS &amp; Cisco Intersight - Programmability Automation &amp; Orchestration Overview - DGTL-BRKPRG-2432</a></li>
-<li><a href="https://www.ciscolive.com/global/on-demand-library.html#/session/1582806029472001wWax" target="_blank" title="Creating, Distributing, Maintaining and Utilizing the Cisco Intersight and Cisco UCS Ansible Collections - DGTL-DEVNET-2700">Creating, Distributing, Maintaining and Utilizing the Cisco Intersight and Cisco UCS Ansible Collections - DGTL-DEVNET-2700</a></li>
-<li><a href="https://www.ciscolive.com/global/on-demand-library.html#/session/1542224338659001rvdb" target="_blank" title="UCS Manager Automation with Ansible - DEVNET-1586">UCS Manager Automation with Ansible - DEVNET-1586</a></li>
-<li><a href="https://www.ciscolive.com/global/on-demand-library.html#/session/1542224343090001rMoa" target="_blank" title="Cisco UCS PowerTool - Deploy at Scale - DEVNET-2562">Cisco UCS PowerTool - Deploy at Scale - DEVNET-2562</a></li>
+<li><a href="https://www.ciscolive.com/global/on-demand-library.html#/session/1510617043449001nob5" target="_blank" title="Automating Your Cisco UCS with Python - Managing Your Infrastructure as Code - DEVNET-1611">Automating Your Cisco <abbr title="Unified Compute System">UCS</abbr> with Python - Managing Your Infrastructure as Code - DEVNET-1611</a></li>
+<li><a href="https://www.ciscolive.com/global/on-demand-library.html#/session/1573153551744001JcLV" target="_blank" title="Cisco UCS &amp; Cisco Intersight - Programmability Automation &amp; Orchestration Overview - DGTL-BRKPRG-2432">Cisco <abbr title="Unified Compute System">UCS</abbr> &amp; Cisco Intersight - Programmability Automation &amp; Orchestration Overview - DGTL-BRKPRG-2432</a></li>
+<li><a href="https://www.ciscolive.com/global/on-demand-library.html#/session/1582806029472001wWax" target="_blank" title="Creating, Distributing, Maintaining and Utilizing the Cisco Intersight and Cisco UCS Ansible Collections - DGTL-DEVNET-2700">Creating, Distributing, Maintaining and Utilizing the Cisco Intersight and Cisco <abbr title="Unified Compute System">UCS</abbr> Ansible Collections - DGTL-DEVNET-2700</a></li>
+<li><a href="https://www.ciscolive.com/global/on-demand-library.html#/session/1542224338659001rvdb" target="_blank" title="UCS Manager Automation with Ansible - DEVNET-1586"><abbr title="Unified Compute System">UCS</abbr> Manager Automation with Ansible - DEVNET-1586</a></li>
+<li><a href="https://www.ciscolive.com/global/on-demand-library.html#/session/1542224343090001rMoa" target="_blank" title="Cisco UCS PowerTool - Deploy at Scale - DEVNET-2562">Cisco <abbr title="Unified Compute System">UCS</abbr> PowerTool - Deploy at Scale - DEVNET-2562</a></li>
 </ul>
 </details>
 <hr />
-<h3 id="hands-on-learning"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M512 64H64C28.65 64 0 92.65 0 128v256c0 35.35 28.65 64 64 64h448c35.35 0 64-28.65 64-64V128c0-35.35-28.7-64-64-64zm16 320c0 8.822-7.178 16-16 16H64c-8.822 0-16-7.178-16-16V128c0-8.822 7.178-16 16-16h448c8.822 0 16 7.178 16 16v256zM140 152h-24c-6.656 0-12 5.344-12 12v24c0 6.656 5.344 12 12 12h24c6.656 0 12-5.344 12-12v-24c0-6.7-5.3-12-12-12zm56 48h24c6.656 0 12-5.344 12-12v-24c0-6.656-5.344-12-12-12h-24c-6.656 0-12 5.344-12 12v24c0 6.7 5.3 12 12 12zm80 0h24c6.656 0 12-5.344 12-12v-24c0-6.656-5.344-12-12-12h-24c-6.656 0-12 5.344-12 12v24c0 6.7 5.3 12 12 12zm80 0h24c6.656 0 12-5.344 12-12v-24c0-6.656-5.344-12-12-12h-24c-6.656 0-12 5.344-12 12v24c0 6.7 5.3 12 12 12zm104-48h-24c-6.656 0-12 5.344-12 12v24c0 6.656 5.344 12 12 12h24c6.656 0 12-5.344 12-12v-24c0-6.7-5.3-12-12-12zm-320 80h-24c-6.656 0-12 5.344-12 12v24c0 6.656 5.344 12 12 12h24c6.656 0 12-5.344 12-12v-24c0-6.7-5.3-12-12-12zm56 48h24c6.656 0 12-5.344 12-12v-24c0-6.656-5.344-12-12-12h-24c-6.656 0-12 5.344-12 12v24c0 6.7 5.3 12 12 12zm80 0h24c6.656 0 12-5.344 12-12v-24c0-6.656-5.344-12-12-12h-24c-6.656 0-12 5.344-12 12v24c0 6.7 5.3 12 12 12zm80 0h24c6.656 0 12-5.344 12-12v-24c0-6.656-5.344-12-12-12h-24c-6.656 0-12 5.344-12 12v24c0 6.7 5.3 12 12 12zm104-48h-24c-6.656 0-12 5.344-12 12v24c0 6.656 5.344 12 12 12h24c6.656 0 12-5.344 12-12v-24c0-6.7-5.3-12-12-12zm-60 88H176c-8.9 0-16 7.1-16 16v16c0 8.875 7.125 16 16 16h224c8.875 0 16-7.125 16-16v-16c0-8.9-7.1-16-16-16z"/></svg></span> Hands-On Learning<a class="headerlink" href="#hands-on-learning" title="Permanent link">&para;</a></h3>
+<h3 id="hands-on-learning"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M64 112c-8.8 0-16 7.2-16 16v256c0 8.8 7.2 16 16 16h448c8.8 0 16-7.2 16-16V128c0-8.8-7.2-16-16-16H64zM0 128c0-35.3 28.7-64 64-64h448c35.3 0 64 28.7 64 64v256c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zm176 192h224c8.8 0 16 7.2 16 16v16c0 8.8-7.2 16-16 16H176c-8.8 0-16-7.2-16-16v-16c0-8.8 7.2-16 16-16zm-72-72c0-8.8 7.2-16 16-16h16c8.8 0 16 7.2 16 16v16c0 8.8-7.2 16-16 16h-16c-8.8 0-16-7.2-16-16v-16zm16-96h16c8.8 0 16 7.2 16 16v16c0 8.8-7.2 16-16 16h-16c-8.8 0-16-7.2-16-16v-16c0-8.8 7.2-16 16-16zm64 96c0-8.8 7.2-16 16-16h16c8.8 0 16 7.2 16 16v16c0 8.8-7.2 16-16 16h-16c-8.8 0-16-7.2-16-16v-16zm16-96h16c8.8 0 16 7.2 16 16v16c0 8.8-7.2 16-16 16h-16c-8.8 0-16-7.2-16-16v-16c0-8.8 7.2-16 16-16zm64 96c0-8.8 7.2-16 16-16h16c8.8 0 16 7.2 16 16v16c0 8.8-7.2 16-16 16h-16c-8.8 0-16-7.2-16-16v-16zm16-96h16c8.8 0 16 7.2 16 16v16c0 8.8-7.2 16-16 16h-16c-8.8 0-16-7.2-16-16v-16c0-8.8 7.2-16 16-16zm64 96c0-8.8 7.2-16 16-16h16c8.8 0 16 7.2 16 16v16c0 8.8-7.2 16-16 16h-16c-8.8 0-16-7.2-16-16v-16zm16-96h16c8.8 0 16 7.2 16 16v16c0 8.8-7.2 16-16 16h-16c-8.8 0-16-7.2-16-16v-16c0-8.8 7.2-16 16-16zm64 96c0-8.8 7.2-16 16-16h16c8.8 0 16 7.2 16 16v16c0 8.8-7.2 16-16 16h-16c-8.8 0-16-7.2-16-16v-16zm16-96h16c8.8 0 16 7.2 16 16v16c0 8.8-7.2 16-16 16h-16c-8.8 0-16-7.2-16-16v-16c0-8.8 7.2-16 16-16z"/></svg></span> Hands-On Learning<a class="headerlink" href="#hands-on-learning" title="Permanent link">&para;</a></h3>
 <details class="abstract">
 <summary>DevNet Sandbox Labs</summary>
 <ul>
-<li><a href="https://devnetsandbox.cisco.com/RM/Diagram/Index/3323b7b0-b70b-4b1e-a929-6bdbff3aac8a?diagramType=Topology" target="_blank" title="DevNet UCS Management Sandbox">DevNet UCS Management Sandbox</a></li>
-<li><a href="https://community.cisco.com/t5/unified-computing-system/ucs-platform-emulator-downloads-ucspe-4-1-2cpe1-ucspe-4-0-4epe1/ta-p/3648177" target="_blank" title="UCS Platform Emulator">UCS Platform Emulator</a></li>
+<li><a href="https://devnetsandbox.cisco.com/RM/Diagram/Index/3323b7b0-b70b-4b1e-a929-6bdbff3aac8a?diagramType=Topology" target="_blank" title="DevNet UCS Management Sandbox">DevNet <abbr title="Unified Compute System">UCS</abbr> Management Sandbox</a></li>
+<li><a href="https://community.cisco.com/t5/unified-computing-system/ucs-platform-emulator-downloads-ucspe-4-1-2cpe1-ucspe-4-0-4epe1/ta-p/3648177" target="_blank" title="UCS Platform Emulator"><abbr title="Unified Compute System">UCS</abbr> Platform Emulator</a></li>
 <li><a href="https://devnetsandbox.cisco.com/RM/Diagram/Index/a63216d2-e891-4856-9f27-309ca61ec862?diagramType=Topology" target="_blank" title="DevNet Cisco Intersight Sandbox">DevNet Cisco Intersight Sandbox</a></li>
 <li><a href="https://intersight.com/mobrowser" target="_blank" title="Intersight Managed Object Browser">Intersight Managed Object Browser</a></li>
 </ul>
@@ -977,18 +1214,18 @@
 </ul>
 <hr />
 <ul>
-<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/></svg></span> <a href="http://localhost:8888/lab/workspaces/auto-I/tree/resources/ucs/ucsm/python_sdk_examples.ipynb" target="_blank" title="UCS Python SDK Examples">UCS Python SDK Examples</a></li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/></svg></span> <a href="http://localhost:8888/lab/workspaces/auto-I/tree/resources/ucs/ucsm/python_sdk_examples.ipynb" target="_blank" title="UCS Python SDK Examples"><abbr title="Unified Compute System">UCS</abbr> Python <abbr title="Software Development Kit">SDK</abbr> Examples</a></li>
 </ul>
 <hr />
 <ul>
-<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 7H5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2m0 4H5V9h2m7-2h-4v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m0 4h-2V9h2m6 0v6h1v2h-4v-2h1V9h-1V7h4v2Z"/></svg></span> <a href="http://localhost:8888/lab/tree/resources/ucs/intersight" target="_blank" title="Intersight REST API">Intersight REST API</a></li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 7H5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2m0 4H5V9h2m7-2h-4v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m0 4h-2V9h2m6 0v6h1v2h-4v-2h1V9h-1V7h4v2Z"/></svg></span> <a href="http://localhost:8888/lab/tree/resources/ucs/intersight" target="_blank" title="Intersight REST API">Intersight <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr></a></li>
 </ul>
 <details class="danger">
 <summary>Important Intersight Code Usage Notes</summary>
-<p>Cisco Intersight REST API keys require an HTTP signature, and the initial setup of Intersight authentication requires several manual steps.  This repository already includes the <a href="https://github.com/movinalot/intersight-rest-api" title="Intersight Authentication Repository">Intersight Authentication Repository</a> files recommended by Cisco DevNet.  These files provide the functionality required to support Intersight authentication via Python.</p>
+<p>Cisco Intersight <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> keys require an <abbr title="Hypertext Transfer Protocol">HTTP</abbr> signature, and the initial setup of Intersight authentication requires several manual steps.  This repository already includes the <a href="https://github.com/movinalot/intersight-rest-api" title="Intersight Authentication Repository">Intersight Authentication Repository</a> files recommended by Cisco DevNet.  These files provide the functionality required to support Intersight authentication via Python.</p>
 <p>If you would like to use the Intersight Python code and Jupyter Notebook examples, you must first perform the following steps:</p>
 <ol>
-<li>Obtain Intersight <code>keyId</code> and <code>keySecret</code> data using the <a href="https://intersight.com/apidocs/introduction/security/#benefits-of-using-api-keys" title="Intersight API Authorization">Intersight API Authorization</a> instructions.</li>
+<li>Obtain Intersight <code>keyId</code> and <code>keySecret</code> data using the <a href="https://intersight.com/apidocs/introduction/security/#benefits-of-using-api-keys" title="Intersight API Authorization">Intersight <abbr title="Application Programming Interface">API</abbr> Authorization</a> instructions.</li>
 <li>
 <p>Create new blank text files within your local copy of the <strong>dcauto-study-resources</strong> repository with the paths:</p>
 <ul>
@@ -1026,22 +1263,22 @@ tIuV+MMhHKWxXtLCUPZjP60nk/d2oR6tN7X75QL9ioduN/QIArZGog==
 </details>
 </details>
 <ul>
-<li><a href="http://localhost:8888/lab/tree/resources/ucs/intersight/intersight_helper.py" target="_blank" title="Intersight API Python Helper Functions">Intersight API Python Helper Functions</a><ul>
+<li><a href="http://localhost:8888/lab/tree/resources/ucs/intersight/intersight_helper.py" target="_blank" title="Intersight API Python Helper Functions">Intersight <abbr title="Application Programming Interface">API</abbr> Python Helper Functions</a><ul>
 <li>The docstrings in <code>intersight_helper.py</code> include usage instructions.</li>
-<li>Use these helper functions from your Python interpreter/REPL with the expression:<ul>
+<li>Use these helper functions from your Python interpreter/<abbr title="Read Evaluate Print Loop">REPL</abbr> with the expression:<ul>
 <li><code>from intersight_helper import *</code></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="http://localhost:8888/lab/workspaces/auto-a/tree/resources/ucs/intersight/intersight.ipynb" target="_blank" title="Intersight REST API Jupyter Notebook Exercises">Intersight REST API Jupyter Notebook Exercises</a></li>
+<li><a href="http://localhost:8888/lab/workspaces/auto-a/tree/resources/ucs/intersight/intersight.ipynb" target="_blank" title="Intersight REST API Jupyter Notebook Exercises">Intersight <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> Jupyter Notebook Exercises</a></li>
 </ul>
 </div>
 </details>
 <details class="abstract">
-<summary>UCS Director REST API Notes</summary>
+<summary><abbr title="Unified Compute System">UCS</abbr> Director <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> Notes</summary>
 <ul>
-<li>API endpoint to request an API key:<ul>
+<li><abbr title="Application Programming Interface">API</abbr> endpoint to request an <abbr title="Application Programming Interface">API</abbr> key:<ul>
 <li><code>https://{{ucsd}}/app/api/rest?opName=getRESTKey&amp;user={{username}}&amp;password={{password}}</code></li>
 </ul>
 </li>
@@ -1058,25 +1295,25 @@ tIuV+MMhHKWxXtLCUPZjP60nk/d2oR6tN7X75QL9ioduN/QIArZGog==
 </ul>
 </details>
 <details class="abstract">
-<summary>DCNM REST API Notes</summary>
+<summary><abbr title="Data Center Network Manager">DCNM</abbr> <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> Notes</summary>
 <ul>
 <li>
-<p>DCNM has Multiple APIs:</p>
+<p><abbr title="Data Center Network Manager">DCNM</abbr> has Multiple <abbr title="Application Programming Interfaces">APIs</abbr>:</p>
 <ul>
-<li>LAN Fabric.</li>
+<li><abbr title="Local Area Network">LAN</abbr> Fabric.</li>
 <li>L4-L7 Services.</li>
 <li>Endpoint Locator.</li>
-<li>Media Controller (DCNM control plane).</li>
-<li>SAN Management.</li>
+<li>Media Controller (<abbr title="Data Center Network Manager">DCNM</abbr> control plane).</li>
+<li><abbr title="Storage Area Network">SAN</abbr> Management.</li>
 </ul>
 </li>
 <li>
-<p>APIs support <code>GET</code>, <code>POST</code>, <code>PUT</code>, &amp; <code>DELETE</code> operations.</p>
+<p><abbr title="Application Programming Interfaces">APIs</abbr> support <code>GET</code>, <code>POST</code>, <code>PUT</code>, &amp; <code>DELETE</code> operations.</p>
 </li>
-<li>API Authentication:<ul>
-<li>API URI Endpoint - <code>/logon</code></li>
-<li>Authentication mechanism - <strong>HTTP Basic</strong><ul>
-<li>Successful authentication requests return a token which must be sent in subsequent API requests, in a custom header with the format:<ul>
+<li><abbr title="Application Programming Interface">API</abbr> Authentication:<ul>
+<li><abbr title="Application Programming Interface">API</abbr> <abbr title="Uniform Resource Identifier">URI</abbr> Endpoint - <code>/logon</code></li>
+<li>Authentication mechanism - <strong><abbr title="Hypertext Transfer Protocol">HTTP</abbr> Basic</strong><ul>
+<li>Successful authentication requests return a token which must be sent in subsequent <abbr title="Application Programming Interface">API</abbr> requests, in a custom header with the format:<ul>
 <li><code>{"DCNM-Token": token}</code></li>
 </ul>
 </li>
@@ -1089,11 +1326,11 @@ tIuV+MMhHKWxXtLCUPZjP60nk/d2oR6tN7X75QL9ioduN/QIArZGog==
 <hr />
 <h2 id="documentation"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6H6m0 2h7v5h5v11H6V4m2 8v2h8v-2H8m0 4v2h5v-2H8Z"/></svg></span> Documentation<a class="headerlink" href="#documentation" title="Permanent link">&para;</a></h2>
 <details class="abstract">
-<summary>UCS Developer Tools</summary>
+<summary><abbr title="Unified Compute System">UCS</abbr> Developer Tools</summary>
 <ul>
-<li><a href="hhttps://ciscoucs.github.io/ucsmsdk_docs/ucsmsdk_ug.html" target="_blank" title="UCS Python SDK Reference Guide">UCS Python SDK Reference Guide</a></li>
-<li><a href="https://community.cisco.com/t5/cisco-developed-ucs-integrations/cisco-ucs-powertool-suite-powershell-modules-for-cisco-ucs/ta-p/3639523" target="_blank" title="UCS PowerTool Resource Landing Page">UCS PowerTool Resource Landing Page</a></li>
-<li><a href="https://hub.docker.com/r/ciscodevnet/ucs-powertool-core-ms" target="_blank" title="DevNet UCS PowerTool Docker Container on Docker Hub">DevNet UCS PowerTool Docker Container on Docker Hub</a><ul>
+<li><a href="https://ciscoucs.github.io/ucsmsdk_docs/ucsmsdk_ug.html" target="_blank" title="UCS Python SDK Reference Guide"><abbr title="Unified Compute System">UCS</abbr> Python <abbr title="Software Development Kit">SDK</abbr> Reference Guide</a></li>
+<li><a href="https://community.cisco.com/t5/cisco-developed-ucs-integrations/cisco-ucs-powertool-suite-powershell-modules-for-cisco-ucs/ta-p/3639523" target="_blank" title="UCS PowerTool Resource Landing Page"><abbr title="Unified Compute System">UCS</abbr> PowerTool Resource Landing Page</a></li>
+<li><a href="https://hub.docker.com/r/ciscodevnet/ucs-powertool-core-ms" target="_blank" title="DevNet UCS PowerTool Docker Container on Docker Hub">DevNet <abbr title="Unified Compute System">UCS</abbr> PowerTool Docker Container on Docker Hub</a><ul>
 <li>The resources in this Docker Container are already built-in to the Visual Studio Development Container in this repository.</li>
 </ul>
 </li>
@@ -1102,100 +1339,78 @@ tIuV+MMhHKWxXtLCUPZjP60nk/d2oR6tN7X75QL9ioduN/QIArZGog==
 <details class="abstract">
 <summary>Cisco Intersight Programmability</summary>
 <ul>
-<li><a href="https://intersight.com/apidocs/introduction/overview/" target="_blank" title="Cisco Intersight RESTful API">Cisco Intersight RESTful API Guide</a></li>
+<li><a href="https://intersight.com/apidocs/introduction/overview/" target="_blank" title="Cisco Intersight RESTful API">Cisco Intersight RESTful <abbr title="Application Programming Interface">API</abbr> Guide</a></li>
 </ul>
 </details>
 <details class="abstract">
-<summary>Ansible with UCS and Intersight</summary>
+<summary>Ansible with <abbr title="Unified Compute System">UCS</abbr> and Intersight</summary>
 <ul>
-<li><a href="https://galaxy.ansible.com/cisco/ucs" target="_blank" title="Ansible Galaxy UCS Manager Collection">Ansible Galaxy UCS Manager Collection</a></li>
+<li><a href="https://galaxy.ansible.com/cisco/ucs" target="_blank" title="Ansible Galaxy UCS Manager Collection">Ansible Galaxy <abbr title="Unified Compute System">UCS</abbr> Manager Collection</a></li>
 <li><a href="https://galaxy.ansible.com/cisco/intersight" target="_blank" title="Ansible Galaxy Intersight Collection">Ansible Galaxy Intersight Collection</a></li>
 </ul>
 </details>
 <details class="abstract">
-<summary>UCS Director and DCNM</summary>
+<summary><abbr title="Unified Compute System">UCS</abbr> Director and <abbr title="Data Center Network Manager">DCNM</abbr></summary>
 <ul>
-<li><a href="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-director/rest-api-getting-started-guide/6-5/cisco-ucs-director-REST-API-getting-started-65.html" target="_blank" title="Cisco UCS Director REST API Getting Started Guide">Cisco UCS Director REST API Getting Started Guide</a></li>
-<li><a href="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-director/orchestration-guide/6-8/cisco-ucs-director-orchestration-68.html" target="_blank" title="Cisco UCS Director Orchestration Guide">Cisco UCS Director Orchestration Guide</a></li>
+<li><a href="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-director/rest-api-getting-started-guide/6-5/cisco-ucs-director-REST-API-getting-started-65.html" target="_blank" title="Cisco UCS Director REST API Getting Started Guide">Cisco <abbr title="Unified Compute System">UCS</abbr> Director <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> Getting Started Guide</a></li>
+<li><a href="https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-director/orchestration-guide/6-8/cisco-ucs-director-orchestration-68.html" target="_blank" title="Cisco UCS Director Orchestration Guide">Cisco <abbr title="Unified Compute System">UCS</abbr> Director Orchestration Guide</a></li>
 </ul>
 </details>
 <hr />
-<h2 id="insights"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M112.1 454.3c0 6.297 1.816 12.44 5.284 17.69l17.14 25.69c5.25 7.875 17.17 14.28 26.64 14.28h61.67c9.438 0 21.36-6.401 26.61-14.28l17.08-25.68c2.938-4.438 5.348-12.37 5.348-17.7l.128-39.2H112l.1 39.2zM191.4.013C89.44.326 16 82.97 16 175.1c0 44.38 16.44 84.84 43.56 115.8 16.53 18.84 42.34 58.23 52.22 91.45.031.25.094.517.125.782h160.2c.031-.265.094-.516.125-.782 9.875-33.22 35.69-72.61 52.22-91.45C351.6 260.8 368 220.4 368 175.1 368 78.61 288.9-.284 191.4.013zm.6 95.997c-44.13 0-80 35.89-80 79.1 0 9.69-7.2 16.89-16 16.89s-16-7.2-16-16c0-61.76 50.25-111.1 112-111.1 8.844 0 16 7.159 16 16s-7.2 15.11-16 15.11z"/></svg></span> Insights<a class="headerlink" href="#insights" title="Permanent link">&para;</a></h2>
+<h2 id="insights"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M272 384c9.6-31.9 29.5-59.1 49.2-86.2 5.2-7.1 10.4-14.2 15.4-21.4 19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3 5 7.2 10.2 14.3 15.4 21.4 19.8 27.1 39.7 54.4 49.2 86.2h160zm-80 128c44.2 0 80-35.8 80-80v-16H112v16c0 44.2 35.8 80 80 80zm-80-336c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112 8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z"/></svg></span> Insights<a class="headerlink" href="#insights" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p>Preparing for the exam topics in this section was an exercise in us spending almost all of our study time in the CLI of our <a href="../section_0/" title="Development Environment Setup Instructions">development environments</a>. If you didn't already notice, we included quite a few <a href="#hands-on-learning" title="DevNet Sandbox Lab Recommendations">DevNet Sandbox Labs</a> in the list of materials that we recommend.  We did that for a good reason; those labs are really, <em>really</em> good because they provide many interactive and repeatable exercises for the UCS PowerTool, the UCS Python SDK, and the Intersight REST API.  We probably went through each of those lab exercises 10+ times to properly commit UCS programmability to memory.  We think all of that practice was time well spent.</p>
+<p>Preparing for the exam topics in this section was an exercise in us spending almost all of our study time in the <abbr title="Command Line Interface">CLI</abbr> of our <a href="../section_0/" title="Development Environment Setup Instructions">development environments</a>. If you didn't already notice, we included quite a few <a href="#hands-on-learning" title="DevNet Sandbox Lab Recommendations">DevNet Sandbox Labs</a> in the list of materials that we recommend.  We did that for a good reason; those labs are really, <em>really</em> good because they provide many interactive and repeatable exercises for the <abbr title="Unified Compute System">UCS</abbr> PowerTool, the <abbr title="Unified Compute System">UCS</abbr> Python <abbr title="Software Development Kit">SDK</abbr>, and the Intersight <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr>.  We probably went through each of those lab exercises 10+ times to properly commit <abbr title="Unified Compute System">UCS</abbr> programmability to memory.  We think all of that practice was time well spent.</p>
 </li>
 <li>
-<p>For our UCS lab resources, we used a combination of the <a href="https://devnetsandbox.cisco.com/RM/Diagram/Index/3323b7b0-b70b-4b1e-a929-6bdbff3aac8a?diagramType=Topology" target="_blank" title="DevNet UCS Management Sandbox">DevNet UCS Management Sandbox</a> and the <a href="https://community.cisco.com/t5/unified-computing-system/ucs-platform-emulator-downloads-ucspe-4-1-2cpe1-ucspe-4-0-4epe1/ta-p/3648177" target="_blank" title="UCS Platform Emulator">UCS Platform Emulator</a>.  Personally, I preferred to have a couple of UCS Platform Emulator instances as virtual machines on my computer.  I did that mostly because I didn't have to reserve DevNet Sandbox resources.  That said, we did not find any glaring limitations with either option, so you can't go wrong.</p>
+<p>For our <abbr title="Unified Compute System">UCS</abbr> lab resources, we used a combination of the <a href="https://devnetsandbox.cisco.com/RM/Diagram/Index/3323b7b0-b70b-4b1e-a929-6bdbff3aac8a?diagramType=Topology" target="_blank" title="DevNet UCS Management Sandbox">DevNet <abbr title="Unified Compute System">UCS</abbr> Management Sandbox</a> and the <a href="https://community.cisco.com/t5/unified-computing-system/ucs-platform-emulator-downloads-ucspe-4-1-2cpe1-ucspe-4-0-4epe1/ta-p/3648177" target="_blank" title="UCS Platform Emulator"><abbr title="Unified Compute System">UCS</abbr> Platform Emulator</a>.  Personally, I preferred to have a couple of <abbr title="Unified Compute System">UCS</abbr> Platform Emulator instances as virtual machines on my computer.  I did that mostly because I didn't have to reserve DevNet Sandbox resources.  That said, we did not find any glaring limitations with either option, so you can't go wrong.</p>
 </li>
 <li>
-<p>For our Intersight study, the API guide was solid gold.  We made sure to get plenty of hands-on time with:</p>
+<p>For our Intersight study, the <abbr title="Application Programming Interface">API</abbr> guide was solid gold.  We made sure to get plenty of hands-on time with:</p>
 <ul>
 <li>The <a href="../section_0/" title="Development Environment Setup Instructions">development environment</a> included in this repository.</li>
-<li>The <a href="http://localhost:8888/lab/workspaces/auto-a/tree/resources/ucs/intersight/intersight.ipynb" target="_blank" title="Intersight REST API Jupyter Notebook Exercises">Intersight REST API Jupyter Notebook Exercises</a>, which will help you get an practice and working examples of the many query Intersight options.</li>
-<li>The Intersight <a href="https://intersight.com/apidocs/apirefs/aaa/AuditRecords/model/" title="Intersight API Reference">API reference</a>.</li>
+<li>The <a href="http://localhost:8888/lab/workspaces/auto-a/tree/resources/ucs/intersight/intersight.ipynb" target="_blank" title="Intersight REST API Jupyter Notebook Exercises">Intersight <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> Jupyter Notebook Exercises</a>, which will help you get an practice and working examples of the many query Intersight options.</li>
+<li>The Intersight <a href="https://intersight.com/apidocs/apirefs/aaa/AuditRecords/model/" title="Intersight API Reference"><abbr title="Application Programming Interface">API</abbr> reference</a>.</li>
 </ul>
 </li>
 <li>
-<p>One more plug for the <a href="https://intersight.com/apidocs/apirefs/aaa/AuditRecords/model/" title="Intersight API Reference">Intersight API reference</a>, we found it very valuable to get plenty of practice understanding which parameters you can expect to receive in a REST API query response from Intersight.  The same is true for our practice determining which Intersight parameters you need to specify in the body of HTTP requests, to either add new objects to Intersight or to modify existing Intersight objects.</p>
+<p>One more plug for the <a href="https://intersight.com/apidocs/apirefs/aaa/AuditRecords/model/" title="Intersight API Reference">Intersight <abbr title="Application Programming Interface">API</abbr> reference</a>, we found it very valuable to get plenty of practice understanding which parameters you can expect to receive in a <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> query response from Intersight.  The same is true for our practice determining which Intersight parameters you need to specify in the body of <abbr title="Hypertext Transfer Protocol">HTTP</abbr> requests, to either add new objects to Intersight or to modify existing Intersight objects.</p>
 </li>
 <li>
-<p>We ended up getting a bit of tunnel vision with our UCS and Intersight studies, and we almost forgot to get some work in with UCSD and DCNM.  The respective DevNet learning <a href="#hands-on-learning" title="DevNet Sandbox Lab Recommendations">DevNet Sandbox Labs</a> for UCSD and DCNM were a big help.</p>
+<p>We ended up getting a bit of tunnel vision with our <abbr title="Unified Compute System">UCS</abbr> and Intersight studies, and we almost forgot to get some work in with <abbr title="Unified Compute System Director">UCSD</abbr> and <abbr title="Data Center Network Manager">DCNM</abbr>.  The respective DevNet learning <a href="#hands-on-learning" title="DevNet Sandbox Lab Recommendations">DevNet Sandbox Labs</a> for <abbr title="Unified Compute System Director">UCSD</abbr> and <abbr title="Data Center Network Manager">DCNM</abbr> were a big help.</p>
 </li>
 </ul>
 <h2 id="lessons-learned">Lessons Learned<a class="headerlink" href="#lessons-learned" title="Permanent link">&para;</a></h2>
-<p><img alt="👍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f44d.svg" title=":thumbsup:" />  You finished the UCS section!  That's all of the study resources we accumulated during our exam preparation.  If you're interested in some general guidance on your path to DCAUTO certification, click <a href="../appendix_a/" title="Appendix A">this link</a> to check out a summary of our <strong>Lessons Learned</strong>.</p>
+<p><img alt="👍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f44d.svg" title=":thumbsup:" />  You finished the <abbr title="Unified Compute System">UCS</abbr> section!  That's all of the study resources we accumulated during our exam preparation.  If you're interested in some general guidance on your path to <abbr title="Cisco Data Center Automation Exam (300-635)">DCAUTO</abbr> certification, click <a href="../appendix_a/" title="Appendix A">this link</a> to check out a summary of our <strong>Lessons Learned</strong>.</p>
 
-              
-            </article>
-            
-          </div>
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
-          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
-            Back to top
-          </a>
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
         
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href="../section_3/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Data Center Device-Centric Networking" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Data Center Device-Centric Networking
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../appendix_a/" class="md-footer__link md-footer__link--next" aria-label="Next: Supplementary Content" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Supplementary Content
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -1217,10 +1432,12 @@ tIuV+MMhHKWxXtLCUPZjP60nk/d2oR6tN7X75QL9ioduN/QIArZGog==
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.integrate"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.integrate"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
     
   </body>
