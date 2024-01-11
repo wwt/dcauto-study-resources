@@ -1,42 +1,54 @@
+// Visual Studio Code Development Container configuration file
+// https://code.visualstudio.com/docs/remote/devcontainerjson-reference
 {
+    // Docker build instructions{
     "name": "WWT - Cisco DevNet DCAUTO Study Resources Dev Container",
     "build": {
         "dockerfile": "../Dockerfile.dev",
         "context": ".."
     },
-    "extensions": [
-        "davidanson.vscode-markdownlint",
-        "docsmsft.docs-markdown",
-        "docsmsft.docs-yaml",
-        "github.vscode-pull-request-github",
-        "ms-azuretools.vscode-docker",
-        "ms-python.python",
-        "ms-python.vscode-pylance",
-        "ms-vscode.powershell",
-        "redhat.ansible",
-        "redhat.vscode-yaml",
-        "streetsidesoftware.code-spell-checker"
-    ],
-    "forwardPorts": [
-        8000,
-        8888
-    ],
-    "postAttachCommand": ["./requirements/server-launch.sh"],
-    "settings": {
-        "#terminal.integrated.defaultProfile.linux#": "/bin/bash",
-        "[yaml]": {
-            "editor.insertSpaces": true,
-            "editor.tabSize": 2,
-            "editor.autoIndent": "keep",
-            "editor.quickSuggestions": {
-                "other": true,
-                "comments": false,
-                "strings": true
+    "customizations": {
+        "vscode": {
+            // Visual Studio Code extensions
+            "extensions": [
+                "davidanson.vscode-markdownlint",
+                "docsmsft.docs-markdown",
+                "docsmsft.docs-yaml",
+                "github.vscode-github-actions",
+                "github.vscode-pull-request-github",
+                "ms-azuretools.vscode-docker",
+                "ms-python.python",
+                "ms-python.flake8",
+                "ms-python.vscode-pylance",
+                "ms-vscode.powershell",
+                "redhat.ansible",
+                "redhat.vscode-yaml",
+                "streetsidesoftware.code-spell-checker"
+            ],
+            "forwardPorts": [
+                8000,
+                8888
+            ],
+            "postAttachCommand": ["./requirements/server-launch.sh"],
+            // Visual Studio Code environment configuration
+            "settings": {
+                // Set the default terminal application to bash
+                "#terminal.integrated.defaultProfile.linux#": "/bin/bash",
+                // Customize YAML formatting
+                "[yaml]": {
+                    "editor.insertSpaces": true,
+                    "editor.tabSize": 2,
+                    "editor.autoIndent": "keep",
+                    "editor.quickSuggestions": {
+                        "other": true,
+                        "comments": false,
+                        "strings": true
+                    }
+                },
+                // Set Python configuration for runtime, syntax analysis, and linting
+                "python.pythonPath": "/usr/local/bin/python3",
+                "python.formatting.provider": "autopep8"
             }
-        },
-        "python.pythonPath": "/usr/local/bin/python3",
-        "python.formatting.provider": "autopep8",
-        "python.linting.enabled": true,
-        "python.linting.flake8Enabled": true
+        }
     }
 }
