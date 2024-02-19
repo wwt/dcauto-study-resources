@@ -29,7 +29,6 @@
                 8000,
                 8888
             ],
-            "postAttachCommand": ["./requirements/server-launch.sh"],
             // Visual Studio Code environment configuration
             "settings": {
                 // Set the default terminal application to bash
@@ -50,5 +49,9 @@
                 "python.formatting.provider": "autopep8"
             }
         }
-    }
+    },
+    // Entrypoint gets overridden by default by vscode, so run the script to start JupyterLab
+    "postStartCommand": [
+        "./requirements/server-launch.sh"
+    ]
 }
